@@ -1,0 +1,47 @@
+{
+  "name": "riftbound-tools",
+  "version": "0.1.0",
+  "description": "Riftbound trading card game data utilities for deckbuilding, search, and card lookup.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && npm run copy-assets",
+    "generate:cards": "ts-node ./scripts/generate-cards.ts",
+    "import:cards": "ts-node ./scripts/import-csv.ts",
+    "fetch:cards": "ts-node ./scripts/fetch-cards.ts",
+    "copy-assets": "ts-node ./scripts/copy-assets.ts",
+    "changeset": "changeset",
+    "changeset:version": "changeset version",
+    "changeset:publish": "changeset publish",
+    "prepare": "npm run build",
+    "test": "vitest run",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "riftbound",
+    "trading-card-game",
+    "tcg",
+    "deckbuilding",
+    "card-data",
+    "riftbound-tools"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "^2.26.0",
+    "@types/node": "^20.11.0",
+    "cross-env": "^10.1.0",
+    "rimraf": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.6.0",
+    "typescript": "^5.5.0",
+    "vitest": "^0.34.0"
+  }
+}
