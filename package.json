@@ -1,6 +1,6 @@
 {
   "name": "riftbound-tools",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Riftbound trading card game data utilities for deckbuilding, search, and card lookup.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
