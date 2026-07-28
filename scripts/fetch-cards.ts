@@ -24,7 +24,7 @@ function isHttpSource(source: string): boolean {
 }
 
 const validSets = ["Origins", "Spiritforged", "Unleashed", "Vendetta", "Radiance"] as const;
-const validSetCodes = ["OGN", "SFD", "UNL", "VND", "RDN"] as const;
+const validSetCodes = ["OGN", "OGS", "SFD", "UNL", "VND", "RDN"] as const;
 
 function validateCard(card: unknown): card is Card {
   if (typeof card !== "object" || card === null) return false;
@@ -32,7 +32,6 @@ function validateCard(card: unknown): card is Card {
   return (
     typeof c.id === "string" &&
     typeof c.name === "string" &&
-    typeof c.faction === "string" &&
     typeof c.type === "string" &&
     typeof c.rarity === "string" &&
     typeof c.cost === "number" &&
@@ -55,7 +54,6 @@ function normalizeRemoteCard(raw: unknown): Card {
   return {
     id: String(card.id ?? ""),
     name: String(card.name ?? ""),
-    faction: String(card.faction ?? ""),
     type: String(card.type ?? ""),
     rarity: String(card.rarity ?? ""),
     cost: Number(card.cost ?? 0),
@@ -66,7 +64,7 @@ function normalizeRemoteCard(raw: unknown): Card {
     setCode: String(card.setCode ?? ""),
     keywords: Array.isArray(card.keywords) ? card.keywords.map(String) : undefined,
     collectible: card.collectible === undefined ? undefined : Boolean(card.collectible)
-  };
+  } as Card;
 }
 
 async function loadCardData(source: string): Promise<unknown> {

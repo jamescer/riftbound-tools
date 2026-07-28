@@ -7,13 +7,16 @@ const outputPath = path.resolve(__dirname, "..", "src", "data", "cards.json");
 
 const setCodeMap: Record<string, CardSet> = {
   ogn: "Origins",
-  spg: "Spiritforged",
+  ogs: "Origins",
+  sfd: "Spiritforged",
   unl: "Unleashed",
   vnd: "Vendetta",
-  rad: "Radiance"
+  rdn: "Radiance"
 };
 
-const validDomains = new Set<CardDomain>(["Fury", "Calm", "Mind", "Colorless", "Any"]);
+const validDomains = new Set<CardDomain>(["Fury", "Calm", "Mind", "Body", "Chaos", "Order", "Colorless"]);
+const validTypes = new Set<CardType>(["Unit", "Spell", "Gear", "Rune", "Battlefield", "Legend"]);
+const validRarities = new Set(["Common", "Uncommon", "Rare", "Epic", "Showcase"]);
 
 function parseCsvLine(line: string): string[] {
   const fields: string[] = [];
@@ -60,19 +63,20 @@ function parseTags(value: string | undefined): string[] | undefined {
 }
 
 function normalizeType(type: string): CardType {
-  const normalized = type.trim();
-  if (normalized === "Gear") return "Gear";
-  return normalized as CardType;
+  return type.trim() as CardType;
 }
 
-function normalizeDomain(value: string | undefined): CardDomain | undefined {
+function normalizeDomain(value: string | undefined): CardDomain[] | undefined {
   if (!value) return undefined;
-  const trimmed = value.trim();
-  return validDomains.has(trimmed as CardDomain) ? (trimmed as CardDomain) : undefined;
+  const parts = value
+    .split(",")
+    .map((part) => part.trim())
+    .filter((part): part is CardDomain => validDomains.has(part as CardDomain));
+  return parts.length > 0 ? parts : undefined;
 }
 
 function parseCardLine(fields: string[]): Card {
-  const [id, name, , , , , , , energy, might, power, cardType, rarity, domain, tags, ability, imageUrl] = fields;
+  const [id, name, , , , , , energy, might, power, cardType, rarity, domain, tags, ability, imageUrl] = fields;
 
   const prefix = id?.split("-")[0]?.toLowerCase() ?? "";
   const setCode = prefix.toUpperCase();
@@ -107,8 +111,8 @@ function validateCard(card: unknown): card is Card {
   return (
     typeof c.id === "string" && c.id !== "" &&
     typeof c.name === "string" && c.name !== "" &&
-    typeof c.type === "string" && c.type !== "" &&
-    typeof c.rarity === "string" && c.rarity !== "" &&
+    typeof c.type === "string" && validTypes.has(c.type as CardType) &&
+    typeof c.rarity === "string" && validRarities.has(c.rarity as string) &&
     typeof c.cost === "number" &&
     typeof c.text === "string" &&
     typeof c.setCode === "string" && c.setCode !== "" &&
@@ -117,6 +121,7 @@ function validateCard(card: unknown): card is Card {
     (c.might === undefined || typeof c.might === "number") &&
     (c.power === undefined || typeof c.power === "number") &&
     (c.imageUrl === undefined || typeof c.imageUrl === "string") &&
+    (c.domain === undefined || (Array.isArray(c.domain) && c.domain.every((item) => validDomains.has(item as CardDomain)))) &&
     (c.tags === undefined || (Array.isArray(c.tags) && c.tags.every((item) => typeof item === "string"))) &&
     (c.keywords === undefined || (Array.isArray(c.keywords) && c.keywords.every((item) => typeof item === "string")))
   );

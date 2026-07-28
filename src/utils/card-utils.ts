@@ -1,7 +1,7 @@
-import { Card, CardFaction, CardRarity, CardSet, CardType } from "../models/card";
+import { Card, CardDomain, CardRarity, CardSet, CardType } from "../models/card";
 
-export const filterByFaction = (cards: Card[], faction: CardFaction): Card[] =>
-  cards.filter((card) => card.faction === faction);
+export const filterByDomain = (cards: Card[], domain: CardDomain): Card[] =>
+  cards.filter((card) => (card.domain ?? []).includes(domain));
 
 export const filterByRarity = (cards: Card[], rarity: CardRarity): Card[] =>
   cards.filter((card) => card.rarity === rarity);

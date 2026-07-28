@@ -21,11 +21,11 @@ npm install riftbound-tools
 ## Usage
 
 ```ts
-import { cards, filterByFaction, searchCards, getCardById } from "riftbound-tools";
+import { cards, filterByDomain, searchCards, getCardById } from "riftbound-tools";
 
-const infernalCards = filterByFaction(cards, "Infernal");
+const furyCards = filterByDomain(cards, "Fury");
 const drawCards = searchCards(cards, "draw");
-const card = getCardById(cards, "riftbound-003");
+const card = getCardById(cards, "ogn-001");
 ```
 
 ## Development

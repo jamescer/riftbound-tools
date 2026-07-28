@@ -1,20 +1,18 @@
-export type CardFaction = "Arcane" | "Celestial" | "Infernal" | "Void" | "Wild";
-export type CardDomain = "Fury" | "Calm" | "Mind" | "Colorless" | "Any";
-export type CardRarity = "Common" | "Rare" | "Epic" | "Legendary";
-export type CardType = "Unit" | "Spell" | "Gear" | "Rune" | "Battlefield" | "Champion" | "Artifact";
+export type CardDomain = "Fury" | "Calm" | "Mind" | "Body" | "Chaos" | "Order" | "Colorless";
+export type CardRarity = "Common" | "Uncommon" | "Rare" | "Epic" | "Showcase";
+export type CardType = "Unit" | "Spell" | "Gear" | "Rune" | "Battlefield" | "Legend";
 export type CardSet = "Origins" | "Spiritforged" | "Unleashed" | "Vendetta" | "Radiance";
 
 export interface CardBase {
   id: string;
   name: string;
-  faction?: CardFaction;
-  domain?: CardDomain;
   type: CardType;
   rarity: CardRarity;
   cost: number;
   energy?: number;
   might?: number;
   power?: number;
+  domain?: CardDomain[];
   tags?: string[];
   ability?: string;
   abilities: string[];
@@ -27,15 +25,15 @@ export interface CardBase {
 }
 
 export interface UnitCard extends CardBase {
-  type: "Unit" | "Champion";
+  type: "Unit";
 }
 
 export interface SpellCard extends CardBase {
   type: "Spell";
 }
 
-export interface ArtifactCard extends CardBase {
-  type: "Artifact" | "Gear";
+export interface GearCard extends CardBase {
+  type: "Gear";
 }
 
 export interface RuneCard extends CardBase {
@@ -46,4 +44,8 @@ export interface BattlefieldCard extends CardBase {
   type: "Battlefield";
 }
 
-export type Card = UnitCard | SpellCard | ArtifactCard | RuneCard | BattlefieldCard;
+export interface LegendCard extends CardBase {
+  type: "Legend";
+}
+
+export type Card = UnitCard | SpellCard | GearCard | RuneCard | BattlefieldCard | LegendCard;
