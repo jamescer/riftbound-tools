@@ -1,6 +1,6 @@
 {
   "name": "riftbound-tools",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Riftbound trading card game data utilities for deckbuilding, search, and card lookup.",
   "keywords": [
     "riftbound",
