@@ -83,7 +83,8 @@
     "name": "Cleave",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
+    "might": 1,
     "domain": [
       "Fury"
     ],
@@ -174,7 +175,7 @@
     "name": "Get Excited!",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Fury"
@@ -193,7 +194,7 @@
     "name": "Hextech Ray",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Fury"
@@ -317,7 +318,7 @@
     "name": "Sky Splitter",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Fury"
@@ -491,7 +492,7 @@
     "name": "Sun Disc",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Fury"
@@ -510,7 +511,7 @@
     "name": "Thermo Beam",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Fury"
@@ -547,7 +548,7 @@
     "name": "Void Seeker",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Fury"
@@ -566,7 +567,7 @@
     "name": "Blind Fury",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Fury"
@@ -698,7 +699,7 @@
     "name": "Falling Star",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Fury"
@@ -819,7 +820,7 @@
     "name": "Shakedown",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Fury"
@@ -1030,7 +1031,7 @@
     "name": "Seal of Rage",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Fury"
@@ -1135,7 +1136,7 @@
     "name": "Charm",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Calm"
@@ -1179,7 +1180,7 @@
     "name": "Defy",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Calm"
@@ -1276,7 +1277,7 @@
     "name": "Rune Prison",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Calm"
@@ -1566,7 +1567,7 @@
     "name": "Spirit's Refuge",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Calm"
@@ -1585,7 +1586,7 @@
     "name": "Wind Wall",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Calm"
@@ -1743,7 +1744,7 @@
     "name": "Last Stand",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Calm"
@@ -2093,7 +2094,7 @@
     "name": "Mystic Reversal",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 3,
     "might": 3,
     "domain": [
       "Calm"
@@ -2112,7 +2113,7 @@
     "name": "Seal of Focus",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Calm"
@@ -2397,7 +2398,7 @@
     "name": "Smoke Screen",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Mind"
@@ -2585,7 +2586,7 @@
     "name": "Portal Rescue",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Mind"
@@ -2647,7 +2648,7 @@
     "name": "Singularity",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Mind"
@@ -2717,7 +2718,7 @@
     "name": "Convergent Mutation",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Mind"
@@ -2905,7 +2906,7 @@
     "name": "Progress Day",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Mind"
@@ -2924,7 +2925,7 @@
     "name": "Promising Future",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Mind"
@@ -3109,7 +3110,7 @@
     "name": "Seal of Insight",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Mind"
@@ -3188,7 +3189,7 @@
     "name": "Time Warp",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 4,
     "might": 4,
     "domain": [
       "Mind"
@@ -3207,7 +3208,7 @@
     "name": "Unchecked Power",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Mind"
@@ -3299,7 +3300,7 @@
     "name": "Cannon Barrage",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Body"
@@ -3318,7 +3319,7 @@
     "name": "Challenge",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Body"
@@ -3685,7 +3686,7 @@
     "name": "Spoils of War",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Body"
@@ -3704,7 +3705,7 @@
     "name": "Unyielding Spirit",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Body"
@@ -3922,7 +3923,7 @@
     "name": "Overt Operation",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Body"
@@ -3941,7 +3942,7 @@
     "name": "Primal Strength",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Body"
@@ -3988,7 +3989,7 @@
     "name": "Sabotage",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Body"
@@ -4121,7 +4122,7 @@
     "name": "Dazzling Aurora",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Body"
@@ -4226,7 +4227,7 @@
     "name": "Seal of Strength",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Body"
@@ -4463,7 +4464,7 @@
     "name": "Rebuke",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Chaos"
@@ -4482,7 +4483,7 @@
     "name": "Ride the Wind",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Chaos"
@@ -4641,7 +4642,7 @@
     "name": "Fading Memories",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Chaos"
@@ -4775,7 +4776,7 @@
     "name": "Whirlwind",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Chaos"
@@ -5131,7 +5132,7 @@
     "name": "The Harrowing",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Chaos"
@@ -5202,7 +5203,7 @@
     "name": "Invert Timelines",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Chaos"
@@ -5277,7 +5278,7 @@
     "name": "Possession",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 3,
     "might": 3,
     "domain": [
       "Chaos"
@@ -5296,7 +5297,7 @@
     "name": "Seal of Discord",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Chaos"
@@ -5432,7 +5433,7 @@
     "name": "Cull the Weak",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Order"
@@ -5519,7 +5520,7 @@
     "name": "Hidden Blade",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Order"
@@ -5719,7 +5720,7 @@
     "name": "Imperial Decree",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Order"
@@ -5791,7 +5792,7 @@
     "name": "Salvage",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Order"
@@ -5900,7 +5901,7 @@
     "name": "Vengeance",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Order"
@@ -5999,7 +6000,7 @@
     "name": "Grand Strategem",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 3,
     "might": 3,
     "domain": [
       "Order"
@@ -6104,7 +6105,7 @@
     "name": "King's Edict",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Order"
@@ -6367,7 +6368,7 @@
     "name": "Divine Judgment",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Order"
@@ -6386,7 +6387,7 @@
     "name": "Seal of Unity",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Order"
@@ -6486,7 +6487,7 @@
     "name": "Icathian Rain",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 3,
     "might": 3,
     "domain": [
       "Fury",
@@ -6537,7 +6538,7 @@
     "name": "Stormbringer",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Fury",
@@ -6588,7 +6589,7 @@
     "name": "Super Mega Death Rocket!",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Fury",
@@ -6639,7 +6640,7 @@
     "name": "Noxian Guillotine",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Fury",
@@ -6740,7 +6741,7 @@
     "name": "Dragon's Rage",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Calm",
@@ -6791,7 +6792,7 @@
     "name": "Last Breath",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Calm",
@@ -6842,7 +6843,7 @@
     "name": "Zenith Blade",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Calm",
@@ -6893,7 +6894,7 @@
     "name": "Guerilla Warfare",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Mind",
@@ -6944,7 +6945,7 @@
     "name": "Siphon Power",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Mind",
@@ -7045,7 +7046,7 @@
     "name": "Showstopper",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Body",
@@ -8222,7 +8223,7 @@
     "name": "Firestorm",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Fury"
@@ -8373,7 +8374,7 @@
     "name": "Gentlemen's Duel",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Body"
@@ -8466,7 +8467,7 @@
     "name": "Blast of Power",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Order"
@@ -8765,7 +8766,7 @@
     "name": "Decisive Strike",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Body",
@@ -8853,7 +8854,7 @@
     "name": "Bushwhack",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Fury"
@@ -8872,7 +8873,7 @@
     "name": "Detonate",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Fury"
@@ -9315,7 +9316,7 @@
     "name": "Long Sword",
     "type": "Gear",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Fury"
@@ -9340,7 +9341,7 @@
     "name": "Piercing Light",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Fury"
@@ -9970,7 +9971,7 @@
     "name": "Not So Fast",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Calm"
@@ -9989,7 +9990,7 @@
     "name": "Poro Snax",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Calm"
@@ -10171,7 +10172,7 @@
     "name": "Heart of Dark Ice",
     "type": "Gear",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Calm"
@@ -10302,7 +10303,7 @@
     "name": "Sterak's Gage",
     "type": "Gear",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Calm"
@@ -10437,7 +10438,7 @@
     "name": "Svellsongur",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Calm"
@@ -10865,7 +10866,7 @@
     "name": "Production Surge",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Mind"
@@ -10884,7 +10885,7 @@
     "name": "Rocket Barrage",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Mind"
@@ -10947,7 +10948,7 @@
     "name": "Bellows Breath",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Mind"
@@ -11047,7 +11048,7 @@
     "name": "Hextech Anomaly",
     "type": "Gear",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Mind"
@@ -11171,7 +11172,7 @@
     "name": "Premonition",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 3,
     "might": 3,
     "domain": [
       "Mind"
@@ -11487,7 +11488,7 @@
     "name": "Punch First",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Body"
@@ -11710,7 +11711,7 @@
     "name": "Show of Strength",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Body"
@@ -11729,7 +11730,7 @@
     "name": "Strike Down",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Body"
@@ -11857,7 +11858,7 @@
     "name": "Here to Help",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Body"
@@ -12032,7 +12033,7 @@
     "name": "Ancient Henge",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Body"
@@ -12212,7 +12213,7 @@
     "name": "Called Shot",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Chaos"
@@ -12827,7 +12828,7 @@
     "name": "Switcheroo",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Chaos"
@@ -12876,7 +12877,7 @@
     "name": "Downwell",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Chaos"
@@ -13331,7 +13332,7 @@
     "name": "Drag Under",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Order"
@@ -13421,7 +13422,7 @@
     "name": "Vanguard Armory",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Order"
@@ -13570,7 +13571,7 @@
     "name": "Sacred Shears",
     "type": "Gear",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Order"
@@ -13761,7 +13762,7 @@
     "name": "Blade of the Ruined King",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Order"
@@ -13891,7 +13892,7 @@
     "name": "Danger Zone",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Fury",
@@ -13942,7 +13943,7 @@
     "name": "Relentless Pursuit",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Fury",
@@ -13993,7 +13994,7 @@
     "name": "Spinning Axe",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Fury",
@@ -14046,7 +14047,7 @@
     "name": "Void Rush",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Fury",
@@ -14097,7 +14098,7 @@
     "name": "Forgefire Cape",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Calm",
@@ -14125,7 +14126,7 @@
     "name": "Rabadon's Deathcrown",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Calm",
@@ -14153,7 +14154,7 @@
     "name": "Shurelya's Requiem",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Calm",
@@ -14206,7 +14207,7 @@
     "name": "Counter Strike",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Calm",
@@ -14257,7 +14258,7 @@
     "name": "Defiant Dance",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Calm",
@@ -14308,7 +14309,7 @@
     "name": "Arise!",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Calm",
@@ -14359,7 +14360,7 @@
     "name": "Arcane Shift",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Mind",
@@ -14410,7 +14411,7 @@
     "name": "Hostile Takeover",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Mind",
@@ -14461,7 +14462,7 @@
     "name": "On the Hunt",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Body",
@@ -14512,7 +14513,7 @@
     "name": "Riposte",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Body",
@@ -14808,7 +14809,7 @@
     "name": "Seal of Rage",
     "type": "Gear",
     "rarity": "Showcase",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Fury"
@@ -14997,7 +14998,7 @@
     "name": "Seal of Focus",
     "type": "Gear",
     "rarity": "Showcase",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Calm"
@@ -15120,7 +15121,7 @@
     "name": "Seal of Insight",
     "type": "Gear",
     "rarity": "Showcase",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Mind"
@@ -15195,7 +15196,7 @@
     "name": "Seal of Strength",
     "type": "Gear",
     "rarity": "Showcase",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Body"
@@ -15326,7 +15327,7 @@
     "name": "Seal of Discord",
     "type": "Gear",
     "rarity": "Showcase",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Chaos"
@@ -15505,7 +15506,7 @@
     "name": "Seal of Unity",
     "type": "Gear",
     "rarity": "Showcase",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Order"
@@ -16051,7 +16052,7 @@
     "name": "Smite",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Fury"
@@ -16113,7 +16114,7 @@
     "name": "Vault Breaker",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Fury"
@@ -16194,7 +16195,7 @@
     "name": "Monster Harpoon",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Fury"
@@ -16213,7 +16214,7 @@
     "name": "Right of Conquest",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Fury"
@@ -16327,7 +16328,7 @@
     "name": "Dancing Grenade",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Fury"
@@ -16918,7 +16919,7 @@
     "name": "Skyward Strike",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Calm"
@@ -17058,7 +17059,7 @@
     "name": "Flurry of Feathers",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Calm"
@@ -17320,7 +17321,7 @@
     "name": "Tricksy Tentacles",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Calm"
@@ -17872,7 +17873,7 @@
     "name": "Crescent Strike",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Mind"
@@ -18007,7 +18008,7 @@
     "name": "Sprite Fountain",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Mind"
@@ -18805,7 +18806,7 @@
     "name": "Repulse",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Body"
@@ -18885,7 +18886,7 @@
     "name": "Clash of Giants",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Body"
@@ -19493,7 +19494,7 @@
     "name": "Star-Crossed",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Chaos"
@@ -19606,7 +19607,7 @@
     "name": "Blast Cone",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Chaos"
@@ -19625,7 +19626,7 @@
     "name": "Existential Dread",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Chaos"
@@ -19733,7 +19734,7 @@
     "name": "Bone Skewer",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Chaos"
@@ -19752,7 +19753,7 @@
     "name": "Conscription",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Chaos"
@@ -19798,7 +19799,7 @@
     "name": "Heedless Resurrection",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Chaos"
@@ -20033,7 +20034,7 @@
     "name": "Cursed Sarcophagus",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Chaos"
@@ -20369,7 +20370,7 @@
     "name": "Soul Harvest",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Order"
@@ -20587,7 +20588,7 @@
     "name": "Undying Loyalty",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Order"
@@ -21022,7 +21023,7 @@
     "name": "The Ruination",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 3,
     "might": 3,
     "domain": [
       "Order"
@@ -21116,7 +21117,7 @@
     "name": "Thrill of the Hunt",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Fury",
@@ -21167,7 +21168,7 @@
     "name": "Death from Below",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Fury",
@@ -21270,7 +21271,7 @@
     "name": "Lilting Lullaby",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Calm",
@@ -21321,7 +21322,7 @@
     "name": "Alpha Strike",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Calm",
@@ -21479,7 +21480,7 @@
     "name": "Moonfall",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Mind",
@@ -21530,7 +21531,7 @@
     "name": "Mirror Image",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Mind",
@@ -21581,7 +21582,7 @@
     "name": "Void Assault",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "might": 1,
     "domain": [
       "Body",
@@ -21632,7 +21633,7 @@
     "name": "Keeper's Verdict",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 2,
     "might": 2,
     "domain": [
       "Body",

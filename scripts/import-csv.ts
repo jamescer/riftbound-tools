@@ -89,7 +89,7 @@ function parseCardLine(fields: string[]): Card {
     name: name?.trim() ?? "",
     type: normalizeType(cardType ?? ""),
     rarity: (rarity?.trim() ?? "") as any,
-    cost: parseNumber(energy) ?? 0,
+    cost: parseNumber(energy) ?? parseNumber(might) ?? 0,
     energy: parseNumber(energy),
     might: parseNumber(might),
     power: parseNumber(power),
