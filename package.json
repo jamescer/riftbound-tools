@@ -1,6 +1,6 @@
 {
   "name": "riftbound-tools",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Riftbound trading card game data utilities for deckbuilding, search, and card lookup.",
   "keywords": [
     "riftbound",
@@ -37,6 +37,8 @@
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json && npm run copy-assets",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "generate:cards": "ts-node ./scripts/generate-cards.ts",
     "import:cards": "ts-node ./scripts/import-csv.ts",
     "fetch:cards": "ts-node ./scripts/fetch-cards.ts",

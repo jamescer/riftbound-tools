@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { Card } from "../src/models/card";
+import { validateCard } from "./utils";
 
 const dataPath = path.resolve(__dirname, "..", "src", "data", "cards.json");
 
@@ -79,25 +80,6 @@ const exampleCards: Card[] = [
     collectible: true
   }
 ];
-
-function validateCard(card: unknown): card is Card {
-  if (typeof card !== "object" || card === null) return false;
-  const c = card as Record<string, unknown>;
-  return (
-    typeof c.id === "string" &&
-    typeof c.name === "string" &&
-    typeof c.type === "string" &&
-    typeof c.rarity === "string" &&
-    typeof c.cost === "number" &&
-    typeof c.text === "string" &&
-    typeof c.set === "string" &&
-    typeof c.setCode === "string" &&
-    Array.isArray(c.abilities) &&
-    c.abilities.every((a) => typeof a === "string") &&
-    (c.might === undefined || typeof c.might === "number") &&
-    (c.keywords === undefined || (Array.isArray(c.keywords) && c.keywords.every((k) => typeof k === "string")))
-  );
-}
 
 function run() {
   const finalCards = exampleCards.filter(validateCard);

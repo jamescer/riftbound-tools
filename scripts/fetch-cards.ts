@@ -1,8 +1,19 @@
 import fs from "fs";
 import path from "path";
-import { Card } from "../src/models/card";
+import { Card, CardDomain, CardSet } from "../src/models/card";
+import { validateCard, validDomains, validSets } from "./utils";
 
 const outputPath = path.resolve(__dirname, "..", "src", "data", "cards.json");
+
+// Same map as import-csv.ts — kept in sync manually if a new set ships.
+const setCodeMap: Record<string, CardSet> = {
+  ogn: "Origins",
+  ogs: "Origins",
+  sfd: "Spiritforged",
+  unl: "Unleashed",
+  vnd: "Vendetta",
+  rdn: "Radiance",
+};
 
 function getSource(): string {
   const args = process.argv.slice(2);
@@ -23,33 +34,54 @@ function isHttpSource(source: string): boolean {
   return source.startsWith("http://") || source.startsWith("https://");
 }
 
-const validSets = ["Origins", "Spiritforged", "Unleashed", "Vendetta", "Radiance"] as const;
-const validSetCodes = ["OGN", "OGS", "SFD", "UNL", "VND", "RDN"] as const;
+function toOptionalNumber(value: unknown): number | undefined {
+  if (value === undefined || value === null || value === "") return undefined;
+  const n = Number(value);
+  return Number.isNaN(n) ? undefined : n;
+}
 
-function validateCard(card: unknown): card is Card {
-  if (typeof card !== "object" || card === null) return false;
-  const c = card as Record<string, unknown>;
-  return (
-    typeof c.id === "string" &&
-    typeof c.name === "string" &&
-    typeof c.type === "string" &&
-    typeof c.rarity === "string" &&
-    typeof c.cost === "number" &&
-    typeof c.text === "string" &&
-    typeof c.set === "string" &&
-    validSets.includes(c.set as typeof validSets[number]) &&
-    typeof c.setCode === "string" &&
-    validSetCodes.includes(c.setCode as typeof validSetCodes[number]) &&
-    Array.isArray(c.abilities) &&
-    c.abilities.every((ability) => typeof ability === "string") &&
-    (c.might === undefined || typeof c.might === "number") &&
-    (c.keywords === undefined || (Array.isArray(c.keywords) && c.keywords.every((keyword) => typeof keyword === "string")))
-  );
+function toStringArray(value: unknown): string[] {
+  if (!Array.isArray(value)) return [];
+  return value.map(String);
+}
+
+function toOptionalStringArray(value: unknown): string[] | undefined {
+  if (!Array.isArray(value)) return undefined;
+  const result = value.map(String).filter(Boolean);
+  return result.length > 0 ? result : undefined;
+}
+
+function normalizeDomain(value: unknown): CardDomain[] | undefined {
+  const arr = Array.isArray(value) ? value : typeof value === "string" ? value.split(",") : [];
+  const parts = arr
+    .map((d) => String(d).trim())
+    .filter((d): d is CardDomain => validDomains.has(d as CardDomain));
+  return parts.length > 0 ? parts : undefined;
+}
+
+function normalizeSet(value: unknown): CardSet | undefined {
+  const s = typeof value === "string" ? value.trim() : "";
+  return validSets.has(s as CardSet) ? (s as CardSet) : undefined;
+}
+
+function normalizeSetCode(raw: Record<string, unknown>): string {
+  // Prefer an explicit setCode field; fall back to deriving from the id prefix.
+  if (typeof raw.setCode === "string" && raw.setCode.trim()) {
+    return raw.setCode.trim().toUpperCase();
+  }
+  const id = typeof raw.id === "string" ? raw.id : "";
+  return id.split("-")[0]?.toUpperCase() ?? "";
 }
 
 function normalizeRemoteCard(raw: unknown): Card {
   const card = raw as Record<string, unknown>;
-  const mightValue = card.might ?? (typeof card.attack === "number" ? card.attack : undefined);
+
+  // Support remote sources that use `attack` as an alias for `might`.
+  const mightRaw = card.might ?? (typeof card.attack === "number" ? card.attack : undefined);
+  const setCode = normalizeSetCode(card);
+  const setFromCode = setCodeMap[setCode.toLowerCase()];
+  const set = setFromCode ?? normalizeSet(card.set);
+  const parsedAbility = typeof card.ability === "string" ? card.ability.trim() : "";
 
   return {
     id: String(card.id ?? ""),
@@ -57,13 +89,21 @@ function normalizeRemoteCard(raw: unknown): Card {
     type: String(card.type ?? ""),
     rarity: String(card.rarity ?? ""),
     cost: Number(card.cost ?? 0),
-    might: mightValue === undefined ? undefined : Number(mightValue),
-    abilities: Array.isArray(card.abilities) ? card.abilities.map(String) : [],
-    text: String(card.text ?? ""),
-    set: String(card.set ?? ""),
-    setCode: String(card.setCode ?? ""),
-    keywords: Array.isArray(card.keywords) ? card.keywords.map(String) : undefined,
-    collectible: card.collectible === undefined ? undefined : Boolean(card.collectible)
+    energy: toOptionalNumber(card.energy),
+    might: toOptionalNumber(mightRaw),
+    power: toOptionalNumber(card.power),
+    domain: normalizeDomain(card.domain),
+    tags: toOptionalStringArray(card.tags),
+    ability: parsedAbility || undefined,
+    abilities: Array.isArray(card.abilities)
+      ? toStringArray(card.abilities)
+      : parsedAbility ? [parsedAbility] : [],
+    text: typeof card.text === "string" ? card.text : parsedAbility,
+    imageUrl: typeof card.imageUrl === "string" && card.imageUrl ? card.imageUrl : undefined,
+    set,
+    setCode,
+    keywords: toOptionalStringArray(card.keywords),
+    collectible: card.collectible === undefined ? undefined : Boolean(card.collectible),
   } as Card;
 }
 

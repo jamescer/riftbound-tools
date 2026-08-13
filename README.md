@@ -2,15 +2,7 @@
 
 Riftbound trading card game data utilities for deckbuilding, lookup, and search.
 
-## Overview
-
-`riftbound-tools` provides TypeScript models, sample card data, and utility functions for building Riftbound TCG tools.
-
-## Packages
-
-- `Card` model and enums
-- sample `cards` dataset
-- filtering and search utilities
+`riftbound-tools` provides TypeScript models, a full card dataset (~950 cards), and filter/search/sort utility functions for building Riftbound TCG tools.
 
 ## Install
 
@@ -32,15 +24,14 @@ const card = getCardById(cards, "ogn-001");
 
 ```bash
 npm install
-npm run generate:cards
+npm run import:cards
 npm run build
 npm test
 ```
 
-## Data generation
+## Documentation
 
-Card data is stored in `src/data/cards.json` and imported from `src/data/cards.ts`.
-Run `npm run generate:cards` to regenerate the JSON from the source script.
+Full docs — data model, API reference, the CSV-to-JSON data pipeline, architecture, contributing guide, and real-world Riftbound game background — live in [`docs/`](./docs/README.md).
 
 ## License
 

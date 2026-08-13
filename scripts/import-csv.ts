@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
-import { Card, CardDomain, CardSet, CardType } from "../src/models/card";
+import { Card, CardDomain, CardRarity, CardSet, CardType } from "../src/models/card";
+import { validateCard, validDomains, validTypes, validRarities } from "./utils";
 
 const csvPath = path.resolve(__dirname, "..", "Riftbound - All Card Info - All Card Data.csv");
 const outputPath = path.resolve(__dirname, "..", "src", "data", "cards.json");
@@ -14,9 +15,6 @@ const setCodeMap: Record<string, CardSet> = {
   rdn: "Radiance"
 };
 
-const validDomains = new Set<CardDomain>(["Fury", "Calm", "Mind", "Body", "Chaos", "Order", "Colorless"]);
-const validTypes = new Set<CardType>(["Unit", "Spell", "Gear", "Rune", "Battlefield", "Legend"]);
-const validRarities = new Set(["Common", "Uncommon", "Rare", "Epic", "Showcase"]);
 
 function parseCsvLine(line: string): string[] {
   const fields: string[] = [];
@@ -62,8 +60,20 @@ function parseTags(value: string | undefined): string[] | undefined {
     .filter(Boolean);
 }
 
-function normalizeType(type: string): CardType {
-  return type.trim() as CardType;
+function normalizeType(raw: string): CardType {
+  const trimmed = raw.trim();
+  if (!validTypes.has(trimmed as CardType)) {
+    throw new Error(`Unknown card type: "${trimmed}"`);
+  }
+  return trimmed as CardType;
+}
+
+function normalizeRarity(raw: string): CardRarity {
+  const trimmed = raw.trim();
+  if (!validRarities.has(trimmed as CardRarity)) {
+    throw new Error(`Unknown card rarity: "${trimmed}"`);
+  }
+  return trimmed as CardRarity;
 }
 
 function normalizeDomain(value: string | undefined): CardDomain[] | undefined {
@@ -88,7 +98,7 @@ function parseCardLine(fields: string[]): Card {
     id: id?.trim() ?? "",
     name: name?.trim() ?? "",
     type: normalizeType(cardType ?? ""),
-    rarity: (rarity?.trim() ?? "") as any,
+    rarity: normalizeRarity(rarity ?? ""),
     cost: parseNumber(energy) ?? parseNumber(might) ?? 0,
     energy: parseNumber(energy),
     might: parseNumber(might),
@@ -103,28 +113,6 @@ function parseCardLine(fields: string[]): Card {
     set,
     keywords: parsedTags,
   } as Card;
-}
-
-function validateCard(card: unknown): card is Card {
-  if (typeof card !== "object" || card === null) return false;
-  const c = card as Record<string, unknown>;
-  return (
-    typeof c.id === "string" && c.id !== "" &&
-    typeof c.name === "string" && c.name !== "" &&
-    typeof c.type === "string" && validTypes.has(c.type as CardType) &&
-    typeof c.rarity === "string" && validRarities.has(c.rarity as string) &&
-    typeof c.cost === "number" &&
-    typeof c.text === "string" &&
-    typeof c.setCode === "string" && c.setCode !== "" &&
-    Array.isArray(c.abilities) && c.abilities.every((item) => typeof item === "string") &&
-    (c.energy === undefined || typeof c.energy === "number") &&
-    (c.might === undefined || typeof c.might === "number") &&
-    (c.power === undefined || typeof c.power === "number") &&
-    (c.imageUrl === undefined || typeof c.imageUrl === "string") &&
-    (c.domain === undefined || (Array.isArray(c.domain) && c.domain.every((item) => validDomains.has(item as CardDomain)))) &&
-    (c.tags === undefined || (Array.isArray(c.tags) && c.tags.every((item) => typeof item === "string"))) &&
-    (c.keywords === undefined || (Array.isArray(c.keywords) && c.keywords.every((item) => typeof item === "string")))
-  );
 }
 
 function run() {

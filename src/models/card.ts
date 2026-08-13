@@ -1,5 +1,5 @@
 export type CardDomain = "Fury" | "Calm" | "Mind" | "Body" | "Chaos" | "Order" | "Colorless";
-export type CardRarity = "Common" | "Uncommon" | "Rare" | "Epic" | "Showcase";
+export type CardRarity = "Common" | "Uncommon" | "Rare" | "Epic" | "Showcase" | "Ultimate";
 export type CardType = "Unit" | "Spell" | "Gear" | "Rune" | "Battlefield" | "Legend";
 export type CardSet = "Origins" | "Spiritforged" | "Unleashed" | "Vendetta" | "Radiance";
 
@@ -14,6 +14,7 @@ export interface CardBase {
   power?: number;
   domain?: CardDomain[];
   tags?: string[];
+  /** @deprecated Use `abilities[0]` or `text` instead. */
   ability?: string;
   abilities: string[];
   text: string;
