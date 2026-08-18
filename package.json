@@ -1,6 +1,6 @@
 {
   "name": "riftbound-tools",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Riftbound trading card game data utilities for deckbuilding, search, and card lookup.",
   "keywords": [
     "riftbound",
@@ -36,7 +36,8 @@
     "test": "test"
   },
   "files": [
-    "dist"
+    "dist",
+    "riot.txt"
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json && npm run copy-assets",
