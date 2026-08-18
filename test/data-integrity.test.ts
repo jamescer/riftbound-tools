@@ -80,4 +80,54 @@ describe("cards.json data integrity", () => {
     );
     expect(bad).toHaveLength(0);
   });
+
+  // ── per-type field relationship invariants ──────────────────────────────────
+  // These encode observed facts about the CSV schema. If any of these fail after
+  // a CSV update, it means the data model or import logic needs revisiting.
+
+  it("every Unit has an energy value set", () => {
+    const bad = cards.filter((c) => c.type === "Unit" && c.energy === undefined);
+    expect(bad.map((c) => c.id)).toHaveLength(0);
+  });
+
+  it("no Spell has an energy value set", () => {
+    const bad = cards.filter((c) => c.type === "Spell" && c.energy !== undefined);
+    expect(bad.map((c) => c.id)).toHaveLength(0);
+  });
+
+  it("no Gear has an energy value set", () => {
+    const bad = cards.filter((c) => c.type === "Gear" && c.energy !== undefined);
+    expect(bad.map((c) => c.id)).toHaveLength(0);
+  });
+
+  it("no Rune, Battlefield, or Legend has an energy value set", () => {
+    const bad = cards.filter(
+      (c) =>
+        (c.type === "Rune" || c.type === "Battlefield" || c.type === "Legend") &&
+        c.energy !== undefined
+    );
+    expect(bad.map((c) => c.id)).toHaveLength(0);
+  });
+
+  it("every Rune, Battlefield, and Legend has cost 0", () => {
+    const bad = cards.filter(
+      (c) =>
+        (c.type === "Rune" || c.type === "Battlefield" || c.type === "Legend") &&
+        c.cost !== 0
+    );
+    expect(bad.map((c) => `${c.id}: cost ${c.cost}`)).toHaveLength(0);
+  });
+
+  it("for Units, cost equals energy", () => {
+    // cost = energy ?? might ?? 0; since all Units have energy, cost must equal energy
+    const bad = cards.filter(
+      (c) => c.type === "Unit" && c.energy !== undefined && c.cost !== c.energy
+    );
+    expect(bad.map((c) => `${c.id}: cost ${c.cost} energy ${c.energy}`)).toHaveLength(0);
+  });
+
+  it("no card has a tags field (deprecated field was removed from cards.json)", () => {
+    const withTags = cards.filter((c) => (c as Record<string, unknown>).tags !== undefined);
+    expect(withTags.map((c) => c.id)).toHaveLength(0);
+  });
 });

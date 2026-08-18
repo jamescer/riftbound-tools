@@ -1,6 +1,7 @@
 {
   "name": "riftbound-tools",
-  "version": "1.1.0",
+  "version": "1.2.1",
+  "key":"RGAPI-c33ec1f9-4479-4c37-8a41-a0d2b548417f",
   "description": "Riftbound trading card game data utilities for deckbuilding, search, and card lookup.",
   "keywords": [
     "riftbound",
@@ -20,6 +21,9 @@
   },
   "license": "MIT",
   "author": "James Cerniglia",
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "type": "commonjs",
   "exports": {
     ".": {
@@ -42,6 +46,7 @@
     "generate:cards": "ts-node ./scripts/generate-cards.ts",
     "import:cards": "ts-node ./scripts/import-csv.ts",
     "fetch:cards": "ts-node ./scripts/fetch-cards.ts",
+    "fetch:riot": "ts-node ./scripts/fetch-riot-api.ts",
     "copy-assets": "ts-node ./scripts/copy-assets.ts",
     "prepare": "npm run build"
   },

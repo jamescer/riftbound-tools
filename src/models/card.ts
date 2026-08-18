@@ -11,8 +11,17 @@ export interface CardBase {
   cost: number;
   energy?: number;
   might?: number;
+  /**
+   * @deprecated Defined in the schema but currently unused — 0 cards in the dataset
+   * have a `power` value. Reserved for a future stat that the CSV does not yet populate.
+   * Do not read or filter on this field in new code.
+   */
   power?: number;
   domain?: CardDomain[];
+  /**
+   * @deprecated Always identical to `keywords` — use `keywords` instead.
+   * This field will be removed from generated card data in a future import run.
+   */
   tags?: string[];
   /** @deprecated Use `abilities[0]` or `text` instead. */
   ability?: string;

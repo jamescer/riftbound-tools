@@ -1,0 +1,79 @@
+name: Sync Riftbound Cards
+
+on:
+  # Quarterly — 08:00 UTC on the 1st of January, April, July, October.
+  # Adjust the cron expression if you want a different cadence.
+  schedule:
+    - cron: "0 8 1 1,4,7,10 *"
+  # Manual trigger from the Actions tab (useful for on-demand syncs, e.g. after a new set drops).
+  workflow_dispatch:
+    inputs:
+      region:
+        description: "Riot API region"
+        required: false
+        default: "americas"
+        type: choice
+        options:
+          - americas
+          - asia
+          - europe
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    name: Fetch cards from Riot API
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch card data from Riot API
+        env:
+          RIOT_API_KEY: ${{ secrets.RIOT_API_KEY }}
+          RIOT_API_REGION: ${{ github.event.inputs.region || 'americas' }}
+        run: npx ts-node ./scripts/fetch-riot-api.ts
+
+      - name: Verify TypeScript still compiles
+        run: npx tsc --noEmit -p tsconfig.json
+
+      - name: Check whether cards.json changed
+        id: diff
+        run: |
+          git diff --quiet src/data/cards.json \
+            && echo "changed=false" >> "$GITHUB_OUTPUT" \
+            || echo "changed=true"  >> "$GITHUB_OUTPUT"
+
+      - name: Open pull request with updated cards.json
+        if: steps.diff.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: sync/riot-api-cards
+          commit-message: "chore(data): sync cards from Riot API"
+          title: "chore(data): quarterly Riot API card sync"
+          body: |
+            Automated quarterly card sync from the Riot `riftbound-content-v1` API.
+
+            **What to do after merging:**
+            1. Review the `src/data/cards.json` diff for unexpected changes (new card types, unknown rarities, stat shifts).
+            2. Bump `version` in `package.json` (patch if data-only, minor if new utilities followed).
+            3. Add a CHANGELOG entry under the new version.
+            4. Run `npm run build && npm test` locally.
+          labels: "data,automated"
+
+      - name: No changes detected
+        if: steps.diff.outputs.changed == 'false'
+        run: echo "cards.json is already up to date — no PR needed."

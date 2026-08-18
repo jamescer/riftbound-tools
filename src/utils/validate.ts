@@ -31,6 +31,7 @@ export function validateCard(card: unknown): card is Card {
     (c.imageUrl === undefined || typeof c.imageUrl === "string") &&
     (c.domain === undefined || (Array.isArray(c.domain) && c.domain.every((item) => validDomains.has(item as CardDomain)))) &&
     (c.tags === undefined || (Array.isArray(c.tags) && c.tags.every((item) => typeof item === "string"))) &&
-    (c.keywords === undefined || (Array.isArray(c.keywords) && c.keywords.every((item) => typeof item === "string")))
+    (c.keywords === undefined || (Array.isArray(c.keywords) && c.keywords.every((item) => typeof item === "string"))) &&
+    (c.collectible === undefined || typeof c.collectible === "boolean")
   );
 }

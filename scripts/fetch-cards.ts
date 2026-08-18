@@ -1,19 +1,10 @@
 import fs from "fs";
 import path from "path";
 import { Card, CardDomain, CardSet } from "../src/models/card";
+import { setCodeMap } from "../src/data/setCodeMap";
 import { validateCard, validDomains, validSets } from "./utils";
 
 const outputPath = path.resolve(__dirname, "..", "src", "data", "cards.json");
-
-// Same map as import-csv.ts — kept in sync manually if a new set ships.
-const setCodeMap: Record<string, CardSet> = {
-  ogn: "Origins",
-  ogs: "Origins",
-  sfd: "Spiritforged",
-  unl: "Unleashed",
-  vnd: "Vendetta",
-  rdn: "Radiance",
-};
 
 function getSource(): string {
   const args = process.argv.slice(2);
@@ -81,7 +72,13 @@ function normalizeRemoteCard(raw: unknown): Card {
   const setCode = normalizeSetCode(card);
   const setFromCode = setCodeMap[setCode.toLowerCase()];
   const set = setFromCode ?? normalizeSet(card.set);
-  const parsedAbility = typeof card.ability === "string" ? card.ability.trim() : "";
+  // Support remote sources that may still carry the deprecated `ability` field as a
+  // fallback for `text`/`abilities` when those fields are absent.
+  const legacyAbility = typeof card.ability === "string" ? card.ability.trim() : "";
+  const text = typeof card.text === "string" ? card.text : legacyAbility;
+  const abilities = Array.isArray(card.abilities)
+    ? toStringArray(card.abilities)
+    : legacyAbility ? [legacyAbility] : [];
 
   return {
     id: String(card.id ?? ""),
@@ -91,14 +88,9 @@ function normalizeRemoteCard(raw: unknown): Card {
     cost: Number(card.cost ?? 0),
     energy: toOptionalNumber(card.energy),
     might: toOptionalNumber(mightRaw),
-    power: toOptionalNumber(card.power),
     domain: normalizeDomain(card.domain),
-    tags: toOptionalStringArray(card.tags),
-    ability: parsedAbility || undefined,
-    abilities: Array.isArray(card.abilities)
-      ? toStringArray(card.abilities)
-      : parsedAbility ? [parsedAbility] : [],
-    text: typeof card.text === "string" ? card.text : parsedAbility,
+    abilities,
+    text,
     imageUrl: typeof card.imageUrl === "string" && card.imageUrl ? card.imageUrl : undefined,
     set,
     setCode,

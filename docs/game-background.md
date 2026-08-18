@@ -33,10 +33,10 @@ Each player brings a **main deck** and a **rune deck**, plus a **Champion Legend
 | 1 | Origins | OGN | 2025-10-31 | 298 | First English release |
 | 2 | Spiritforged | SFD | 2026-02-13 | 221 | |
 | 3 | Unleashed | UNL | 2026-05-08 | 219 | Introduces keywords Ambush, Level, Hunt, and the **Ultimate** rarity tier |
-| 4 | Vendetta | (TBD) | 2026-07-31 | — | |
-| 5 | Radiance | (TBD) | 2026-10-23 | — | |
+| 4 | Vendetta | VND | 2026-07-31 | — | Released; set code `VND` (mapped in `setCodeMap` as `vnd`). CSV data not yet imported. |
+| 5 | Radiance | (TBD) | 2026-10-23 | — | Unreleased as of 2026-08-16 |
 
-Cross-check against [data-model.md](./data-model.md) — the `CardSet` enum in this package already has literals for all five sets, but as of the current `cards.json`, only `Origins`, `Spiritforged`, and `Unleashed` data actually exists (matching what's been released). `Vendetta` and `Radiance` will need a data import once those sets release. The `Ultimate` rarity from Unleashed is likewise not yet in the `CardRarity` type — see the note in [data-model.md](./data-model.md#enums).
+Cross-check against [data-model.md](./data-model.md) — the `CardSet` enum in this package already has literals for all five sets, but as of the current `cards.json`, only `Origins`, `Spiritforged`, and `Unleashed` data actually exists. Vendetta has released (2026-07-31) but its cards have not yet been imported from a CSV; run `npm run import:cards` once a Vendetta CSV is available. Radiance is still unreleased. The `Ultimate` rarity from Unleashed is already in the `CardRarity` type and `validRarities` set; it just doesn't appear in the current dataset because no Ultimate cards from the CSV have been imported yet.
 
 ## Reception (as of initial coverage)
 

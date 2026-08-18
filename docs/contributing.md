@@ -30,9 +30,18 @@ See [data-pipeline.md](./data-pipeline.md) for what each data script actually do
 ## Making a model/API change
 
 1. Edit `src/models/card.ts` and/or `src/utils/card-utils.ts`.
-2. If you touched `utils/card-utils.ts`, add/update a case in `test/card-utils.test.ts` using its local fixture cards (no need to touch the real dataset).
-3. If you added a new recognized enum value (e.g. a new `CardRarity`), also update `validRarities` in `src/utils/validate.ts` — otherwise `validateCard` will reject cards with that value, and the `import:cards` script will throw on them.
-4. `npm test`
+2. If you added new exported functions, document them in `docs/api-reference.md` and update the relevant section of `README.md`.
+3. If you touched `utils/card-utils.ts`, add/update a case in `test/card-utils.test.ts` using its local fixture cards (no need to touch the real dataset).
+4. If you added a new recognized enum value (e.g. a new `CardRarity`), also update `validRarities` in `src/utils/validate.ts` — otherwise `validateCard` will reject cards with that value, and the `import:cards` script will throw on them.
+5. `npm test` (or `npx tsc --noEmit -p tsconfig.json` if running in the Linux sandbox where vitest fails)
+
+## Adding a new set
+
+1. Add the set name to `CardSet` in `src/models/card.ts` and to `validSets` in `src/utils/validate.ts`.
+2. Add the lowercased prefix → set name entry to `src/data/setCodeMap.ts` — this is the single source of truth used by both import scripts.
+3. Add the set to `setOrder` in `src/utils/card-utils.ts` so `sortBySet` orders it correctly.
+4. Update `docs/game-background.md` set table and `docs/data-model.md` enum table.
+5. Run `npm run import:cards` once a CSV containing the new set's cards is available.
 
 ## Versioning / changelog
 

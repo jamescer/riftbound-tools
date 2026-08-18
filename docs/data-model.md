@@ -18,7 +18,7 @@ These are hand-maintained to track the real game as closely as possible, but the
 | `CardType` | `Unit`, `Spell`, `Rune`, `Gear`, `Legend`, `Battlefield` (all of them) |
 | `CardRarity` | `Common`, `Uncommon`, `Rare`, `Epic`, `Showcase` — **`Ultimate` is in the type but not yet in the data** (Unleashed introduces it per game docs, but those cards aren't in the current CSV) |
 | `CardDomain` | `Fury`, `Calm`, `Mind`, `Body`, `Chaos`, `Order`, `Colorless` (all of them) |
-| `CardSet` | `Origins`, `Spiritforged`, `Unleashed` — **`Vendetta` and `Radiance` are not in the data yet** (unreleased sets; see [game-background.md](./game-background.md)) |
+| `CardSet` | `Origins`, `Spiritforged`, `Unleashed` — **`Vendetta` released 2026-07-31 but its CSV hasn't been imported yet; `Radiance` is still unreleased** (see [game-background.md](./game-background.md)) |
 
 ## `CardBase` fields
 
@@ -74,27 +74,49 @@ interface CardBase {
 cost: parseNumber(energy) ?? parseNumber(might) ?? 0
 ```
 
-i.e. "energy cost if the card has one, otherwise fall back to might, otherwise 0." This exists so `sortByCost` / generic cost-curve UIs have one numeric field to sort on regardless of card type (a Rune has no energy cost the way a Unit does). If you need the *actual* energy cost specifically, read `energy`, not `cost`.
+i.e. "energy cost if the card has one, otherwise fall back to might, otherwise 0." This exists so `sortByCost` / generic cost-curve UIs have one numeric field to sort on regardless of card type. If you need the *actual* play cost for a specific card type, read `energy` (Units) or `might` (Spells/Gear) directly, not `cost`.
 
-- `energy` — the card's play cost in energy, when applicable (mostly Units/Spells/Gear).
-- `might` — a Unit's combat stat. **Only ~403 of 950 cards (~42%) have a defined `might`** — non-Unit types generally don't.
-- `power` — defined in the schema but **currently unused**: 0 cards in the dataset have a `power` value. It's reserved for a stat the CSV doesn't populate yet.
+The per-type field picture from the real dataset:
+
+| Type | `energy` | `might` | Notes |
+| --- | --- | --- | --- |
+| Unit | always set (491/491) | set on ~53% (259/491) | `energy` = play cost; `might` = separate combat stat |
+| Spell | never set (0/192) | set on ~58% (112/192) | `might` = play cost for costed spells; free spells omit it |
+| Gear | never set (0/99) | set on ~32% (32/99) | `might` = play cost for costed gear |
+| Rune | never set | never set | always free (cost: 0) |
+| Battlefield | never set | never set | always free (cost: 0) |
+| Legend | never set | never set | always free (cost: 0) |
+
+Key takeaways:
+- **`energy` is Unit-only** in the current dataset. Do not expect Spells or Gears to have it.
+- **`might` plays double duty**: for Units it is a combat stat *independent* of `energy`; for Spells/Gears it is the play cost. Use `filterByEnergyRange` or `filterByMightRange` rather than `filterByCostRange` when you care about this distinction.
+- **`power`** — **deprecated**: defined in the schema but unused. 0 cards in the dataset have a `power` value. Do not read or filter on this field in new code.
 
 ### `ability` vs `abilities` vs `text`
 
-These three fields are currently redundant by construction. The import script does:
+`ability` is **deprecated** and no longer emitted by the import or fetch scripts — 0 cards in `cards.json` have this field. Use `text` or `abilities[0]` instead.
+
+`abilities` and `text` both come from the single `Ability` column in the source CSV:
 
 ```ts
-ability: parsedAbility || undefined,
-abilities: parsedAbility ? [parsedAbility] : [],
-text: parsedAbility || "",
+text,
+abilities: text ? [text] : [],
 ```
 
-All three come from the single `Ability` column in the source CSV. `abilities` is an array because the model anticipates cards with multiple discrete ability lines, but the current importer only ever produces zero or one element. Prefer `text` for display and `abilities`/`searchCards` (which already includes `abilities` in its search haystack) for search; don't assume `abilities` will always be length ≤ 1 going forward.
+`abilities` is an array because the model anticipates cards with multiple discrete ability lines, but the current importer only ever produces zero or one element. Prefer `text` for display and `searchCards` (which includes `abilities` in its search haystack) for search; don't assume `abilities` will always be length ≤ 1 going forward.
+
+**20 cards in the current dataset have an empty `text` field.** This is expected, not a data error — they are cards that legitimately have no ability text:
+
+- The 6 basic Rune cards (`Fury Rune`, `Calm Rune`, etc.), each in two printings (`ogn-007`/`ogn-007a`, etc.) — 12 cards total.
+- A small number of generated/token Unit cards that appear in play but are not standalone cards with text (`Recruit (DE)`, `Recruit (NX)`, `Recruit (ZN)`, `Mountain Drake`, `Mega-Mech`, `Playful Phantom`, `Shipyard Skulker`, `Vanguard Sergeant`) — 8 cards total.
+
+If you use `extractRulesKeywords` on these cards it returns `[]`, which is correct.
 
 ### `tags` vs `keywords`
 
-Also currently identical by construction — the importer sets `keywords: parsedTags` from the same CSV `Tags` column. In the raw data these are things like champion/region tags (`"Dragon"`, `"Noxus"`), not necessarily rules keywords like "Flying" or "Ward" (those are folded into `ability`/`text` instead, e.g. `"[Accelerate] (...)"`). Don't assume `keywords` means "rules keyword" — check `filterByKeyword`'s actual usage before relying on that assumption in a new feature.
+**`tags` is deprecated** — it has always been identical to `keywords` by construction (both come from the same CSV `Tags` column). The import script no longer sets `tags`; existing records in `cards.json` still have it until the next `import:cards` regeneration, but new code should read `keywords` only.
+
+`keywords` contains region/champion tags like `"Dragon"`, `"Noxus"`, `"Ionia"` — not rules keywords like "Flying" or "Rush". Those are embedded in `text` as `[Keyword]` notation and are accessible via `extractRulesKeywords(card)` / `filterByRulesKeyword(cards, kw)`. Don't conflate the two.
 
 ### `domain`
 
@@ -116,7 +138,6 @@ An array, not a single value — cards can span multiple domains (e.g. a card ta
   "cost": 5,
   "energy": 5,
   "domain": ["Fury"],
-  "tags": ["Dragon", "Noxus"],
   "ability": "[Accelerate] (You may pay 1 energy and 1 fury rune as an additional cost to have me enter ready.)",
   "abilities": ["[Accelerate] (You may pay 1 energy and 1 fury rune as an additional cost to have me enter ready.)"],
   "text": "[Accelerate] (You may pay 1 energy and 1 fury rune as an additional cost to have me enter ready.)",

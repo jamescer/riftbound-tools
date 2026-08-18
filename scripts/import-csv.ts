@@ -1,19 +1,11 @@
 import fs from "fs";
 import path from "path";
-import { Card, CardDomain, CardRarity, CardSet, CardType } from "../src/models/card";
+import { Card, CardDomain, CardRarity, CardType } from "../src/models/card";
+import { setCodeMap } from "../src/data/setCodeMap";
 import { validateCard, validDomains, validTypes, validRarities } from "./utils";
 
 const csvPath = path.resolve(__dirname, "..", "Riftbound - All Card Info - All Card Data.csv");
 const outputPath = path.resolve(__dirname, "..", "src", "data", "cards.json");
-
-const setCodeMap: Record<string, CardSet> = {
-  ogn: "Origins",
-  ogs: "Origins",
-  sfd: "Spiritforged",
-  unl: "Unleashed",
-  vnd: "Vendetta",
-  rdn: "Radiance"
-};
 
 
 function parseCsvLine(line: string): string[] {
@@ -78,20 +70,26 @@ function normalizeRarity(raw: string): CardRarity {
 
 function normalizeDomain(value: string | undefined): CardDomain[] | undefined {
   if (!value) return undefined;
-  const parts = value
-    .split(",")
-    .map((part) => part.trim())
-    .filter((part): part is CardDomain => validDomains.has(part as CardDomain));
-  return parts.length > 0 ? parts : undefined;
+  const recognized: CardDomain[] = [];
+  for (const part of value.split(",").map((p) => p.trim()).filter(Boolean)) {
+    if (validDomains.has(part as CardDomain)) {
+      recognized.push(part as CardDomain);
+    } else {
+      // Warn rather than throw — domain is optional and a new domain value in the
+      // CSV is a signal to update the CardDomain enum, not an import-aborting error.
+      console.warn(`Warning: unrecognized domain value "${part}" — skipped. Add it to CardDomain and validDomains if intentional.`);
+    }
+  }
+  return recognized.length > 0 ? recognized : undefined;
 }
 
 function parseCardLine(fields: string[]): Card {
-  const [id, name, , , , , , energy, might, power, cardType, rarity, domain, tags, ability, imageUrl] = fields;
+  const [id, name, , , , , , energy, might, , cardType, rarity, domain, tags, ability, imageUrl] = fields;
 
   const prefix = id?.split("-")[0]?.toLowerCase() ?? "";
   const setCode = prefix.toUpperCase();
   const set = setCodeMap[prefix];
-  const parsedAbility = ability?.trim() ?? "";
+  const text = ability?.trim() ?? "";
   const parsedTags = parseTags(tags);
 
   return {
@@ -102,12 +100,9 @@ function parseCardLine(fields: string[]): Card {
     cost: parseNumber(energy) ?? parseNumber(might) ?? 0,
     energy: parseNumber(energy),
     might: parseNumber(might),
-    power: parseNumber(power),
     domain: normalizeDomain(domain),
-    tags: parsedTags,
-    ability: parsedAbility || undefined,
-    abilities: parsedAbility ? [parsedAbility] : [],
-    text: parsedAbility || "",
+    abilities: text ? [text] : [],
+    text,
     imageUrl: imageUrl?.trim() || undefined,
     setCode,
     set,
