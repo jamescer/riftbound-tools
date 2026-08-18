@@ -1,10 +1,5 @@
 # riftbound-tools
 
-export RIOT_API_KEY=RGAPI-your-new-key
-npm run fetch:riot
-
-export RIOT_API_KEY=RGAPI-c33ec1f9-4479-4c37-8a41-a0d2b548417f
-
 
 TypeScript models, a full card dataset (~950 cards), and filter/sort/search utilities for the Riftbound TCG.
 
