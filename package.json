@@ -1,7 +1,6 @@
 {
   "name": "riftbound-tools",
   "version": "1.2.1",
-  "key":"RGAPI-c33ec1f9-4479-4c37-8a41-a0d2b548417f",
   "description": "Riftbound trading card game data utilities for deckbuilding, search, and card lookup.",
   "keywords": [
     "riftbound",
