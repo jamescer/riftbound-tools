@@ -184,10 +184,25 @@ getUniqueDomains(cards);       // → ["Body", "Calm", "Chaos", "Colorless", "Fu
 getUniqueTypes(cards);         // → ["Battlefield", "Gear", "Legend", "Rune", "Spell", "Unit"]
 getUniqueRarities(cards);      // sorted distinct rarities present in the given cards
 getUniqueSetCodes(cards);      // → ["OGN", "OGS", "SFD", "UNL"] (raw set code strings)
+getUniqueSets(cards);          // → ["Origins", "Spiritforged", "Unleashed"] (in release order)
 getUniqueKeywords(cards);      // sorted distinct region/champion tags
 getUniqueRulesKeywords(cards); // sorted distinct rules keywords from text fields
 
 rarityOrder.Epic; // 3  (Common=0 → Uncommon=1 → Rare=2 → Epic=3 → Showcase=4 → Ultimate=5)
+```
+
+## Mana curve
+
+```ts
+import { groupByCost, countByCost } from "riftbound-tools";
+
+// Cost → Card[] breakdown
+const curve = groupByCost(filterByType(cards, "Unit"));
+curve[2]; // all 2-cost Units
+
+// Cost → count (chart-ready)
+countByCost(filterByType(cards, "Unit"));
+// → { 0: 12, 1: 43, 2: 87, 3: 95, 4: 110, ... }
 ```
 
 ## Sample and paginate

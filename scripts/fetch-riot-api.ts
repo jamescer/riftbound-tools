@@ -218,10 +218,22 @@ async function run() {
 
   if (!response.ok) {
     const body = await response.text().catch(() => "");
+    const hint =
+      response.status === 401
+        ? "\nHint: 401 = invalid or expired key. Regenerate at https://developer.riotgames.com"
+        : response.status === 403
+        ? "\nHint: 403 = key not authorized for riftbound-content-v1.\n" +
+          "  Development keys do not include Riftbound content access by default.\n" +
+          "  You need a production API key approved for Riftbound at:\n" +
+          "  https://developer.riotgames.com  (apply under 'Riftbound' → 'riftbound-content-v1')"
+        : response.status === 429
+        ? "\nHint: 429 = rate limit hit. Wait a moment and retry."
+        : "";
     throw new Error(
       `Riot API request failed: ${response.status} ${response.statusText}\n` +
-      `URL: ${url}\n` +
-      (body ? `Body: ${body.slice(0, 400)}` : "")
+      `URL: ${url}` +
+      (body ? `\nBody: ${body.slice(0, 400)}` : "") +
+      hint
     );
   }
 

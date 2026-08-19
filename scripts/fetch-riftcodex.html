@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fetch Riftcodex Card Data</title>
+  <style>
+    body { font-family: monospace; max-width: 700px; margin: 40px auto; padding: 0 20px; background: #111; color: #eee; }
+    h1 { font-size: 1.2rem; margin-bottom: 4px; }
+    p { color: #aaa; margin: 4px 0 20px; font-size: 0.9rem; }
+    button { padding: 10px 20px; font-size: 1rem; cursor: pointer; background: #2563eb; color: #fff; border: none; border-radius: 4px; }
+    button:disabled { background: #444; cursor: default; }
+    #log { margin-top: 20px; background: #1a1a1a; padding: 12px; border-radius: 4px; white-space: pre-wrap; font-size: 0.85rem; min-height: 80px; max-height: 400px; overflow-y: auto; }
+    .ok  { color: #4ade80; }
+    .err { color: #f87171; }
+    .dim { color: #888; }
+  </style>
+</head>
+<body>
+  <h1>Riftcodex Card Data Fetcher</h1>
+  <p>Fetches all card stats from api.riftcodex.com and downloads them as <code>riftcodex-cache.json</code>.</p>
+
+  <button id="btn" onclick="run()">Download JSON</button>
+
+  <div id="log"><span class="dim">Click "Download JSON" to start.</span></div>
+
+  <script>
+    const BASE = "https://api.riftcodex.com";
+    const PAGE_SIZE = 100;
+
+    const log = document.getElementById("log");
+    const btn = document.getElementById("btn");
+
+    function append(text, cls) {
+      const span = document.createElement("span");
+      if (cls) span.className = cls;
+      span.textContent = text + "\n";
+      log.appendChild(span);
+      log.scrollTop = log.scrollHeight;
+    }
+
+    async function fetchPage(page) {
+      const url = `${BASE}/cards?dir=1&page=${page}&size=${PAGE_SIZE}`;
+      const r = await fetch(url, { headers: { Accept: "application/json" } });
+      if (!r.ok) throw new Error(`${r.status} ${r.statusText} — ${url}`);
+      return r.json();
+    }
+
+    async function run() {
+      btn.disabled = true;
+      log.innerHTML = "";
+
+      try {
+        append("Fetching page 1…", "dim");
+        const first = await fetchPage(1);
+        const total = first.total || first.count || 0;
+        const totalPages = Math.ceil(total / PAGE_SIZE);
+        const allCards = [...(first.items || first.data || [])];
+        append(`  Page 1: ${allCards.length} cards (total: ${total}, pages: ${totalPages})`, "ok");
+
+        for (let page = 2; page <= totalPages; page++) {
+          append(`Fetching page ${page}/${totalPages}…`, "dim");
+          const data = await fetchPage(page);
+          const items = data.items || data.data || [];
+          allCards.push(...items);
+          append(`  Page ${page}: ${items.length} cards`, "ok");
+        }
+
+        append(`\nTotal collected: ${allCards.length} cards`, "ok");
+        append("Preparing download…", "dim");
+
+        const json = JSON.stringify(allCards, null, 2);
+        const blob = new Blob([json], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "riftcodex-cache.json";
+        a.click();
+        URL.revokeObjectURL(url);
+
+        append("\nDownloaded riftcodex-cache.json", "ok");
+        append("\nNext step — run from the repo root:", "dim");
+        append("  python scripts/patch-stats.py --source=path/to/riftcodex-cache.json", "ok");
+
+      } catch (err) {
+        append(`\nError: ${err.message}`, "err");
+        append("\nIf Cloudflare blocked it, navigate to https://api.riftcodex.com in this", "dim");
+        append("tab first to pass the challenge, then click Download JSON again.", "dim");
+      }
+
+      btn.disabled = false;
+    }
+  </script>
+</body>
+</html>

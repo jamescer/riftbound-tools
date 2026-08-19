@@ -224,6 +224,15 @@ Keeps cards that have an `energy` value defined. In the current dataset this is 
 
 Keeps cards that have a `might` value defined. This includes Units (where `might` is a combat stat) and costed Spells/Gear (where `might` doubles as play cost). More ergonomic than `filterByMightRange(cards, 0, Infinity)`.
 
+### `filterByImageUrl(cards, hasImage?: boolean): Card[]`
+
+Keeps cards that have (or lack) an `imageUrl`. Defaults to `true` (keep only cards with art). Pass `false` to find cards missing art — useful for auditing incomplete data imports or spotting cards the API didn't return art for.
+
+```ts
+filterByImageUrl(cards);        // cards that have art
+filterByImageUrl(cards, false); // cards missing art
+```
+
 ### `filterByEnergyRange(cards, min: number, max: number): Card[]`
 
 Keeps cards whose `energy` cost is within `[min, max]` inclusive. Cards with no `energy` value (Legends, Battlefields, Runes, and other cost-zero types) are always excluded — distinct from `filterByCostRange`, which uses the derived `cost` field and includes those types at `cost: 0`.
@@ -454,6 +463,14 @@ Returns a sorted list of every distinct `setCode` present in the given cards (e.
 getUniqueSetCodes(cards); // → ["OGN", "OGS", "SFD", "UNL"]
 ```
 
+### `getUniqueSets(cards): CardSet[]`
+
+Returns a list of every distinct `CardSet` present in the given cards, sorted in chronological release order (Origins → Spiritforged → Unleashed → Vendetta → Radiance). Cards with `set: undefined` are excluded. Unlike `getUniqueSetCodes`, this collapses set codes that share a set (e.g. `"OGN"` and `"OGS"` both resolve to `"Origins"`).
+
+```ts
+getUniqueSets(cards); // → ["Origins", "Spiritforged", "Unleashed"]
+```
+
 ### `getUniqueKeywords(cards): string[]`
 
 Returns a sorted list of every distinct value in the `keywords` (region/champion tag) field across the given cards. Useful for populating a filter dropdown. Returns `[]` if no cards have keywords.
@@ -520,6 +537,24 @@ groups.OGN; // core Origins cards
 groups.OGS; // Origins store/promo variant cards
 ```
 
+### `groupByCost(cards): Record<number, Card[]>`
+
+Groups cards by their derived `cost` value. Keys are cost integers; cost values not present in the input are omitted. Use `countByCost` when you only need the counts.
+
+```ts
+const curve = groupByCost(filterByType(cards, "Unit"));
+curve[2]; // all 2-cost Units
+```
+
+### `countByCost(cards): Record<number, number>`
+
+The mana curve — counts how many cards exist at each cost value. Follows the same pattern as `countByType`/`countByRarity`/etc., but keyed by a number rather than an enum string. Use this to power cost-distribution charts.
+
+```ts
+countByCost(filterByType(cards, "Unit"));
+// → { 0: 12, 1: 43, 2: 87, 3: 95, 4: 110, 5: 79, ... }
+```
+
 ### `countByType(cards): Partial<Record<CardType, number>>`
 ### `countByDomain(cards): Partial<Record<CardDomain, number>>`
 ### `countByRarity(cards): Partial<Record<CardRarity, number>>`
@@ -534,6 +569,15 @@ countByType(cards);
 
 countByRarity(cards);
 // → { Common: 220, Uncommon: 213, Rare: 212, Epic: 124, Showcase: 181 }
+```
+
+### `sumCost(cards: Card[]): number`
+
+Returns the total cost across all cards (sum of `card.cost`). Useful for computing deck mana value or the average cost of a filtered subset.
+
+```ts
+sumCost(myDeck);                    // total mana value
+sumCost(myDeck) / myDeck.length;   // same as getCardStats(myDeck).cost.avg
 ```
 
 ### `getCardStats(cards: Card[]): CardStats`

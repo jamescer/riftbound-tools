@@ -1,5 +1,29 @@
 # riftbound-tools
 
+## 1.2.3
+
+### Scripts
+
+WIP
+
+---
+
+## 1.2.2
+
+### New utilities
+
+- `groupByCost(cards)` — groups cards by cost value (`Record<number, Card[]>`); the missing member of the `groupBy*` family
+- `countByCost(cards)` — count per cost value (`Record<number, number>`); the mana curve in one call
+- `getUniqueSets(cards)` — returns `CardSet[]` in chronological release order; complements `getUniqueSetCodes` with typed, set-name-level deduplication (e.g. OGN + OGS both collapse to "Origins")
+- `sumCost(cards)` — total cost across a card array; useful for deck mana value calculations
+- `filterByImageUrl(cards, hasImage?)` — keep cards with (or without) an `imageUrl`; defaults to `true` (has art), pass `false` to audit cards missing art
+
+### Fixes
+
+- `scripts/fetch-riot-api.ts`: improved 403/401/429 error messages with specific guidance. 403 now explains that development keys do not include `riftbound-content-v1` access and links to the production key approval flow at developer.riotgames.com.
+
+---
+
 ## 1.2.1
 
 ### New utilities

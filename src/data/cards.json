@@ -19,15 +19,16 @@
     "keywords": [
       "Dragon",
       "Noxus"
-    ]
+    ],
+    "might": 5
   },
   {
     "id": "ogn-002",
     "name": "Brazen Buccaneer",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 5,
-    "energy": 5,
+    "cost": 6,
+    "energy": 6,
     "domain": [
       "Fury"
     ],
@@ -41,7 +42,8 @@
     "keywords": [
       "Pirate",
       "Bilgewater"
-    ]
+    ],
+    "might": 5
   },
   {
     "id": "ogn-003",
@@ -62,7 +64,8 @@
     "set": "Origins",
     "keywords": [
       "Zaun"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "ogn-004",
@@ -87,7 +90,7 @@
     "name": "Disintegrate",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 4,
     "domain": [
       "Fury"
     ],
@@ -97,7 +100,8 @@
     "text": "[Action] (Play on your turn or in showdowns.) Deal 3 to a unit at a battlefield. If this kills it, do this: draw 1.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/a27374ac3a81f3dfefb43c3c3237c23b4883cb5a-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 4
   },
   {
     "id": "ogn-006",
@@ -118,7 +122,8 @@
     "set": "Origins",
     "keywords": [
       "Zaun"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "ogn-007",
@@ -155,8 +160,8 @@
     "name": "Get Excited!",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Fury"
     ],
@@ -206,7 +211,8 @@
     "keywords": [
       "Trifarian",
       "Noxus"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "ogn-011",
@@ -215,7 +221,7 @@
     "rarity": "Common",
     "cost": 8,
     "energy": 8,
-    "might": 1,
+    "might": 8,
     "domain": [
       "Fury"
     ],
@@ -250,7 +256,8 @@
     "keywords": [
       "Trifarian",
       "Noxus"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "ogn-013",
@@ -271,15 +278,16 @@
     "set": "Origins",
     "keywords": [
       "Poro"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "ogn-014",
     "name": "Sky Splitter",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 1,
-    "might": 1,
+    "cost": 8,
+    "might": 8,
     "domain": [
       "Fury"
     ],
@@ -296,9 +304,9 @@
     "name": "Captain Farron",
     "type": "Unit",
     "rarity": "Uncommon",
-    "cost": 5,
-    "energy": 5,
-    "might": 1,
+    "cost": 4,
+    "energy": 4,
+    "might": 5,
     "domain": [
       "Fury"
     ],
@@ -334,14 +342,15 @@
     "keywords": [
       "Mech",
       "Bandle City"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "ogn-017",
     "name": "Iron Ballista",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Fury"
     ],
@@ -351,7 +360,8 @@
     "text": "This enters exhausted. exhaust: Deal 2 to a unit at a battlefield.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/9b5cfe757b6067994e17e284eba46433880a1461-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 3
   },
   {
     "id": "ogn-018",
@@ -373,7 +383,8 @@
     "keywords": [
       "Trifarian",
       "Noxus"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "ogn-019",
@@ -395,7 +406,8 @@
     "keywords": [
       "Spirit",
       "Shadow Isles"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "ogn-020",
@@ -404,7 +416,7 @@
     "rarity": "Uncommon",
     "cost": 5,
     "energy": 5,
-    "might": 1,
+    "might": 5,
     "domain": [
       "Fury"
     ],
@@ -425,8 +437,8 @@
     "name": "Sun Disc",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Fury"
     ],
@@ -443,8 +455,8 @@
     "name": "Thermo Beam",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 2,
-    "might": 2,
+    "cost": 5,
+    "might": 5,
     "domain": [
       "Fury"
     ],
@@ -461,7 +473,7 @@
     "name": "Unlicensed Armory",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Fury"
     ],
@@ -471,15 +483,16 @@
     "text": "Discard 1, exhaust: Choose a friendly unit. The next time it would die this turn, you may pay 1 fury rune to heal it, exhaust it, and recall it instead. (Send it to base. This isn't a move.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/1a80bedd893d9024fc90f108da36b4fd1d496ad6-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 2
   },
   {
     "id": "ogn-024",
     "name": "Void Seeker",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 1,
-    "might": 1,
+    "cost": 3,
+    "might": 3,
     "domain": [
       "Fury"
     ],
@@ -496,8 +509,8 @@
     "name": "Blind Fury",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 2,
-    "might": 2,
+    "cost": 4,
+    "might": 4,
     "domain": [
       "Fury"
     ],
@@ -514,8 +527,8 @@
     "name": "Brynhir Thundersong",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 5,
-    "energy": 5,
+    "cost": 6,
+    "energy": 6,
     "domain": [
       "Fury"
     ],
@@ -528,7 +541,8 @@
     "set": "Origins",
     "keywords": [
       "Freljord"
-    ]
+    ],
+    "might": 5
   },
   {
     "id": "ogn-027",
@@ -583,9 +597,9 @@
     "name": "Draven, Showboat",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 3,
-    "energy": 3,
-    "might": 1,
+    "cost": 5,
+    "energy": 5,
+    "might": 3,
     "domain": [
       "Fury"
     ],
@@ -624,9 +638,9 @@
     "name": "Jinx, Demolitionist",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 4,
-    "energy": 4,
-    "might": 1,
+    "cost": 3,
+    "energy": 3,
+    "might": 4,
     "domain": [
       "Fury"
     ],
@@ -647,9 +661,9 @@
     "name": "Jinx, Demolitionist",
     "type": "Unit",
     "rarity": "Showcase",
-    "cost": 4,
-    "energy": 4,
-    "might": 1,
+    "cost": 3,
+    "energy": 3,
+    "might": 4,
     "domain": [
       "Fury"
     ],
@@ -670,9 +684,9 @@
     "name": "Raging Firebrand",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 4,
-    "energy": 4,
-    "might": 1,
+    "cost": 6,
+    "energy": 6,
+    "might": 4,
     "domain": [
       "Fury"
     ],
@@ -693,7 +707,7 @@
     "name": "Ravenborn Tome",
     "type": "Gear",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Fury"
     ],
@@ -703,15 +717,16 @@
     "text": "exhaust: The next spell you play this turn deals 1 Bonus Damage. (Each instance of damage the spell deals is increased by 1.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/81f968126026635e5b9a2fa1048fc979fcd13a1d-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 3
   },
   {
     "id": "ogn-033",
     "name": "Shakedown",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Fury"
     ],
@@ -774,9 +789,9 @@
     "name": "Vi, Destructive",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 3,
-    "energy": 3,
-    "might": 1,
+    "cost": 2,
+    "energy": 2,
+    "might": 3,
     "domain": [
       "Fury"
     ],
@@ -799,7 +814,7 @@
     "rarity": "Epic",
     "cost": 3,
     "energy": 3,
-    "might": 1,
+    "might": 3,
     "domain": [
       "Fury"
     ],
@@ -821,7 +836,7 @@
     "rarity": "Epic",
     "cost": 9,
     "energy": 9,
-    "might": 2,
+    "might": 9,
     "domain": [
       "Fury"
     ],
@@ -857,7 +872,8 @@
     "keywords": [
       "Kai'Sa",
       "The Void"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "ogn-039a",
@@ -879,15 +895,16 @@
     "keywords": [
       "Kai'Sa",
       "The Void"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "ogn-040",
     "name": "Seal of Rage",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 0,
+    "might": 0,
     "domain": [
       "Fury"
     ],
@@ -1012,7 +1029,8 @@
     "set": "Origins",
     "keywords": [
       "Shurima"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "ogn-045",
@@ -1037,7 +1055,7 @@
     "name": "En Garde",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Calm"
     ],
@@ -1047,14 +1065,15 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) Give a friendly unit +1 might this turn, then an additional +1 might this turn if it is the only unit you control there.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/03c0ec7eaa5957a62869dad2a0ce40913fc874a9-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 1
   },
   {
     "id": "ogn-047",
     "name": "Find Your Center",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Calm"
     ],
@@ -1064,14 +1083,15 @@
     "text": "[Action] (Play on your turn or in showdowns.) If an opponent's score is within 3 points of the Victory Score, this costs 2 energy less. Draw 1 and channel 1 rune exhausted.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/cd9d798b496fdce133c5b0106d636a230b6e7ebe-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 3
   },
   {
     "id": "ogn-048",
     "name": "Meditation",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Calm"
     ],
@@ -1081,7 +1101,8 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) As an additional cost to play this, you may exhaust a friendly unit. If you do, draw 2. Otherwise, draw 1.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/7103336ab0d7f7bebdaa4155e4258d8d9beb06de-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 2
   },
   {
     "id": "ogn-049",
@@ -1101,15 +1122,16 @@
     "keywords": [
       "Spirit",
       "Shadow Isles"
-    ]
+    ],
+    "might": 5
   },
   {
     "id": "ogn-050",
     "name": "Rune Prison",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Calm"
     ],
@@ -1126,8 +1148,8 @@
     "name": "Solari Shieldbearer",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 2,
-    "energy": 2,
+    "cost": 3,
+    "energy": 3,
     "domain": [
       "Calm"
     ],
@@ -1140,7 +1162,8 @@
     "set": "Origins",
     "keywords": [
       "Mount Targon"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "ogn-052",
@@ -1161,14 +1184,15 @@
     "set": "Origins",
     "keywords": [
       "Poro"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "ogn-053",
     "name": "Stand United",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Calm"
     ],
@@ -1178,7 +1202,8 @@
     "text": "[Hidden] (Hide now for 1 rune of any type to react with later for 0 energy.) [Action] (Play on your turn or in showdowns.) Buff a friendly unit. Buffs give an additional +1 might to friendly units this turn. (To buff a unit, give it a +1 might buff if it doesn't already have one.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/4d10570e70a998de520d4baba254c3b726caa4f0-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 3
   },
   {
     "id": "ogn-054",
@@ -1199,15 +1224,16 @@
     "set": "Origins",
     "keywords": [
       "Shurima"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "ogn-055",
     "name": "Wielder of Water",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 2,
-    "energy": 2,
+    "cost": 3,
+    "energy": 3,
     "domain": [
       "Calm"
     ],
@@ -1220,15 +1246,16 @@
     "set": "Origins",
     "keywords": [
       "Ionia"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "ogn-056",
     "name": "Adaptatron",
     "type": "Unit",
     "rarity": "Uncommon",
-    "cost": 3,
-    "energy": 3,
+    "cost": 4,
+    "energy": 4,
     "domain": [
       "Calm"
     ],
@@ -1242,14 +1269,15 @@
     "keywords": [
       "Mech",
       "Piltover"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "ogn-057",
     "name": "Block",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Calm"
     ],
@@ -1259,14 +1287,15 @@
     "text": "[Hidden] (Hide now for 1 rune of any type to react with later for 0 energy.) [Action] (Play on your turn or in showdowns.) Give a unit [Shield 3] and [Tank] this turn. (+3 might while it's a defender. It must be assigned combat damage first.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/36f7352e715fe073631ed85be41408c9a38ab865-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 2
   },
   {
     "id": "ogn-058",
     "name": "Discipline",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Calm"
     ],
@@ -1276,7 +1305,8 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) Give a unit +2 might this turn. Draw 1.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/8b9613970b505e3ad6abe2d51d091778314a7d48-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 2
   },
   {
     "id": "ogn-059",
@@ -1285,7 +1315,7 @@
     "rarity": "Uncommon",
     "cost": 7,
     "energy": 7,
-    "might": 1,
+    "might": 7,
     "domain": [
       "Calm"
     ],
@@ -1306,7 +1336,7 @@
     "name": "Mask of Foresight",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Calm"
     ],
@@ -1316,7 +1346,8 @@
     "text": "When a friendly unit attacks or defends alone, give it +1 might this turn.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/03824709acbb4151d13b083a842c4702a3e61221-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 2
   },
   {
     "id": "ogn-061",
@@ -1325,7 +1356,7 @@
     "rarity": "Uncommon",
     "cost": 3,
     "energy": 3,
-    "might": 1,
+    "might": 3,
     "domain": [
       "Calm"
     ],
@@ -1345,7 +1376,7 @@
     "name": "Reinforce",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 5,
     "domain": [
       "Calm"
     ],
@@ -1355,15 +1386,16 @@
     "text": "Look at the top 5 cards of your Main Deck. You may banish a unit from among them, then play it, reducing its cost by 5 energy. Recycle the remaining cards.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/5bb4ce960c7636dac103c560a2e2f4e32f9d5390-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 5
   },
   {
     "id": "ogn-063",
     "name": "Spirit's Refuge",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Calm"
     ],
@@ -1380,8 +1412,8 @@
     "name": "Wind Wall",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 2,
-    "might": 2,
+    "cost": 3,
+    "might": 3,
     "domain": [
       "Calm"
     ],
@@ -1412,7 +1444,8 @@
     "set": "Origins",
     "keywords": [
       "Ionia"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "ogn-066",
@@ -1512,8 +1545,8 @@
     "name": "Last Stand",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 1,
-    "might": 1,
+    "cost": 3,
+    "might": 3,
     "domain": [
       "Calm"
     ],
@@ -1530,9 +1563,9 @@
     "name": "Mageseeker Warden",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 5,
-    "energy": 5,
-    "might": 1,
+    "cost": 6,
+    "energy": 6,
+    "might": 5,
     "domain": [
       "Calm"
     ],
@@ -1552,7 +1585,7 @@
     "name": "Party Favors",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Calm"
     ],
@@ -1562,14 +1595,15 @@
     "text": "Each other player chooses Cards or Runes. For each player that chooses Cards, you and that player each draw 1. For each player that chooses Runes, you and that player each channel 1 rune exhausted.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/fddcef3c55663c5d6856f6d039d19cacfd64abb5-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 3
   },
   {
     "id": "ogn-072",
     "name": "Solari Shrine",
     "type": "Gear",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Calm"
     ],
@@ -1579,7 +1613,8 @@
     "text": "When you kill a stunned enemy unit, you may exhaust this to draw 1.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/139a6d1c62a717bab4cdd75926e7f4aba6efb15d-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 3
   },
   {
     "id": "ogn-073",
@@ -1588,7 +1623,7 @@
     "rarity": "Rare",
     "cost": 4,
     "energy": 4,
-    "might": 1,
+    "might": 4,
     "domain": [
       "Calm"
     ],
@@ -1632,8 +1667,8 @@
     "name": "Tasty Faefolk",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 6,
-    "energy": 6,
+    "cost": 7,
+    "energy": 7,
     "domain": [
       "Calm"
     ],
@@ -1647,7 +1682,8 @@
     "keywords": [
       "Fae",
       "Bandle City"
-    ]
+    ],
+    "might": 6
   },
   {
     "id": "ogn-076",
@@ -1700,7 +1736,7 @@
     "name": "Zhonya's Hourglass",
     "type": "Gear",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Calm"
     ],
@@ -1710,7 +1746,8 @@
     "text": "[Hidden] (Hide now for 1 rune of any type to react with later for 0 energy.) If a friendly unit would die, kill this instead. Heal that unit, exhaust it, and recall it. (Send it to base. This isn't a move.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/dc38172c56f838b407fc9f170ba973da32d7cd4d-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 2
   },
   {
     "id": "ogn-078",
@@ -1809,8 +1846,8 @@
     "name": "Mystic Reversal",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 3,
-    "might": 3,
+    "cost": 4,
+    "might": 4,
     "domain": [
       "Calm"
     ],
@@ -1827,8 +1864,8 @@
     "name": "Seal of Focus",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 0,
+    "might": 0,
     "domain": [
       "Calm"
     ],
@@ -1847,7 +1884,7 @@
     "rarity": "Epic",
     "cost": 8,
     "energy": 8,
-    "might": 2,
+    "might": 8,
     "domain": [
       "Calm"
     ],
@@ -1868,7 +1905,7 @@
     "name": "Consult the Past",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 4,
     "domain": [
       "Mind"
     ],
@@ -1878,7 +1915,8 @@
     "text": "[Hidden] (Hide now for 1 rune of any type to react with later for 0 energy.) [Reaction] (Play any time, even before spells and abilities resolve.) Draw 2.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/198d950d3933972273ec714e9264cbd563ea6920-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 4
   },
   {
     "id": "ogn-084",
@@ -1899,14 +1937,15 @@
     "set": "Origins",
     "keywords": [
       "Piltover"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "ogn-085",
     "name": "Falling Comet",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 5,
     "domain": [
       "Mind"
     ],
@@ -1916,7 +1955,8 @@
     "text": "[Action] (Play on your turn or in showdowns.) Deal 6 to a unit at a battlefield.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/eaaf300a07d5b2927fe9a601d70f2a01b512cc7e-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 5
   },
   {
     "id": "ogn-086",
@@ -1937,15 +1977,16 @@
     "set": "Origins",
     "keywords": [
       "Mount Targon"
-    ]
+    ],
+    "might": 5
   },
   {
     "id": "ogn-087",
     "name": "Lecturing Yordle",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 2,
-    "energy": 2,
+    "cost": 3,
+    "energy": 3,
     "domain": [
       "Mind"
     ],
@@ -1959,15 +2000,16 @@
     "keywords": [
       "Yordle",
       "Bandle City"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "ogn-088",
     "name": "Mega-Mech",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 8,
-    "energy": 8,
+    "cost": 7,
+    "energy": 7,
     "domain": [
       "Mind"
     ],
@@ -1979,7 +2021,8 @@
     "keywords": [
       "Mech",
       "Bandle City"
-    ]
+    ],
+    "might": 8
   },
   {
     "id": "ogn-089",
@@ -2016,7 +2059,7 @@
     "name": "Orb of Regret",
     "type": "Gear",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Mind"
     ],
@@ -2026,7 +2069,8 @@
     "text": "exhaust: Give a unit -1 might this turn, to a minimum of 1 might.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/fd883b646d1a3cdb1a03b0c19dc62c92ca552f4f-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 1
   },
   {
     "id": "ogn-091",
@@ -2047,7 +2091,8 @@
     "set": "Origins",
     "keywords": [
       "Bandle City"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "ogn-092",
@@ -2056,7 +2101,7 @@
     "rarity": "Common",
     "cost": 6,
     "energy": 6,
-    "might": 2,
+    "might": 6,
     "domain": [
       "Mind"
     ],
@@ -2077,8 +2122,8 @@
     "name": "Smoke Screen",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Mind"
     ],
@@ -2095,7 +2140,7 @@
     "name": "Sprite Call",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Mind"
     ],
@@ -2105,14 +2150,15 @@
     "text": "[Hidden] (Hide now for 1 rune of any type to react with later for 0 energy.) [Action] (Play on your turn or in showdowns.) Play a ready 3 might Sprite unit token with [Temporary]. (Kill it at the start of its controller's Beginning Phase, before scoring.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ab3db48dcbb12b01151d3a08c2412020380b7ca5-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 3
   },
   {
     "id": "ogn-095",
     "name": "Stupefy",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Mind"
     ],
@@ -2122,15 +2168,16 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) Give a unit -1 might this turn, to a minimum of 1 might. Draw 1.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/837a5976192bbf8bdb4086429802167548ecc119-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 1
   },
   {
     "id": "ogn-096",
     "name": "Watchful Sentry",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 1,
-    "energy": 1,
+    "cost": 2,
+    "energy": 2,
     "domain": [
       "Mind"
     ],
@@ -2143,7 +2190,8 @@
     "set": "Origins",
     "keywords": [
       "Freljord"
-    ]
+    ],
+    "might": 1
   },
   {
     "id": "ogn-097",
@@ -2152,7 +2200,7 @@
     "rarity": "Uncommon",
     "cost": 2,
     "energy": 2,
-    "might": 1,
+    "might": 2,
     "domain": [
       "Mind"
     ],
@@ -2173,7 +2221,7 @@
     "name": "Energy Conduit",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Mind"
     ],
@@ -2183,14 +2231,15 @@
     "text": "exhaust: [Reaction] — [Add] 1 energy. (Abilities that add resources can't be reacted to.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/f0e0a67e9e9b1d45d12d248df78b4e643b70bdc1-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 3
   },
   {
     "id": "ogn-099",
     "name": "Garbage Grabber",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Mind"
     ],
@@ -2200,7 +2249,8 @@
     "text": "Recycle 3 from your trash, 1 energy, exhaust: Draw 1.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/199f21237aeee2582904463a15ec62ce29452c10-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 2
   },
   {
     "id": "ogn-100",
@@ -2209,7 +2259,7 @@
     "rarity": "Uncommon",
     "cost": 3,
     "energy": 3,
-    "might": 1,
+    "might": 3,
     "domain": [
       "Mind"
     ],
@@ -2229,7 +2279,7 @@
     "name": "Mushroom Pouch",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Mind"
     ],
@@ -2239,15 +2289,16 @@
     "text": "At the start of your Beginning Phase, if you control a facedown card at a battlefield, draw 1.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ef5b3125fda91c0d0a02b7e6dfb7d3d5bafa8bd0-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 2
   },
   {
     "id": "ogn-102",
     "name": "Portal Rescue",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 1,
-    "might": 1,
+    "cost": 3,
+    "might": 3,
     "domain": [
       "Mind"
     ],
@@ -2278,14 +2329,15 @@
     "set": "Origins",
     "keywords": [
       "Noxus"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "ogn-104",
     "name": "Retreat",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Mind"
     ],
@@ -2295,15 +2347,16 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) Return a friendly unit to its owner's hand. Its owner channels 1 rune exhausted.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/71ecf6c06d3110a81ac0f01c726c06921f479a13-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 1
   },
   {
     "id": "ogn-105",
     "name": "Singularity",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 2,
-    "might": 2,
+    "cost": 6,
+    "might": 6,
     "domain": [
       "Mind"
     ],
@@ -2320,9 +2373,9 @@
     "name": "Sprite Mother",
     "type": "Unit",
     "rarity": "Uncommon",
-    "cost": 3,
-    "energy": 3,
-    "might": 1,
+    "cost": 4,
+    "energy": 4,
+    "might": 3,
     "domain": [
       "Mind"
     ],
@@ -2342,8 +2395,8 @@
     "name": "Ava Achiever",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 4,
-    "energy": 4,
+    "cost": 5,
+    "energy": 5,
     "domain": [
       "Mind"
     ],
@@ -2356,15 +2409,16 @@
     "set": "Origins",
     "keywords": [
       "Yordle"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "ogn-108",
     "name": "Convergent Mutation",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Mind"
     ],
@@ -2519,8 +2573,8 @@
     "name": "Progress Day",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 1,
-    "might": 1,
+    "cost": 6,
+    "might": 6,
     "domain": [
       "Mind"
     ],
@@ -2537,8 +2591,8 @@
     "name": "Promising Future",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 1,
-    "might": 1,
+    "cost": 5,
+    "might": 5,
     "domain": [
       "Mind"
     ],
@@ -2557,7 +2611,7 @@
     "rarity": "Rare",
     "cost": 7,
     "energy": 7,
-    "might": 1,
+    "might": 7,
     "domain": [
       "Mind"
     ],
@@ -2577,9 +2631,9 @@
     "name": "Viktor, Innovator",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 3,
-    "energy": 3,
-    "might": 1,
+    "cost": 4,
+    "energy": 4,
+    "might": 3,
     "domain": [
       "Mind"
     ],
@@ -2600,9 +2654,9 @@
     "name": "Viktor, Innovator",
     "type": "Unit",
     "rarity": "Showcase",
-    "cost": 3,
-    "energy": 3,
-    "might": 1,
+    "cost": 4,
+    "energy": 4,
+    "might": 3,
     "domain": [
       "Mind"
     ],
@@ -2623,9 +2677,9 @@
     "name": "Wraith of Echoes",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 5,
-    "energy": 5,
-    "might": 1,
+    "cost": 6,
+    "energy": 6,
+    "might": 5,
     "domain": [
       "Mind"
     ],
@@ -2648,7 +2702,7 @@
     "rarity": "Epic",
     "cost": 3,
     "energy": 3,
-    "might": 1,
+    "might": 3,
     "domain": [
       "Mind"
     ],
@@ -2671,7 +2725,7 @@
     "rarity": "Showcase",
     "cost": 3,
     "energy": 3,
-    "might": 1,
+    "might": 3,
     "domain": [
       "Mind"
     ],
@@ -2692,8 +2746,8 @@
     "name": "Seal of Insight",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 0,
+    "might": 0,
     "domain": [
       "Mind"
     ],
@@ -2758,8 +2812,8 @@
     "name": "Time Warp",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 4,
-    "might": 4,
+    "cost": 10,
+    "might": 10,
     "domain": [
       "Mind"
     ],
@@ -2776,8 +2830,8 @@
     "name": "Unchecked Power",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 2,
-    "might": 2,
+    "cost": 7,
+    "might": 7,
     "domain": [
       "Mind"
     ],
@@ -2794,7 +2848,7 @@
     "name": "Arena Bar",
     "type": "Gear",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Body"
     ],
@@ -2804,7 +2858,8 @@
     "text": "exhaust: Buff an exhausted friendly unit. (If it doesn't have a buff, it gets a +1 might buff.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/519306d1d4a36f2d54fe0982268a197a257f5e5d-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 3
   },
   {
     "id": "ogn-125",
@@ -2825,7 +2880,8 @@
     "set": "Origins",
     "keywords": [
       "Bilgewater"
-    ]
+    ],
+    "might": 6
   },
   {
     "id": "ogn-126",
@@ -2862,8 +2918,8 @@
     "name": "Cannon Barrage",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Body"
     ],
@@ -2880,8 +2936,8 @@
     "name": "Challenge",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Body"
     ],
@@ -2898,7 +2954,7 @@
     "name": "Confront",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Body"
     ],
@@ -2908,7 +2964,8 @@
     "text": "[Action] (Play on your turn or in showdowns.) Units you play this turn enter ready. Draw 1.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/691a38a7c344fdb5ee86e34d41321d99754286a7-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 2
   },
   {
     "id": "ogn-130",
@@ -2930,7 +2987,8 @@
     "keywords": [
       "Pirate",
       "Bilgewater"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "ogn-131",
@@ -2952,7 +3010,8 @@
     "keywords": [
       "Dragon",
       "Shurima"
-    ]
+    ],
+    "might": 5
   },
   {
     "id": "ogn-132",
@@ -2974,14 +3033,15 @@
     "keywords": [
       "Pirate",
       "Bilgewater"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "ogn-133",
     "name": "Flurry of Blades",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Body"
     ],
@@ -2991,14 +3051,15 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) Deal 1 to all units at battlefields.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/c72f872e7e71b55b2074c5be4f2d7a44fa6fafca-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 1
   },
   {
     "id": "ogn-134",
     "name": "Mobilize",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Body"
     ],
@@ -3008,7 +3069,8 @@
     "text": "Channel 1 rune exhausted. If you can't, draw 1.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/cb22153e84ce250192b8e6e75e7f4dc0b66a728c-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 2
   },
   {
     "id": "ogn-135",
@@ -3030,7 +3092,8 @@
     "keywords": [
       "Cat",
       "Ixtal"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "ogn-136",
@@ -3051,15 +3114,16 @@
     "set": "Origins",
     "keywords": [
       "Bilgewater"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "ogn-137",
     "name": "Stormclaw Ursine",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 6,
-    "energy": 6,
+    "cost": 7,
+    "energy": 7,
     "domain": [
       "Body"
     ],
@@ -3072,14 +3136,15 @@
     "set": "Origins",
     "keywords": [
       "Freljord"
-    ]
+    ],
+    "might": 6
   },
   {
     "id": "ogn-138",
     "name": "Catalyst of Aeons",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 4,
     "domain": [
       "Body"
     ],
@@ -3089,15 +3154,16 @@
     "text": "Channel 2 runes exhausted. If you couldn't channel 2 runes this way, draw 1.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/4753707323ab6f9ac572c097f29f2f76ac62f54f-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 4
   },
   {
     "id": "ogn-139",
     "name": "Cithria of Cloudfield",
     "type": "Unit",
     "rarity": "Uncommon",
-    "cost": 1,
-    "energy": 1,
+    "cost": 2,
+    "energy": 2,
     "domain": [
       "Body"
     ],
@@ -3111,15 +3177,16 @@
     "keywords": [
       "Elite",
       "Demacia"
-    ]
+    ],
+    "might": 1
   },
   {
     "id": "ogn-140",
     "name": "Herald of Scales",
     "type": "Unit",
     "rarity": "Uncommon",
-    "cost": 3,
-    "energy": 3,
+    "cost": 4,
+    "energy": 4,
     "domain": [
       "Body"
     ],
@@ -3132,7 +3199,8 @@
     "set": "Origins",
     "keywords": [
       "Mount Targon"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "ogn-141",
@@ -3141,7 +3209,7 @@
     "rarity": "Uncommon",
     "cost": 4,
     "energy": 4,
-    "might": 1,
+    "might": 4,
     "domain": [
       "Body"
     ],
@@ -3161,8 +3229,8 @@
     "name": "Mountain Drake",
     "type": "Unit",
     "rarity": "Uncommon",
-    "cost": 10,
-    "energy": 10,
+    "cost": 9,
+    "energy": 9,
     "domain": [
       "Body"
     ],
@@ -3173,14 +3241,15 @@
     "set": "Origins",
     "keywords": [
       "Dragon"
-    ]
+    ],
+    "might": 10
   },
   {
     "id": "ogn-143",
     "name": "Pirate's Haven",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Body"
     ],
@@ -3190,15 +3259,16 @@
     "text": "When you ready a friendly unit, give it +1 might this turn.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/1991b64d58cbd3698574f44b404f7a88d6403134-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 3
   },
   {
     "id": "ogn-144",
     "name": "Spoils of War",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 1,
-    "might": 1,
+    "cost": 4,
+    "might": 4,
     "domain": [
       "Body"
     ],
@@ -3233,7 +3303,7 @@
     "name": "Wallop",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Body"
     ],
@@ -3243,15 +3313,16 @@
     "text": "[Action] (Play on your turn or in showdowns.) As you play this, you may spend a buff as an additional cost. If you do, ignore this spell's cost. Ready a unit.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/7bbd2eb8ce224e1872a1c920d7c64d796b2355cd-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 2
   },
   {
     "id": "ogn-147",
     "name": "Wildclaw Shaman",
     "type": "Unit",
     "rarity": "Uncommon",
-    "cost": 3,
-    "energy": 3,
+    "cost": 4,
+    "energy": 4,
     "domain": [
       "Body"
     ],
@@ -3264,7 +3335,8 @@
     "set": "Origins",
     "keywords": [
       "Freljord"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "ogn-148",
@@ -3295,9 +3367,9 @@
     "name": "Carnivorous Snapvine",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 6,
-    "energy": 6,
-    "might": 2,
+    "cost": 5,
+    "energy": 5,
+    "might": 6,
     "domain": [
       "Body"
     ],
@@ -3317,9 +3389,9 @@
     "name": "Kraken Hunter",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 5,
-    "energy": 5,
-    "might": 2,
+    "cost": 3,
+    "energy": 3,
+    "might": 5,
     "domain": [
       "Body"
     ],
@@ -3384,7 +3456,7 @@
     "name": "Mistfall",
     "type": "Gear",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Body"
     ],
@@ -3394,15 +3466,16 @@
     "text": "When you buff a friendly unit, you may pay 1 body rune and exhaust this to ready it.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/1cedf0dcd6c4a44ae867e9f04f9f179d9b91c357-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 3
   },
   {
     "id": "ogn-153",
     "name": "Overt Operation",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 2,
-    "might": 2,
+    "cost": 5,
+    "might": 5,
     "domain": [
       "Body"
     ],
@@ -3419,8 +3492,8 @@
     "name": "Primal Strength",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 1,
-    "might": 1,
+    "cost": 4,
+    "might": 4,
     "domain": [
       "Body"
     ],
@@ -3571,8 +3644,8 @@
     "name": "Dazzling Aurora",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 2,
-    "might": 2,
+    "cost": 9,
+    "might": 9,
     "domain": [
       "Body"
     ],
@@ -3591,7 +3664,7 @@
     "rarity": "Epic",
     "cost": 8,
     "energy": 8,
-    "might": 2,
+    "might": 8,
     "domain": [
       "Body"
     ],
@@ -3659,8 +3732,8 @@
     "name": "Seal of Strength",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 0,
+    "might": 0,
     "domain": [
       "Body"
     ],
@@ -3677,9 +3750,9 @@
     "name": "Sett, Brawler",
     "type": "Unit",
     "rarity": "Epic",
-    "cost": 4,
-    "energy": 4,
-    "might": 1,
+    "cost": 5,
+    "energy": 5,
+    "might": 4,
     "domain": [
       "Body"
     ],
@@ -3700,9 +3773,9 @@
     "name": "Sett, Brawler",
     "type": "Unit",
     "rarity": "Showcase",
-    "cost": 4,
-    "energy": 4,
-    "might": 1,
+    "cost": 5,
+    "energy": 5,
+    "might": 4,
     "domain": [
       "Body"
     ],
@@ -3725,7 +3798,7 @@
     "rarity": "Common",
     "cost": 3,
     "energy": 3,
-    "might": 1,
+    "might": 3,
     "domain": [
       "Chaos"
     ],
@@ -3790,14 +3863,15 @@
     "set": "Origins",
     "keywords": [
       "Bandle City"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "ogn-168",
     "name": "Fight or Flight",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Chaos"
     ],
@@ -3807,14 +3881,15 @@
     "text": "[Hidden] (Hide now for 1 rune of any type to react with later for 0 energy.) [Action] (Play on your turn or in showdowns.) Move a unit from a battlefield to its base.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/2e7c7ad72889878e2dd5932d203814b185e74a87-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 2
   },
   {
     "id": "ogn-169",
     "name": "Gust",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Chaos"
     ],
@@ -3824,14 +3899,15 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) Return a unit at a battlefield with 3 might or less to its owner's hand.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/dfd3b161ab76ba0c5d503384f1289b3395434b10-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 1
   },
   {
     "id": "ogn-170",
     "name": "Morbid Return",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Chaos"
     ],
@@ -3841,7 +3917,8 @@
     "text": "[Action] (Play on your turn or in showdowns.) Return a unit from your trash to your hand.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/33b5ca4e580b94f2056bd884a4a35e8c630920a2-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 2
   },
   {
     "id": "ogn-171",
@@ -3862,7 +3939,8 @@
     "set": "Origins",
     "keywords": [
       "Poro"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "ogn-172",
@@ -3887,8 +3965,8 @@
     "name": "Ride the Wind",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Chaos"
     ],
@@ -3905,8 +3983,8 @@
     "name": "Sai Scout",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 5,
-    "energy": 5,
+    "cost": 6,
+    "energy": 6,
     "domain": [
       "Chaos"
     ],
@@ -3919,7 +3997,8 @@
     "set": "Origins",
     "keywords": [
       "Shurima"
-    ]
+    ],
+    "might": 5
   },
   {
     "id": "ogn-175",
@@ -3939,15 +4018,16 @@
     "keywords": [
       "Pirate",
       "Bilgewater"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "ogn-176",
     "name": "Sneaky Deckhand",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 2,
-    "energy": 2,
+    "cost": 3,
+    "energy": 3,
     "domain": [
       "Chaos"
     ],
@@ -3961,7 +4041,8 @@
     "keywords": [
       "Pirate",
       "Bilgewater"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "ogn-177",
@@ -3970,7 +4051,7 @@
     "rarity": "Common",
     "cost": 4,
     "energy": 4,
-    "might": 1,
+    "might": 4,
     "domain": [
       "Chaos"
     ],
@@ -3992,7 +4073,7 @@
     "rarity": "Common",
     "cost": 5,
     "energy": 5,
-    "might": 1,
+    "might": 5,
     "domain": [
       "Chaos"
     ],
@@ -4009,7 +4090,7 @@
     "name": "Acceptable Losses",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Chaos"
     ],
@@ -4019,15 +4100,16 @@
     "text": "[Action] (Play on your turn or in showdowns.) Each player kills one of their gear.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/b2b470bab1ae511ab9de0b1ce576e2050532a081-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 1
   },
   {
     "id": "ogn-180",
     "name": "Fading Memories",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 1,
-    "might": 1,
+    "cost": 4,
+    "might": 4,
     "domain": [
       "Chaos"
     ],
@@ -4044,7 +4126,7 @@
     "name": "Pack of Wonders",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Chaos"
     ],
@@ -4054,14 +4136,15 @@
     "text": "exhaust: Return another friendly gear, unit, or facedown card to its owner's hand.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/a0830f326c49abe7fb1d3c9787e7ce5d7b776eec-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 2
   },
   {
     "id": "ogn-182",
     "name": "Scrapheap",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Chaos"
     ],
@@ -4071,14 +4154,15 @@
     "text": "When this is played, discarded, or killed, draw 1.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/0c059786e89a2443221b7c0b8ca39779dcc9c755-744x1038.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 2
   },
   {
     "id": "ogn-183",
     "name": "Stacked Deck",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Chaos"
     ],
@@ -4088,14 +4172,15 @@
     "text": "[Action] (Play on your turn or in showdowns.) Look at the top 3 cards of your Main Deck. Put 1 into your hand and recycle the rest.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/fdcb22cb620a4c1c37920d6b744edb615647cbd4-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 1
   },
   {
     "id": "ogn-184",
     "name": "The Syren",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Chaos"
     ],
@@ -4105,7 +4190,8 @@
     "text": "1 energy, exhaust: Move a friendly unit at a battlefield to its base.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/cafdd212b542243e10e5fac587616ab77e3d9cf1-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 2
   },
   {
     "id": "ogn-185",
@@ -4126,14 +4212,15 @@
     "set": "Origins",
     "keywords": [
       "Bilgewater"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "ogn-186",
     "name": "Treasure Trove",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Chaos"
     ],
@@ -4143,15 +4230,16 @@
     "text": "When this leaves the board, draw 1 and channel 1 rune exhausted. 1 chaos rune, exhaust: Kill this.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/682f5ee828ede4dbaf428cd0666db64ee8bae722-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 2
   },
   {
     "id": "ogn-187",
     "name": "Whirlwind",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 1,
-    "might": 1,
+    "cost": 3,
+    "might": 3,
     "domain": [
       "Chaos"
     ],
@@ -4168,8 +4256,8 @@
     "name": "Zaunite Bouncer",
     "type": "Unit",
     "rarity": "Uncommon",
-    "cost": 2,
-    "energy": 2,
+    "cost": 4,
+    "energy": 4,
     "might": 2,
     "domain": [
       "Chaos"
@@ -4236,8 +4324,8 @@
     "name": "Maddened Marauder",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 4,
-    "energy": 4,
+    "cost": 5,
+    "energy": 5,
     "domain": [
       "Chaos"
     ],
@@ -4251,7 +4339,8 @@
     "keywords": [
       "Pirate",
       "Bilgewater"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "ogn-192",
@@ -4260,7 +4349,7 @@
     "rarity": "Rare",
     "cost": 7,
     "energy": 7,
-    "might": 2,
+    "might": 7,
     "domain": [
       "Chaos"
     ],
@@ -4351,9 +4440,9 @@
     "name": "Rhasa the Sunderer",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 6,
-    "energy": 6,
-    "might": 1,
+    "cost": 10,
+    "energy": 10,
+    "might": 6,
     "domain": [
       "Chaos"
     ],
@@ -4374,9 +4463,9 @@
     "name": "Soulgorger",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 5,
-    "energy": 5,
-    "might": 2,
+    "cost": 8,
+    "energy": 8,
+    "might": 5,
     "domain": [
       "Chaos"
     ],
@@ -4443,8 +4532,8 @@
     "name": "The Harrowing",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 2,
-    "might": 2,
+    "cost": 6,
+    "might": 6,
     "domain": [
       "Chaos"
     ],
@@ -4475,7 +4564,8 @@
     "set": "Origins",
     "keywords": [
       "Bilgewater"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "ogn-200",
@@ -4504,8 +4594,8 @@
     "name": "Invert Timelines",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 3,
+    "might": 3,
     "domain": [
       "Chaos"
     ],
@@ -4568,8 +4658,8 @@
     "name": "Possession",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 3,
-    "might": 3,
+    "cost": 8,
+    "might": 8,
     "domain": [
       "Chaos"
     ],
@@ -4586,8 +4676,8 @@
     "name": "Seal of Discord",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 0,
+    "might": 0,
     "domain": [
       "Chaos"
     ],
@@ -4650,7 +4740,7 @@
     "name": "Back to Back",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Order"
     ],
@@ -4660,14 +4750,15 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) Give two friendly units each +2 might this turn.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/7f5585dcd3e9c7866e3b99cb169a0404ea4c010f-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 3
   },
   {
     "id": "ogn-207",
     "name": "Call to Glory",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Order"
     ],
@@ -4677,15 +4768,16 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) As you play this, you may spend a buff as an additional cost. If you do, ignore this spell's cost. Give a unit +3 might this turn.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ced53bc3fb15f263471067fc3868295b09e62a07-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 3
   },
   {
     "id": "ogn-208",
     "name": "Cruel Patron",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 6,
-    "energy": 6,
+    "cost": 4,
+    "energy": 4,
     "domain": [
       "Order"
     ],
@@ -4698,15 +4790,16 @@
     "set": "Origins",
     "keywords": [
       "Noxus"
-    ]
+    ],
+    "might": 6
   },
   {
     "id": "ogn-209",
     "name": "Cull the Weak",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Order"
     ],
@@ -4737,15 +4830,16 @@
     "set": "Origins",
     "keywords": [
       "Poro"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "ogn-211",
     "name": "Faithful Manufactor",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 2,
-    "energy": 2,
+    "cost": 3,
+    "energy": 3,
     "domain": [
       "Order"
     ],
@@ -4758,14 +4852,15 @@
     "set": "Origins",
     "keywords": [
       "Piltover"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "ogn-212",
     "name": "Forge of the Future",
     "type": "Gear",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Order"
     ],
@@ -4775,15 +4870,16 @@
     "text": "When you play this, play a 1 might Recruit unit token at your base. Kill this: Recycle up to 4 cards from trashes.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/8e6a76d28590bcd835b0a9a1e806fe0fa6883141-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 2
   },
   {
     "id": "ogn-213",
     "name": "Hidden Blade",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Order"
     ],
@@ -4845,15 +4941,16 @@
     "keywords": [
       "Pirate",
       "Bilgewater"
-    ]
+    ],
+    "might": 5
   },
   {
     "id": "ogn-216",
     "name": "Soaring Scout",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 1,
-    "energy": 1,
+    "cost": 2,
+    "energy": 2,
     "domain": [
       "Order"
     ],
@@ -4867,7 +4964,8 @@
     "keywords": [
       "Bird",
       "Freljord"
-    ]
+    ],
+    "might": 1
   },
   {
     "id": "ogn-217",
@@ -4889,7 +4987,8 @@
     "keywords": [
       "Trifarian",
       "Noxus"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "ogn-218",
@@ -4898,7 +4997,7 @@
     "rarity": "Common",
     "cost": 3,
     "energy": 3,
-    "might": 1,
+    "might": 3,
     "domain": [
       "Order"
     ],
@@ -4932,14 +5031,15 @@
     "keywords": [
       "Elite",
       "Demacia"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "ogn-220",
     "name": "Facebreaker",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Order"
     ],
@@ -4949,15 +5049,16 @@
     "text": "[Hidden] (Hide now for 1 rune of any type to react with later for 0 energy.) [Action] (Play on your turn or in showdowns.) Stun a friendly unit and an enemy unit at the same battlefield. (They don't deal combat damage this turn.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/b7cddc717b886bb955b900ffaae4db9154a19280-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 2
   },
   {
     "id": "ogn-221",
     "name": "Imperial Decree",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 2,
-    "might": 2,
+    "cost": 5,
+    "might": 5,
     "domain": [
       "Order"
     ],
@@ -4989,16 +5090,17 @@
     "keywords": [
       "Trifarian",
       "Noxus"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "ogn-223",
     "name": "Peak Guardian",
     "type": "Unit",
     "rarity": "Uncommon",
-    "cost": 5,
-    "energy": 5,
-    "might": 1,
+    "cost": 6,
+    "energy": 6,
+    "might": 5,
     "domain": [
       "Order"
     ],
@@ -5018,8 +5120,8 @@
     "name": "Salvage",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Order"
     ],
@@ -5036,9 +5138,9 @@
     "name": "Solari Chief",
     "type": "Unit",
     "rarity": "Uncommon",
-    "cost": 4,
-    "energy": 4,
-    "might": 1,
+    "cost": 5,
+    "energy": 5,
+    "might": 4,
     "domain": [
       "Order"
     ],
@@ -5060,7 +5162,7 @@
     "rarity": "Uncommon",
     "cost": 4,
     "energy": 4,
-    "might": 2,
+    "might": 4,
     "domain": [
       "Order"
     ],
@@ -5081,7 +5183,7 @@
     "name": "Symbol of the Solari",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Order"
     ],
@@ -5091,14 +5193,15 @@
     "text": "If a combat where you are the attacker ends in a tie, recall ALL units instead. (Send them to base. This isn't a move. Ties are calculated after combat damage is dealt.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/d4f746c396df48623ef8a4df763b5deb47f59339-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 1
   },
   {
     "id": "ogn-228",
     "name": "Vanguard Helm",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Order"
     ],
@@ -5108,15 +5211,16 @@
     "text": "When a buffed friendly unit dies, buff another friendly unit. (If it doesn't have a buff, it gets a +1 might buff.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/9718c666cbf789a572760c826d0a06b26b787ae5-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 2
   },
   {
     "id": "ogn-229",
     "name": "Vengeance",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 2,
-    "might": 2,
+    "cost": 4,
+    "might": 4,
     "domain": [
       "Order"
     ],
@@ -5133,8 +5237,8 @@
     "name": "Albus Ferros",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 3,
-    "energy": 3,
+    "cost": 4,
+    "energy": 4,
     "domain": [
       "Order"
     ],
@@ -5147,16 +5251,17 @@
     "set": "Origins",
     "keywords": [
       "Piltover"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "ogn-231",
     "name": "Commander Ledros",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 8,
-    "energy": 8,
-    "might": 4,
+    "cost": 6,
+    "energy": 6,
+    "might": 8,
     "domain": [
       "Order"
     ],
@@ -5199,8 +5304,8 @@
     "name": "Grand Strategem",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 3,
-    "might": 3,
+    "cost": 6,
+    "might": 6,
     "domain": [
       "Order"
     ],
@@ -5217,9 +5322,9 @@
     "name": "Harnessed Dragon",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 6,
-    "energy": 6,
-    "might": 2,
+    "cost": 8,
+    "energy": 8,
+    "might": 6,
     "domain": [
       "Order"
     ],
@@ -5287,8 +5392,8 @@
     "name": "King's Edict",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 2,
-    "might": 2,
+    "cost": 6,
+    "might": 6,
     "domain": [
       "Order"
     ],
@@ -5307,7 +5412,7 @@
     "rarity": "Rare",
     "cost": 4,
     "energy": 4,
-    "might": 1,
+    "might": 4,
     "domain": [
       "Order"
     ],
@@ -5330,7 +5435,7 @@
     "rarity": "Showcase",
     "cost": 4,
     "energy": 4,
-    "might": 1,
+    "might": 4,
     "domain": [
       "Order"
     ],
@@ -5351,9 +5456,9 @@
     "name": "Machine Evangel",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 4,
-    "energy": 4,
-    "might": 1,
+    "cost": 5,
+    "energy": 5,
+    "might": 4,
     "domain": [
       "Order"
     ],
@@ -5442,7 +5547,7 @@
     "name": "Baited Hook",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Order"
     ],
@@ -5452,7 +5557,8 @@
     "text": "1 energy and 1 order rune, exhaust: Kill a friendly unit. Look at the top 5 cards of your Main Deck. You may banish a unit from among them that has Might up to 1 more than the killed unit and play it, ignoring its cost. Then recycle the rest.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/7b4e6a1e32878a7d5fe4e40869c83e47ea08de7c-744x1039.png",
     "setCode": "OGN",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 3
   },
   {
     "id": "ogn-243",
@@ -5507,8 +5613,8 @@
     "name": "Divine Judgment",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 2,
-    "might": 2,
+    "cost": 7,
+    "might": 7,
     "domain": [
       "Order"
     ],
@@ -5525,8 +5631,8 @@
     "name": "Seal of Unity",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 0,
+    "might": 0,
     "domain": [
       "Order"
     ],
@@ -5610,8 +5716,8 @@
     "name": "Icathian Rain",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 3,
-    "might": 3,
+    "cost": 7,
+    "might": 7,
     "domain": [
       "Fury",
       "Mind"
@@ -5653,8 +5759,8 @@
     "name": "Stormbringer",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 2,
-    "might": 2,
+    "cost": 6,
+    "might": 6,
     "domain": [
       "Fury",
       "Body"
@@ -5696,8 +5802,8 @@
     "name": "Super Mega Death Rocket!",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 4,
+    "might": 4,
     "domain": [
       "Fury",
       "Chaos"
@@ -5739,8 +5845,8 @@
     "name": "Noxian Guillotine",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 4,
+    "might": 4,
     "domain": [
       "Fury",
       "Order"
@@ -5782,7 +5888,7 @@
     "name": "Fox-Fire",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Calm",
       "Mind"
@@ -5796,7 +5902,8 @@
     "set": "Origins",
     "keywords": [
       "Ahri"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "ogn-257",
@@ -5824,8 +5931,8 @@
     "name": "Dragon's Rage",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 4,
+    "might": 4,
     "domain": [
       "Calm",
       "Body"
@@ -5867,8 +5974,8 @@
     "name": "Last Breath",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 2,
-    "might": 2,
+    "cost": 3,
+    "might": 3,
     "domain": [
       "Calm",
       "Chaos"
@@ -5910,8 +6017,8 @@
     "name": "Zenith Blade",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 2,
-    "might": 2,
+    "cost": 3,
+    "might": 3,
     "domain": [
       "Calm",
       "Order"
@@ -5953,8 +6060,8 @@
     "name": "Guerilla Warfare",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Mind",
       "Chaos"
@@ -5996,8 +6103,8 @@
     "name": "Siphon Power",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Mind",
       "Order"
@@ -6039,7 +6146,7 @@
     "name": "Bullet Time",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Body",
       "Chaos"
@@ -6053,7 +6160,8 @@
     "set": "Origins",
     "keywords": [
       "Miss Fortune"
-    ]
+    ],
+    "might": 1
   },
   {
     "id": "ogn-269",
@@ -7116,8 +7224,8 @@
     "name": "Firestorm",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 1,
-    "might": 1,
+    "cost": 6,
+    "might": 6,
     "domain": [
       "Fury"
     ],
@@ -7134,7 +7242,7 @@
     "name": "Incinerate",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Fury"
     ],
@@ -7144,7 +7252,8 @@
     "text": "[Action] (Play on your turn or in showdowns.) Deal 2 to a unit at a battlefield.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/46e4eaada1412f9b6c24751bdb3932c6a51e905f-744x1039.png",
     "setCode": "OGS",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 2
   },
   {
     "id": "ogs-004",
@@ -7176,7 +7285,7 @@
     "rarity": "Uncommon",
     "cost": 6,
     "energy": 6,
-    "might": 1,
+    "might": 6,
     "domain": [
       "Calm"
     ],
@@ -7244,8 +7353,8 @@
     "name": "Gentlemen's Duel",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 1,
-    "might": 1,
+    "cost": 6,
+    "might": 6,
     "domain": [
       "Body"
     ],
@@ -7308,7 +7417,7 @@
     "name": "Flash",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Chaos"
     ],
@@ -7318,15 +7427,16 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) Move up to 2 friendly units to base.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/4d9cc1c13b75933e509e642213f13359350cd3f9-744x1039.png",
     "setCode": "OGS",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 2
   },
   {
     "id": "ogs-012",
     "name": "Blast of Power",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 1,
-    "might": 1,
+    "cost": 6,
+    "might": 6,
     "domain": [
       "Order"
     ],
@@ -7367,8 +7477,8 @@
     "name": "Lux, Crownguard",
     "type": "Unit",
     "rarity": "Epic",
-    "cost": 2,
-    "energy": 2,
+    "cost": 4,
+    "energy": 4,
     "domain": [
       "Order"
     ],
@@ -7382,14 +7492,15 @@
     "keywords": [
       "Lux",
       "Demacia"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "ogs-015",
     "name": "Recruit the Vanguard",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 6,
     "domain": [
       "Order"
     ],
@@ -7399,16 +7510,17 @@
     "text": "[Action] (Play on your turn or in showdowns.) Play four 1 might Recruit unit tokens. (They can be played to your base or to battlefields you control.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/81d1c47459606f7b627778cce9b5f0e44d80f7fa-744x1039.png",
     "setCode": "OGS",
-    "set": "Origins"
+    "set": "Origins",
+    "might": 6
   },
   {
     "id": "ogs-016",
     "name": "Vanguard Attendant",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 5,
-    "energy": 5,
-    "might": 1,
+    "cost": 6,
+    "energy": 6,
+    "might": 5,
     "domain": [
       "Order"
     ],
@@ -7450,9 +7562,9 @@
     "name": "Tibbers",
     "type": "Unit",
     "rarity": "Epic",
-    "cost": 7,
-    "energy": 7,
-    "might": 2,
+    "cost": 8,
+    "energy": 8,
+    "might": 7,
     "domain": [
       "Fury",
       "Chaos"
@@ -7494,7 +7606,7 @@
     "name": "Highlander",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 4,
     "domain": [
       "Calm",
       "Body"
@@ -7508,7 +7620,8 @@
     "set": "Origins",
     "keywords": [
       "Master Yi"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "ogs-021",
@@ -7536,7 +7649,7 @@
     "name": "Final Spark",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 8,
     "domain": [
       "Mind",
       "Order"
@@ -7550,7 +7663,8 @@
     "set": "Origins",
     "keywords": [
       "Lux"
-    ]
+    ],
+    "might": 8
   },
   {
     "id": "ogs-023",
@@ -7578,8 +7692,8 @@
     "name": "Decisive Strike",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 5,
+    "might": 5,
     "domain": [
       "Body",
       "Order"
@@ -7600,7 +7714,7 @@
     "name": "Against the Odds",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Fury"
     ],
@@ -7610,7 +7724,8 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) Give a friendly unit at a battlefield +2 might this turn for each enemy unit there.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/4c4ab0c838854ccd5d5399a045835876450287e8-744x1039.png",
     "setCode": "SFD",
-    "set": "Spiritforged"
+    "set": "Spiritforged",
+    "might": 2
   },
   {
     "id": "sfd-002",
@@ -7619,7 +7734,7 @@
     "rarity": "Common",
     "cost": 6,
     "energy": 6,
-    "might": 1,
+    "might": 6,
     "domain": [
       "Fury"
     ],
@@ -7639,7 +7754,7 @@
     "name": "Blood Rush",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Fury"
     ],
@@ -7649,15 +7764,16 @@
     "text": "[Action] (Play on your turn or in showdowns.) [Repeat] 1 energy (You may pay the additional cost to repeat this spell's effect.) Give a unit [Assault 2] this turn. (+2 might while it's an attacker.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/931b77b9ab56c3abc85686be4d2452c450f9b3e0-744x1039.png",
     "setCode": "SFD",
-    "set": "Spiritforged"
+    "set": "Spiritforged",
+    "might": 1
   },
   {
     "id": "sfd-004",
     "name": "Bushwhack",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Fury"
     ],
@@ -7694,7 +7810,7 @@
     "rarity": "Common",
     "cost": 3,
     "energy": 3,
-    "might": 1,
+    "might": 3,
     "domain": [
       "Fury"
     ],
@@ -7731,7 +7847,8 @@
     "keywords": [
       "Mech",
       "Bandle City"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "sfd-008",
@@ -7753,14 +7870,15 @@
     "keywords": [
       "Shadow Isles",
       "Sentinel"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "sfd-009",
     "name": "Serrated Dirk",
     "type": "Gear",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Fury"
     ],
@@ -7773,7 +7891,8 @@
     "set": "Spiritforged",
     "keywords": [
       "Equipment"
-    ]
+    ],
+    "might": 1
   },
   {
     "id": "sfd-010",
@@ -7794,14 +7913,15 @@
     "set": "Spiritforged",
     "keywords": [
       "The Void"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "sfd-011",
     "name": "Angle Shot",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Fury"
     ],
@@ -7811,7 +7931,8 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) Choose a unit and an Equipment with the same controller. Attach that Equipment to that unit or detach that Equipment from that unit. Draw 1.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/757d507b684e55e333bac0ecdf2ec9ff3ad6045c-744x1039.png",
     "setCode": "SFD",
-    "set": "Spiritforged"
+    "set": "Spiritforged",
+    "might": 2
   },
   {
     "id": "sfd-012",
@@ -7833,7 +7954,8 @@
     "keywords": [
       "Trifarian",
       "Noxus"
-    ]
+    ],
+    "might": 5
   },
   {
     "id": "sfd-013",
@@ -7854,7 +7976,8 @@
     "set": "Spiritforged",
     "keywords": [
       "Piltover"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "sfd-014",
@@ -7875,15 +7998,16 @@
     "set": "Spiritforged",
     "keywords": [
       "Noxus"
-    ]
+    ],
+    "might": 5
   },
   {
     "id": "sfd-015",
     "name": "Perched Grimwyrm",
     "type": "Unit",
     "rarity": "Uncommon",
-    "cost": 5,
-    "energy": 5,
+    "cost": 4,
+    "energy": 4,
     "domain": [
       "Fury"
     ],
@@ -7897,14 +8021,15 @@
     "keywords": [
       "Dragon",
       "Shadow Isles"
-    ]
+    ],
+    "might": 5
   },
   {
     "id": "sfd-016",
     "name": "Recurve Bow",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Fury"
     ],
@@ -7917,14 +8042,15 @@
     "set": "Spiritforged",
     "keywords": [
       "Equipment"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "sfd-017",
     "name": "Sudden Storm",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Fury"
     ],
@@ -7934,7 +8060,8 @@
     "text": "[Hidden] (Hide now for 1 rune of any type to react with later for 0 energy.) [Action] (Play on your turn or in showdowns.) Deal 2 to a unit at a battlefield. If it's attacking, deal 4 to it instead.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ba3e8c3e95137a289dbdec88e96e5c5a9a45f2c7-744x1039.png",
     "setCode": "SFD",
-    "set": "Spiritforged"
+    "set": "Spiritforged",
+    "might": 3
   },
   {
     "id": "sfd-018",
@@ -7955,14 +8082,15 @@
     "set": "Spiritforged",
     "keywords": [
       "The Void"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "sfd-019",
     "name": "Assembly Rig",
     "type": "Gear",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 4,
     "domain": [
       "Fury"
     ],
@@ -7972,7 +8100,8 @@
     "text": "1 energy and 1 fury rune, Recycle a unit from your trash, exhaust: Play a 3 might Mech unit token to your base.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/40ae6f61f1a0b5d65d91e3bb3fd2a0dad9148208-744x1039.png",
     "setCode": "SFD",
-    "set": "Spiritforged"
+    "set": "Spiritforged",
+    "might": 4
   },
   {
     "id": "sfd-020",
@@ -8025,7 +8154,7 @@
     "rarity": "Rare",
     "cost": 6,
     "energy": 6,
-    "might": 1,
+    "might": 6,
     "domain": [
       "Fury"
     ],
@@ -8047,8 +8176,8 @@
     "name": "Long Sword",
     "type": "Gear",
     "rarity": "Rare",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Fury"
     ],
@@ -8068,8 +8197,8 @@
     "name": "Piercing Light",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Fury"
     ],
@@ -8182,7 +8311,7 @@
     "rarity": "Epic",
     "cost": 7,
     "energy": 7,
-    "might": 1,
+    "might": 7,
     "domain": [
       "Fury"
     ],
@@ -8292,7 +8421,7 @@
     "name": "Skyfall of Areion",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Fury"
     ],
@@ -8305,14 +8434,15 @@
     "set": "Spiritforged",
     "keywords": [
       "Equipment"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "sfd-031",
     "name": "Desert's Call",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Calm"
     ],
@@ -8322,16 +8452,17 @@
     "text": "[Repeat] 2 energy (You may pay the additional cost to repeat this spell's effect.) Play a 2 might Sand Soldier unit token.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/b38ab6c02238b5a8e456cdad9b5108bb30e718bc-744x1039.png",
     "setCode": "SFD",
-    "set": "Spiritforged"
+    "set": "Spiritforged",
+    "might": 2
   },
   {
     "id": "sfd-032",
     "name": "Disarming Rake",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 2,
-    "energy": 2,
-    "might": 1,
+    "cost": 3,
+    "energy": 3,
+    "might": 2,
     "domain": [
       "Calm"
     ],
@@ -8351,7 +8482,7 @@
     "name": "Doran's Shield",
     "type": "Gear",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Calm"
     ],
@@ -8364,14 +8495,15 @@
     "set": "Spiritforged",
     "keywords": [
       "Equipment"
-    ]
+    ],
+    "might": 1
   },
   {
     "id": "sfd-034",
     "name": "Feral Strength",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Calm"
     ],
@@ -8381,7 +8513,8 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) [Repeat] 2 energy (You may pay the additional cost to repeat this spell's effect.) Give a unit +2 might this turn.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/f07842b38914f6bc73235fe07788a3fce89b4785-744x1039.png",
     "setCode": "SFD",
-    "set": "Spiritforged"
+    "set": "Spiritforged",
+    "might": 2
   },
   {
     "id": "sfd-035",
@@ -8403,7 +8536,8 @@
     "keywords": [
       "Spirit",
       "Shadow Isles"
-    ]
+    ],
+    "might": 6
   },
   {
     "id": "sfd-036",
@@ -8425,7 +8559,8 @@
     "keywords": [
       "Poro",
       "Freljord"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "sfd-037",
@@ -8447,7 +8582,8 @@
     "keywords": [
       "Yordle",
       "Ionia"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "sfd-038",
@@ -8468,16 +8604,17 @@
     "set": "Spiritforged",
     "keywords": [
       "Ionia"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "sfd-039",
     "name": "Royal Entourage",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 4,
-    "energy": 4,
-    "might": 1,
+    "cost": 3,
+    "energy": 3,
+    "might": 4,
     "domain": [
       "Calm"
     ],
@@ -8497,7 +8634,7 @@
     "name": "Thwonk!",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Calm"
     ],
@@ -8507,7 +8644,8 @@
     "text": "[Action] (Play on your turn or in showdowns.) [Repeat] 2 energy (You may pay the additional cost to repeat this spell's effect.) Stun an attacking unit. (It doesn't deal combat damage this turn.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/c414fdba5e47db294b8364a07f1258bc3e204c51-744x1039.png",
     "setCode": "SFD",
-    "set": "Spiritforged"
+    "set": "Spiritforged",
+    "might": 2
   },
   {
     "id": "sfd-041",
@@ -8528,14 +8666,15 @@
     "set": "Spiritforged",
     "keywords": [
       "Freljord"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "sfd-042",
     "name": "Brutalizer",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Calm"
     ],
@@ -8548,14 +8687,15 @@
     "set": "Spiritforged",
     "keywords": [
       "Equipment"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "sfd-043",
     "name": "Emperor's Divide",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Calm"
     ],
@@ -8565,15 +8705,16 @@
     "text": "[Hidden] (Hide now for 1 rune of any type to react with later for 0 energy.) [Action] (Play on your turn or in showdowns.) Move any number of friendly units at a battlefield to their base.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/80f367f06549d597c7b5a77be73eb647eab34f59-744x1039.png",
     "setCode": "SFD",
-    "set": "Spiritforged"
+    "set": "Spiritforged",
+    "might": 2
   },
   {
     "id": "sfd-044",
     "name": "Legion Quartermaster",
     "type": "Unit",
     "rarity": "Uncommon",
-    "cost": 4,
-    "energy": 4,
+    "cost": 3,
+    "energy": 3,
     "domain": [
       "Calm"
     ],
@@ -8587,15 +8728,16 @@
     "keywords": [
       "Trifarian",
       "Noxus"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "sfd-045",
     "name": "Not So Fast",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Calm"
     ],
@@ -8632,7 +8774,7 @@
     "rarity": "Uncommon",
     "cost": 5,
     "energy": 5,
-    "might": 1,
+    "might": 5,
     "domain": [
       "Calm"
     ],
@@ -8652,8 +8794,8 @@
     "name": "Stellacorn Herder",
     "type": "Unit",
     "rarity": "Uncommon",
-    "cost": 3,
-    "energy": 3,
+    "cost": 4,
+    "energy": 4,
     "domain": [
       "Calm"
     ],
@@ -8666,7 +8808,8 @@
     "set": "Spiritforged",
     "keywords": [
       "Mount Targon"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "sfd-049",
@@ -8744,7 +8887,7 @@
     "name": "Guardian Angel",
     "type": "Gear",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Calm"
     ],
@@ -8757,15 +8900,16 @@
     "set": "Spiritforged",
     "keywords": [
       "Equipment"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "sfd-052",
     "name": "Heart of Dark Ice",
     "type": "Gear",
     "rarity": "Rare",
-    "cost": 1,
-    "might": 1,
+    "cost": 3,
+    "might": 3,
     "domain": [
       "Calm"
     ],
@@ -8851,9 +8995,9 @@
     "name": "Needlessly Large Yordle",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 5,
-    "energy": 5,
-    "might": 3,
+    "cost": 10,
+    "energy": 10,
+    "might": 5,
     "domain": [
       "Calm"
     ],
@@ -8874,8 +9018,8 @@
     "name": "Sterak's Gage",
     "type": "Gear",
     "rarity": "Rare",
-    "cost": 2,
-    "might": 2,
+    "cost": 3,
+    "might": 3,
     "domain": [
       "Calm"
     ],
@@ -8895,8 +9039,8 @@
     "name": "Irelia, Fervent",
     "type": "Unit",
     "rarity": "Epic",
-    "cost": 4,
-    "energy": 4,
+    "cost": 5,
+    "energy": 5,
     "domain": [
       "Calm"
     ],
@@ -8910,15 +9054,16 @@
     "keywords": [
       "Irelia",
       "Ionia"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "sfd-057a",
     "name": "Irelia, Fervent",
     "type": "Unit",
     "rarity": "Showcase",
-    "cost": 4,
-    "energy": 4,
+    "cost": 5,
+    "energy": 5,
     "domain": [
       "Calm"
     ],
@@ -8932,7 +9077,8 @@
     "keywords": [
       "Irelia",
       "Ionia"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "sfd-058",
@@ -8985,8 +9131,8 @@
     "name": "Svellsongur",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 3,
+    "might": 3,
     "domain": [
       "Calm"
     ],
@@ -9006,9 +9152,9 @@
     "name": "Tianna Crownguard",
     "type": "Unit",
     "rarity": "Epic",
-    "cost": 4,
-    "energy": 4,
-    "might": 2,
+    "cost": 7,
+    "energy": 7,
+    "might": 4,
     "domain": [
       "Calm"
     ],
@@ -9031,7 +9177,7 @@
     "rarity": "Common",
     "cost": 3,
     "energy": 3,
-    "might": 1,
+    "might": 3,
     "domain": [
       "Mind"
     ],
@@ -9067,14 +9213,15 @@
       "Mech",
       "Yordle",
       "Bandle City"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "sfd-063",
     "name": "Chemtech Cask",
     "type": "Gear",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Mind"
     ],
@@ -9084,14 +9231,15 @@
     "text": "When you play a spell on an opponent's turn, you may exhaust me to play a Gold gear token exhausted.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/39071feea6d3739a834a83b1841f496bdfc3a59a-744x1039.png",
     "setCode": "SFD",
-    "set": "Spiritforged"
+    "set": "Spiritforged",
+    "might": 1
   },
   {
     "id": "sfd-064",
     "name": "Cloth Armor",
     "type": "Gear",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Mind"
     ],
@@ -9104,7 +9252,8 @@
     "set": "Spiritforged",
     "keywords": [
       "Equipment"
-    ]
+    ],
+    "might": 1
   },
   {
     "id": "sfd-065",
@@ -9127,14 +9276,15 @@
       "Mech",
       "Yordle",
       "Bandle City"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "sfd-066",
     "name": "Frigid Touch",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Mind"
     ],
@@ -9144,7 +9294,8 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) [Repeat] 2 energy (You may pay the additional cost to repeat this spell's effect.) Give a unit -2 might this turn.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/1caaf42d4cc12ab9acc57dc8c572448f8d8dd34d-744x1039.png",
     "setCode": "SFD",
-    "set": "Spiritforged"
+    "set": "Spiritforged",
+    "might": 2
   },
   {
     "id": "sfd-067",
@@ -9166,15 +9317,16 @@
     "keywords": [
       "Dog",
       "Freljord"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "sfd-068",
     "name": "Gearhead",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 3,
-    "energy": 3,
+    "cost": 5,
+    "energy": 5,
     "domain": [
       "Mind"
     ],
@@ -9187,7 +9339,8 @@
     "set": "Spiritforged",
     "keywords": [
       "Zaun"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "sfd-069",
@@ -9210,14 +9363,15 @@
       "Poro",
       "Pirate",
       "Bilgewater"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "sfd-070",
     "name": "Wages of Pain",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Mind"
     ],
@@ -9227,16 +9381,17 @@
     "text": "[Hidden] (Hide now for 1 rune of any type to react with later for 0 energy.) [Action] (Play on your turn or in showdowns.) Deal 3 to a unit at a battlefield. Play a Gold gear token exhausted.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/aef5c891bd6f7cbc3a97b1e01688868316599929-744x1039.png",
     "setCode": "SFD",
-    "set": "Spiritforged"
+    "set": "Spiritforged",
+    "might": 3
   },
   {
     "id": "sfd-071",
     "name": "Breakneck Mech",
     "type": "Unit",
     "rarity": "Uncommon",
-    "cost": 7,
-    "energy": 7,
-    "might": 2,
+    "cost": 8,
+    "energy": 8,
+    "might": 7,
     "domain": [
       "Mind"
     ],
@@ -9272,14 +9427,15 @@
     "set": "Spiritforged",
     "keywords": [
       "Zaun"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "sfd-073",
     "name": "Experimental Hexplate",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Mind"
     ],
@@ -9292,7 +9448,8 @@
     "set": "Spiritforged",
     "keywords": [
       "Equipment"
-    ]
+    ],
+    "might": 1
   },
   {
     "id": "sfd-074",
@@ -9313,16 +9470,17 @@
     "set": "Spiritforged",
     "keywords": [
       "Zaun"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "sfd-075",
     "name": "Prize of Progress",
     "type": "Unit",
     "rarity": "Uncommon",
-    "cost": 3,
-    "energy": 3,
-    "might": 1,
+    "cost": 4,
+    "energy": 4,
+    "might": 3,
     "domain": [
       "Mind"
     ],
@@ -9343,8 +9501,8 @@
     "name": "Production Surge",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 1,
-    "might": 1,
+    "cost": 4,
+    "might": 4,
     "domain": [
       "Mind"
     ],
@@ -9361,8 +9519,8 @@
     "name": "Rocket Barrage",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 1,
-    "might": 1,
+    "cost": 4,
+    "might": 4,
     "domain": [
       "Mind"
     ],
@@ -9379,7 +9537,7 @@
     "name": "Temporal Portal",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Mind"
     ],
@@ -9389,7 +9547,8 @@
     "text": "1 rune of any type, exhaust: Give the next spell you play this turn [Repeat] equal to its cost. (You may pay the additional cost to repeat the spell's effect.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/a6b8167486d552cc41d10cb9321bae4cef338fa7-744x1039.png",
     "setCode": "SFD",
-    "set": "Spiritforged"
+    "set": "Spiritforged",
+    "might": 3
   },
   {
     "id": "sfd-079",
@@ -9450,7 +9609,8 @@
     "set": "Spiritforged",
     "keywords": [
       "Bilgewater"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "sfd-082",
@@ -9503,8 +9663,8 @@
     "name": "Hextech Anomaly",
     "type": "Gear",
     "rarity": "Rare",
-    "cost": 1,
-    "might": 1,
+    "cost": 3,
+    "might": 3,
     "domain": [
       "Mind"
     ],
@@ -9536,7 +9696,8 @@
     "keywords": [
       "Jayce",
       "Piltover"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "sfd-085",
@@ -9587,7 +9748,7 @@
     "name": "World Atlas",
     "type": "Gear",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Mind"
     ],
@@ -9600,15 +9761,16 @@
     "set": "Spiritforged",
     "keywords": [
       "Equipment"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "sfd-087",
     "name": "Premonition",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 3,
-    "might": 3,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Mind"
     ],
@@ -9719,7 +9881,7 @@
     "name": "The Zero Drive",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Mind"
     ],
@@ -9732,7 +9894,8 @@
     "set": "Spiritforged",
     "keywords": [
       "Equipment"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "sfd-091",
@@ -9741,7 +9904,7 @@
     "rarity": "Common",
     "cost": 3,
     "energy": 3,
-    "might": 1,
+    "might": 3,
     "domain": [
       "Body"
     ],
@@ -9775,7 +9938,8 @@
     "set": "Spiritforged",
     "keywords": [
       "Demacia"
-    ]
+    ],
+    "might": 5
   },
   {
     "id": "sfd-093",
@@ -9784,7 +9948,7 @@
     "rarity": "Common",
     "cost": 4,
     "energy": 4,
-    "might": 1,
+    "might": 4,
     "domain": [
       "Body"
     ],
@@ -9820,14 +9984,15 @@
     "keywords": [
       "Dragon",
       "Demacia"
-    ]
+    ],
+    "might": 7
   },
   {
     "id": "sfd-095",
     "name": "Doran's Blade",
     "type": "Gear",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Body"
     ],
@@ -9840,7 +10005,8 @@
     "set": "Spiritforged",
     "keywords": [
       "Equipment"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "sfd-096",
@@ -9861,15 +10027,16 @@
     "set": "Spiritforged",
     "keywords": [
       "Demacia"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "sfd-097",
     "name": "Punch First",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 2,
-    "might": 2,
+    "cost": 1,
+    "might": 1,
     "domain": [
       "Body"
     ],
@@ -9901,7 +10068,8 @@
     "keywords": [
       "Pirate",
       "Bilgewater"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "sfd-099",
@@ -9923,7 +10091,8 @@
     "keywords": [
       "Poro",
       "Freljord"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "sfd-100",
@@ -9945,7 +10114,8 @@
     "keywords": [
       "Yordle",
       "Bandle City"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "sfd-101",
@@ -9954,7 +10124,7 @@
     "rarity": "Uncommon",
     "cost": 7,
     "energy": 7,
-    "might": 1,
+    "might": 7,
     "domain": [
       "Body"
     ],
@@ -9976,7 +10146,7 @@
     "name": "Hexdrinker",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Body"
     ],
@@ -9989,16 +10159,17 @@
     "set": "Spiritforged",
     "keywords": [
       "Equipment"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "sfd-103",
     "name": "Jaull-Fish",
     "type": "Unit",
     "rarity": "Uncommon",
-    "cost": 6,
-    "energy": 6,
-    "might": 2,
+    "cost": 7,
+    "energy": 7,
+    "might": 6,
     "domain": [
       "Body"
     ],
@@ -10018,7 +10189,7 @@
     "name": "Petricite Monument",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Body"
     ],
@@ -10028,15 +10199,16 @@
     "text": "[Temporary] (Kill this at the start of its controller's Beginning Phase, before scoring.) Friendly units have [Deflect]. (Opponents must pay 1 rune of any type to choose them with a spell or ability.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/c994dcefe24e00f8033bc31327bf7dbe4a8703d1-744x1039.png",
     "setCode": "SFD",
-    "set": "Spiritforged"
+    "set": "Spiritforged",
+    "might": 2
   },
   {
     "id": "sfd-105",
     "name": "Ruin Runner",
     "type": "Unit",
     "rarity": "Uncommon",
-    "cost": 5,
-    "energy": 5,
+    "cost": 6,
+    "energy": 6,
     "domain": [
       "Body"
     ],
@@ -10049,15 +10221,16 @@
     "set": "Spiritforged",
     "keywords": [
       "Shurima"
-    ]
+    ],
+    "might": 5
   },
   {
     "id": "sfd-106",
     "name": "Show of Strength",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Body"
     ],
@@ -10074,8 +10247,8 @@
     "name": "Strike Down",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 1,
-    "might": 1,
+    "cost": 3,
+    "might": 3,
     "domain": [
       "Body"
     ],
@@ -10092,7 +10265,7 @@
     "name": "Warmog's Armor",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Body"
     ],
@@ -10105,7 +10278,8 @@
     "set": "Spiritforged",
     "keywords": [
       "Equipment"
-    ]
+    ],
+    "might": 1
   },
   {
     "id": "sfd-109",
@@ -10181,8 +10355,8 @@
     "name": "Here to Help",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Body"
     ],
@@ -10199,9 +10373,9 @@
     "name": "Kato the Arm",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 3,
-    "energy": 3,
-    "might": 1,
+    "cost": 4,
+    "energy": 4,
+    "might": 3,
     "domain": [
       "Body"
     ],
@@ -10267,7 +10441,7 @@
     "name": "Marching Orders",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Body"
     ],
@@ -10277,14 +10451,15 @@
     "text": "[Action] (Play on your turn or in showdowns.) [Repeat] 3 energy (You may pay the additional cost to repeat this spell's effect.) Choose a friendly unit anywhere and an enemy unit at a battlefield. They deal damage equal to their Mights to each other.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/b553f8e16e0ff1aaa57f74121e68954fbe45a07b-744x1039.png",
     "setCode": "SFD",
-    "set": "Spiritforged"
+    "set": "Spiritforged",
+    "might": 3
   },
   {
     "id": "sfd-115",
     "name": "Trinity Force",
     "type": "Gear",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 4,
     "domain": [
       "Body"
     ],
@@ -10297,7 +10472,8 @@
     "set": "Spiritforged",
     "keywords": [
       "Equipment"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "sfd-116",
@@ -10328,8 +10504,8 @@
     "name": "Ancient Henge",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Body"
     ],
@@ -10346,7 +10522,7 @@
     "name": "Boneshiver",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Body"
     ],
@@ -10359,7 +10535,8 @@
     "set": "Spiritforged",
     "keywords": [
       "Equipment"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "sfd-119",
@@ -10472,15 +10649,16 @@
     "set": "Spiritforged",
     "keywords": [
       "Zaun"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "sfd-122",
     "name": "Called Shot",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 1,
-    "might": 1,
+    "cost": 0,
+    "might": 0,
     "domain": [
       "Chaos"
     ],
@@ -10497,9 +10675,9 @@
     "name": "Corrupt Enforcer",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 4,
-    "energy": 4,
-    "might": 1,
+    "cost": 3,
+    "energy": 3,
+    "might": 4,
     "domain": [
       "Chaos"
     ],
@@ -10519,7 +10697,7 @@
     "name": "Doran's Ring",
     "type": "Gear",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Chaos"
     ],
@@ -10532,7 +10710,8 @@
     "set": "Spiritforged",
     "keywords": [
       "Equipment"
-    ]
+    ],
+    "might": 1
   },
   {
     "id": "sfd-125",
@@ -10554,7 +10733,8 @@
     "keywords": [
       "Fae",
       "Ionia"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "sfd-126",
@@ -10576,7 +10756,8 @@
     "keywords": [
       "Dog",
       "Bandle City"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "sfd-127",
@@ -10597,7 +10778,8 @@
     "set": "Spiritforged",
     "keywords": [
       "Ionia"
-    ]
+    ],
+    "might": 6
   },
   {
     "id": "sfd-128",
@@ -10618,14 +10800,15 @@
     "set": "Spiritforged",
     "keywords": [
       "Noxus"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "sfd-129",
     "name": "Temptation",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Chaos"
     ],
@@ -10635,15 +10818,16 @@
     "text": "[Repeat] 2 energy (You may pay the additional cost to repeat this spell's effect.) Move an enemy unit to a location where there's a unit with the same controller.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/4d5075a540ff5e4a2daec598cb6400fbb6570673-744x1039.png",
     "setCode": "SFD",
-    "set": "Spiritforged"
+    "set": "Spiritforged",
+    "might": 2
   },
   {
     "id": "sfd-130",
     "name": "Treasure Hunter",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 1,
-    "energy": 1,
+    "cost": 2,
+    "energy": 2,
     "domain": [
       "Chaos"
     ],
@@ -10656,15 +10840,16 @@
     "set": "Spiritforged",
     "keywords": [
       "Shurima"
-    ]
+    ],
+    "might": 1
   },
   {
     "id": "sfd-131",
     "name": "Ancient Warmonger",
     "type": "Unit",
     "rarity": "Uncommon",
-    "cost": 4,
-    "energy": 4,
+    "cost": 5,
+    "energy": 5,
     "domain": [
       "Chaos"
     ],
@@ -10678,16 +10863,17 @@
     "keywords": [
       "Spirit",
       "Noxus"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "sfd-132",
     "name": "Beast Below",
     "type": "Unit",
     "rarity": "Uncommon",
-    "cost": 8,
-    "energy": 8,
-    "might": 2,
+    "cost": 7,
+    "energy": 7,
+    "might": 8,
     "domain": [
       "Chaos"
     ],
@@ -10707,7 +10893,7 @@
     "name": "Boots of Swiftness",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Chaos"
     ],
@@ -10720,14 +10906,15 @@
     "set": "Spiritforged",
     "keywords": [
       "Equipment"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "sfd-134",
     "name": "Cull",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Chaos"
     ],
@@ -10740,14 +10927,15 @@
     "set": "Spiritforged",
     "keywords": [
       "Equipment"
-    ]
+    ],
+    "might": 1
   },
   {
     "id": "sfd-135",
     "name": "Factory Recall",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Chaos"
     ],
@@ -10757,14 +10945,15 @@
     "text": "[Action] (Play on your turn or in showdowns.) Return a gear to its owner's hand.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/86bd2be6d0750e3444355bce229f83930825e968-744x1039.png",
     "setCode": "SFD",
-    "set": "Spiritforged"
+    "set": "Spiritforged",
+    "might": 1
   },
   {
     "id": "sfd-136",
     "name": "Hard Bargain",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Chaos"
     ],
@@ -10774,7 +10963,8 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) [Repeat] 2 energy (You may pay the additional cost to repeat this spell's effect.) Counter a spell unless its controller pays 2 energy.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/2b09887a6e0d2f109aefea62ca6744488794c233-744x1039.png",
     "setCode": "SFD",
-    "set": "Spiritforged"
+    "set": "Spiritforged",
+    "might": 2
   },
   {
     "id": "sfd-137",
@@ -10796,15 +10986,16 @@
     "keywords": [
       "Pirate",
       "Bilgewater"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "sfd-138",
     "name": "Windsinger",
     "type": "Unit",
     "rarity": "Uncommon",
-    "cost": 1,
-    "energy": 1,
+    "cost": 2,
+    "energy": 2,
     "domain": [
       "Chaos"
     ],
@@ -10817,14 +11008,15 @@
     "set": "Spiritforged",
     "keywords": [
       "Ionia"
-    ]
+    ],
+    "might": 1
   },
   {
     "id": "sfd-139",
     "name": "Edge of Night",
     "type": "Gear",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Chaos"
     ],
@@ -10837,7 +11029,8 @@
     "set": "Spiritforged",
     "keywords": [
       "Equipment"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "sfd-140",
@@ -10916,7 +11109,7 @@
     "rarity": "Rare",
     "cost": 5,
     "energy": 5,
-    "might": 2,
+    "might": 5,
     "domain": [
       "Chaos"
     ],
@@ -10982,7 +11175,7 @@
     "name": "Spirit Wheel",
     "type": "Gear",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Chaos"
     ],
@@ -10992,7 +11185,8 @@
     "text": "When you choose a friendly unit, you may pay 1 energy and exhaust this to draw 1.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/d83d994e6dc7949eb783da16f4bbdb64342a8dfb-744x1039.png",
     "setCode": "SFD",
-    "set": "Spiritforged"
+    "set": "Spiritforged",
+    "might": 2
   },
   {
     "id": "sfd-145",
@@ -11041,8 +11235,8 @@
     "name": "Downwell",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 2,
-    "might": 2,
+    "cost": 8,
+    "might": 8,
     "domain": [
       "Chaos"
     ],
@@ -11107,7 +11301,7 @@
     "rarity": "Epic",
     "cost": 3,
     "energy": 3,
-    "might": 1,
+    "might": 3,
     "domain": [
       "Chaos"
     ],
@@ -11130,7 +11324,7 @@
     "rarity": "Showcase",
     "cost": 3,
     "energy": 3,
-    "might": 1,
+    "might": 3,
     "domain": [
       "Chaos"
     ],
@@ -11151,7 +11345,7 @@
     "name": "Last Rites",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Chaos"
     ],
@@ -11164,14 +11358,15 @@
     "set": "Spiritforged",
     "keywords": [
       "Equipment"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "sfd-151",
     "name": "Bonds of Strength",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Order"
     ],
@@ -11181,15 +11376,16 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) [Repeat] 2 energy (You may pay the additional cost to repeat this spell's effect.) Give two friendly units each +1 might this turn.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/344034c00d9fad558e98a64efab0310ad4bac37c-744x1039.png",
     "setCode": "SFD",
-    "set": "Spiritforged"
+    "set": "Spiritforged",
+    "might": 2
   },
   {
     "id": "sfd-152",
     "name": "Eminent Benefactor",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 5,
-    "energy": 5,
+    "cost": 6,
+    "energy": 6,
     "domain": [
       "Order"
     ],
@@ -11202,14 +11398,15 @@
     "set": "Spiritforged",
     "keywords": [
       "Piltover"
-    ]
+    ],
+    "might": 5
   },
   {
     "id": "sfd-153",
     "name": "Eye of the Herald",
     "type": "Gear",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Order"
     ],
@@ -11222,14 +11419,15 @@
     "set": "Spiritforged",
     "keywords": [
       "Equipment"
-    ]
+    ],
+    "might": 1
   },
   {
     "id": "sfd-154",
     "name": "Guards!",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Order"
     ],
@@ -11239,7 +11437,8 @@
     "text": "[Hidden] (Hide now for 1 rune of any type to react with later for 0 energy.) Play a 2 might Sand Soldier unit token. You may pay 1 order rune to ready it.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/1dc4fef81d018c6cf14f0344b51ebcdec968aab9-744x1039.png",
     "setCode": "SFD",
-    "set": "Spiritforged"
+    "set": "Spiritforged",
+    "might": 3
   },
   {
     "id": "sfd-155",
@@ -11260,15 +11459,16 @@
     "set": "Spiritforged",
     "keywords": [
       "Ionia"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "sfd-156",
     "name": "Laurent Duelist",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 3,
-    "energy": 3,
+    "cost": 4,
+    "energy": 4,
     "domain": [
       "Order"
     ],
@@ -11281,15 +11481,16 @@
     "set": "Spiritforged",
     "keywords": [
       "Demacia"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "sfd-157",
     "name": "Royal Guard",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 2,
-    "energy": 2,
+    "cost": 4,
+    "energy": 4,
     "domain": [
       "Order"
     ],
@@ -11302,16 +11503,17 @@
     "set": "Spiritforged",
     "keywords": [
       "Shurima"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "sfd-158",
     "name": "Sandshifter",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 6,
-    "energy": 6,
-    "might": 2,
+    "cost": 5,
+    "energy": 5,
+    "might": 6,
     "domain": [
       "Order"
     ],
@@ -11347,7 +11549,8 @@
       "Dog",
       "Elite",
       "Demacia"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "sfd-160",
@@ -11368,14 +11571,15 @@
     "set": "Spiritforged",
     "keywords": [
       "Zaun"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "sfd-161",
     "name": "B.F. Sword",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 4,
     "domain": [
       "Order"
     ],
@@ -11388,14 +11592,15 @@
     "set": "Spiritforged",
     "keywords": [
       "Equipment"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "sfd-162",
     "name": "Blood Money",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Order"
     ],
@@ -11405,14 +11610,15 @@
     "text": "[Action] (Play on your turn or in showdowns.) Kill a unit at a battlefield with 2 might or less. If it was an enemy unit, play a Gold gear token exhausted. If it was a friendly unit, play two Gold gear tokens exhausted.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/0062fe2a96fc94bd8d85c01607a48e8619ed4e20-744x1039.png",
     "setCode": "SFD",
-    "set": "Spiritforged"
+    "set": "Spiritforged",
+    "might": 2
   },
   {
     "id": "sfd-163",
     "name": "Deathgrip",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Order"
     ],
@@ -11422,15 +11628,16 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) Kill a friendly unit. If you do, give +might equal to its Might to another friendly unit this turn. Draw 1.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/695304200c6fd3b287bd319ac564d31936b23d66-744x1039.png",
     "setCode": "SFD",
-    "set": "Spiritforged"
+    "set": "Spiritforged",
+    "might": 2
   },
   {
     "id": "sfd-164",
     "name": "Drag Under",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 1,
-    "might": 1,
+    "cost": 5,
+    "might": 5,
     "domain": [
       "Order"
     ],
@@ -11449,7 +11656,7 @@
     "rarity": "Uncommon",
     "cost": 5,
     "energy": 5,
-    "might": 1,
+    "might": 5,
     "domain": [
       "Order"
     ],
@@ -11469,7 +11676,7 @@
     "name": "Rally the Troops",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Order"
     ],
@@ -11479,7 +11686,8 @@
     "text": "[Action] (Play on your turn or in showdowns.) When a friendly unit is played this turn, buff it. (If it doesn't have a buff, it gets a +1 might buff.) Draw 1.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/952476dd51338ff97774946ded134a2072b2e6c9-744x1039.png",
     "setCode": "SFD",
-    "set": "Spiritforged"
+    "set": "Spiritforged",
+    "might": 2
   },
   {
     "id": "sfd-167",
@@ -11501,15 +11709,16 @@
     "keywords": [
       "Elite",
       "Demacia"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "sfd-168",
     "name": "Vanguard Armory",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 1,
-    "might": 1,
+    "cost": 7,
+    "might": 7,
     "domain": [
       "Order"
     ],
@@ -11526,7 +11735,7 @@
     "name": "Altar of Memories",
     "type": "Gear",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Order"
     ],
@@ -11536,7 +11745,8 @@
     "text": "When a friendly unit dies, you may exhaust me to draw 1, then put a card from your hand on the top or bottom of your Main Deck.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/3ddc94a035d793d48987c6fe5d65fa11ea25c808-744x1039.png",
     "setCode": "SFD",
-    "set": "Spiritforged"
+    "set": "Spiritforged",
+    "might": 2
   },
   {
     "id": "sfd-170",
@@ -11635,8 +11845,8 @@
     "name": "Sacred Shears",
     "type": "Gear",
     "rarity": "Rare",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Order"
     ],
@@ -11679,9 +11889,9 @@
     "name": "Trove Golem",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 9,
-    "energy": 9,
-    "might": 2,
+    "cost": 8,
+    "energy": 8,
+    "might": 9,
     "domain": [
       "Order"
     ],
@@ -11701,9 +11911,9 @@
     "name": "Undertitan",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 5,
-    "energy": 5,
-    "might": 1,
+    "cost": 6,
+    "energy": 6,
+    "might": 5,
     "domain": [
       "Order"
     ],
@@ -11792,8 +12002,8 @@
     "name": "Blade of the Ruined King",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 3,
+    "might": 3,
     "domain": [
       "Order"
     ],
@@ -11813,9 +12023,9 @@
     "name": "Corina Veraza",
     "type": "Unit",
     "rarity": "Epic",
-    "cost": 6,
-    "energy": 6,
-    "might": 1,
+    "cost": 7,
+    "energy": 7,
+    "might": 6,
     "domain": [
       "Order"
     ],
@@ -11943,8 +12153,8 @@
     "name": "Relentless Pursuit",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Fury",
       "Body"
@@ -11986,8 +12196,8 @@
     "name": "Spinning Axe",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Fury",
       "Chaos"
@@ -12030,8 +12240,8 @@
     "name": "Void Rush",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Fury",
       "Order"
@@ -12073,8 +12283,8 @@
     "name": "Forgefire Cape",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 2,
-    "might": 2,
+    "cost": 4,
+    "might": 4,
     "domain": [
       "Calm",
       "Mind"
@@ -12096,8 +12306,8 @@
     "name": "Rabadon's Deathcrown",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 2,
-    "might": 2,
+    "cost": 4,
+    "might": 4,
     "domain": [
       "Calm",
       "Mind"
@@ -12119,8 +12329,8 @@
     "name": "Shurelya's Requiem",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 2,
-    "might": 2,
+    "cost": 4,
+    "might": 4,
     "domain": [
       "Calm",
       "Mind"
@@ -12163,8 +12373,8 @@
     "name": "Counter Strike",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Calm",
       "Body"
@@ -12249,8 +12459,8 @@
     "name": "Arise!",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 6,
+    "might": 6,
     "domain": [
       "Calm",
       "Order"
@@ -12292,8 +12502,8 @@
     "name": "Arcane Shift",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 3,
+    "might": 3,
     "domain": [
       "Mind",
       "Chaos"
@@ -12335,8 +12545,8 @@
     "name": "Hostile Takeover",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 2,
-    "might": 2,
+    "cost": 5,
+    "might": 5,
     "domain": [
       "Mind",
       "Order"
@@ -12378,8 +12588,8 @@
     "name": "On the Hunt",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 2,
-    "might": 2,
+    "cost": 1,
+    "might": 1,
     "domain": [
       "Body",
       "Chaos"
@@ -12698,8 +12908,8 @@
     "name": "Seal of Rage",
     "type": "Gear",
     "rarity": "Showcase",
-    "cost": 1,
-    "might": 1,
+    "cost": 0,
+    "might": 0,
     "domain": [
       "Fury"
     ],
@@ -12810,8 +13020,8 @@
     "name": "Irelia, Fervent",
     "type": "Unit",
     "rarity": "Showcase",
-    "cost": 4,
-    "energy": 4,
+    "cost": 5,
+    "energy": 5,
     "domain": [
       "Calm"
     ],
@@ -12825,15 +13035,16 @@
     "keywords": [
       "Irelia",
       "Ionia"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "sfd-225",
     "name": "Irelia, Fervent",
     "type": "Unit",
     "rarity": "Showcase",
-    "cost": 4,
-    "energy": 4,
+    "cost": 5,
+    "energy": 5,
     "domain": [
       "Calm"
     ],
@@ -12847,15 +13058,16 @@
     "keywords": [
       "Irelia",
       "Ionia"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "sfd-226",
     "name": "Seal of Focus",
     "type": "Gear",
     "rarity": "Showcase",
-    "cost": 1,
-    "might": 1,
+    "cost": 0,
+    "might": 0,
     "domain": [
       "Calm"
     ],
@@ -12874,7 +13086,7 @@
     "rarity": "Showcase",
     "cost": 3,
     "energy": 3,
-    "might": 1,
+    "might": 3,
     "domain": [
       "Mind"
     ],
@@ -12896,7 +13108,7 @@
     "rarity": "Showcase",
     "cost": 3,
     "energy": 3,
-    "might": 1,
+    "might": 3,
     "domain": [
       "Mind"
     ],
@@ -12960,8 +13172,8 @@
     "name": "Seal of Insight",
     "type": "Gear",
     "rarity": "Showcase",
-    "cost": 1,
-    "might": 1,
+    "cost": 0,
+    "might": 0,
     "domain": [
       "Mind"
     ],
@@ -13024,8 +13236,8 @@
     "name": "Seal of Strength",
     "type": "Gear",
     "rarity": "Showcase",
-    "cost": 1,
-    "might": 1,
+    "cost": 0,
+    "might": 0,
     "domain": [
       "Body"
     ],
@@ -13042,9 +13254,9 @@
     "name": "Sett, Brawler",
     "type": "Unit",
     "rarity": "Showcase",
-    "cost": 4,
-    "energy": 4,
-    "might": 1,
+    "cost": 5,
+    "energy": 5,
+    "might": 4,
     "domain": [
       "Body"
     ],
@@ -13064,9 +13276,9 @@
     "name": "Sett, Brawler",
     "type": "Unit",
     "rarity": "Showcase",
-    "cost": 4,
-    "energy": 4,
-    "might": 1,
+    "cost": 5,
+    "energy": 5,
+    "might": 4,
     "domain": [
       "Body"
     ],
@@ -13134,8 +13346,8 @@
     "name": "Seal of Discord",
     "type": "Gear",
     "rarity": "Showcase",
-    "cost": 1,
-    "might": 1,
+    "cost": 0,
+    "might": 0,
     "domain": [
       "Chaos"
     ],
@@ -13286,8 +13498,8 @@
     "name": "Seal of Unity",
     "type": "Gear",
     "rarity": "Showcase",
-    "cost": 1,
-    "might": 1,
+    "cost": 0,
+    "might": 0,
     "domain": [
       "Order"
     ],
@@ -13619,8 +13831,8 @@
     "name": "Arena Kingpin",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 3,
-    "energy": 3,
+    "cost": 5,
+    "energy": 5,
     "domain": [
       "Fury"
     ],
@@ -13634,15 +13846,16 @@
     "keywords": [
       "Yordle",
       "Noxus"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "unl-002",
     "name": "Inferna",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 1,
-    "energy": 1,
+    "cost": 2,
+    "energy": 2,
     "domain": [
       "Fury"
     ],
@@ -13655,7 +13868,8 @@
     "set": "Unleashed",
     "keywords": [
       "Bilgewater"
-    ]
+    ],
+    "might": 1
   },
   {
     "id": "unl-003",
@@ -13676,15 +13890,16 @@
     "set": "Unleashed",
     "keywords": [
       "Bilgewater"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "unl-004",
     "name": "Prepared Neophyte",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 1,
-    "energy": 1,
+    "cost": 3,
+    "energy": 3,
     "domain": [
       "Fury"
     ],
@@ -13697,7 +13912,8 @@
     "set": "Unleashed",
     "keywords": [
       "Shadow Isles"
-    ]
+    ],
+    "might": 1
   },
   {
     "id": "unl-005",
@@ -13706,7 +13922,7 @@
     "rarity": "Common",
     "cost": 7,
     "energy": 7,
-    "might": 1,
+    "might": 7,
     "domain": [
       "Fury"
     ],
@@ -13726,8 +13942,8 @@
     "name": "Sharkling",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 1,
-    "energy": 1,
+    "cost": 3,
+    "energy": 3,
     "domain": [
       "Fury"
     ],
@@ -13740,15 +13956,16 @@
     "set": "Unleashed",
     "keywords": [
       "Bilgewater"
-    ]
+    ],
+    "might": 1
   },
   {
     "id": "unl-007",
     "name": "Smite",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Fury"
     ],
@@ -13779,14 +13996,15 @@
     "set": "Unleashed",
     "keywords": [
       "Shurima"
-    ]
+    ],
+    "might": 6
   },
   {
     "id": "unl-009",
     "name": "Upstage Comedy",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Fury"
     ],
@@ -13796,7 +14014,8 @@
     "text": "[Repeat] 2 energy (You may pay the additional cost to repeat this spell's effect.) Ready a unit.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/4a636fcd682b32b41a4886c7383e781414139adb-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 2
   },
   {
     "id": "unl-010",
@@ -13821,7 +14040,7 @@
     "name": "Fresh Beans",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Fury"
     ],
@@ -13831,7 +14050,8 @@
     "text": "When you play a unit during a showdown, you may exhaust this to draw 1.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/1737d7d02cd0619a520aba258d1b40fdbb5d1129-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 2
   },
   {
     "id": "unl-012",
@@ -13840,7 +14060,7 @@
     "rarity": "Uncommon",
     "cost": 5,
     "energy": 5,
-    "might": 1,
+    "might": 5,
     "domain": [
       "Fury"
     ],
@@ -13860,7 +14080,7 @@
     "name": "Lotus Trap",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Fury"
     ],
@@ -13870,7 +14090,8 @@
     "text": "[Hidden] (Hide now for 1 rune of any type to react with later for 0 energy.) [Reaction] (Play any time, even before spells and abilities resolve.) Choose a unit. Double all damage that would be dealt to it this turn.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/9490f8c80da1bf4467e14c39b66ae4262e5f7f7b-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 2
   },
   {
     "id": "unl-014",
@@ -13895,8 +14116,8 @@
     "name": "Right of Conquest",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 1,
-    "might": 1,
+    "cost": 3,
+    "might": 3,
     "domain": [
       "Fury"
     ],
@@ -13915,7 +14136,7 @@
     "rarity": "Uncommon",
     "cost": 3,
     "energy": 3,
-    "might": 1,
+    "might": 3,
     "domain": [
       "Fury"
     ],
@@ -13936,7 +14157,7 @@
     "name": "Square Up",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 4,
     "domain": [
       "Fury"
     ],
@@ -13946,7 +14167,8 @@
     "text": "[Repeat] — Discard 1 (You may pay the additional cost to repeat this spell's effect.) Give a unit [Assault 4] this turn. (+4 might while it's an attacker.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/5e14c09db2f064e5f6986f500a04335d73d459dd-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 4
   },
   {
     "id": "unl-018",
@@ -13967,14 +14189,15 @@
     "set": "Unleashed",
     "keywords": [
       "Noxus"
-    ]
+    ],
+    "might": 6
   },
   {
     "id": "unl-019",
     "name": "Blighted Battleaxe",
     "type": "Gear",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 4,
     "domain": [
       "Fury"
     ],
@@ -13987,15 +14210,16 @@
     "set": "Unleashed",
     "keywords": [
       "Equipment"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "unl-020",
     "name": "Dancing Grenade",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Fury"
     ],
@@ -14026,7 +14250,8 @@
     "set": "Unleashed",
     "keywords": [
       "Noxus"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "unl-022",
@@ -14165,7 +14390,8 @@
     "keywords": [
       "Spirit",
       "Shadow Isles"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "unl-026",
@@ -14196,7 +14422,7 @@
     "rarity": "Epic",
     "cost": 8,
     "energy": 8,
-    "might": 2,
+    "might": 8,
     "domain": [
       "Fury"
     ],
@@ -14263,7 +14489,7 @@
     "rarity": "Epic",
     "cost": 4,
     "energy": 4,
-    "might": 1,
+    "might": 4,
     "domain": [
       "Fury"
     ],
@@ -14285,7 +14511,7 @@
     "rarity": "Showcase",
     "cost": 4,
     "energy": 4,
-    "might": 1,
+    "might": 4,
     "domain": [
       "Fury"
     ],
@@ -14346,7 +14572,7 @@
     "name": "Combat Experience",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Calm"
     ],
@@ -14356,14 +14582,15 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) Give a unit +1 might this turn. [Level 6][&gt;] Give it +3 might this turn instead. (While you have 6+ XP, get the effect.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/537b66b5f0259f80bf25b1aafb78558f4db6886a-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 1
   },
   {
     "id": "unl-032",
     "name": "Double Trouble",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Calm"
     ],
@@ -14373,15 +14600,16 @@
     "text": "[Repeat] 2 energy (You may pay the additional cost to repeat this spell's effect.) Look at the top 3 cards of your Main Deck. You may reveal a unit from among them and draw it. Recycle the rest.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/64e977213f50471ad7b6e8664488fb9017693f71-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 2
   },
   {
     "id": "unl-033",
     "name": "Frisky Hunter",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 3,
-    "energy": 3,
+    "cost": 4,
+    "energy": 4,
     "domain": [
       "Calm"
     ],
@@ -14395,7 +14623,8 @@
     "keywords": [
       "Cat",
       "Zaun"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "unl-034",
@@ -14404,7 +14633,7 @@
     "rarity": "Common",
     "cost": 4,
     "energy": 4,
-    "might": 1,
+    "might": 4,
     "domain": [
       "Calm"
     ],
@@ -14438,15 +14667,16 @@
     "set": "Unleashed",
     "keywords": [
       "Bandle City"
-    ]
+    ],
+    "might": 6
   },
   {
     "id": "unl-036",
     "name": "Mutated Mouser",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 1,
-    "energy": 1,
+    "cost": 2,
+    "energy": 2,
     "domain": [
       "Calm"
     ],
@@ -14460,16 +14690,17 @@
     "keywords": [
       "Cat",
       "Bilgewater"
-    ]
+    ],
+    "might": 1
   },
   {
     "id": "unl-037",
     "name": "Shadow Watcher",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 5,
-    "energy": 5,
-    "might": 1,
+    "cost": 4,
+    "energy": 4,
+    "might": 5,
     "domain": [
       "Calm"
     ],
@@ -14489,8 +14720,8 @@
     "name": "Skyward Strike",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Calm"
     ],
@@ -14507,7 +14738,7 @@
     "name": "Soul Sword",
     "type": "Gear",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Calm"
     ],
@@ -14520,7 +14751,8 @@
     "set": "Unleashed",
     "keywords": [
       "Equipment"
-    ]
+    ],
+    "might": 1
   },
   {
     "id": "unl-040",
@@ -14541,7 +14773,8 @@
     "set": "Unleashed",
     "keywords": [
       "Ionia"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "unl-041",
@@ -14563,14 +14796,15 @@
     "keywords": [
       "Yordle",
       "Bandle City"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "unl-042",
     "name": "Back Off",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Calm"
     ],
@@ -14580,15 +14814,16 @@
     "text": "[Hidden] (Hide now for 1 rune of any type to react with later for 0 energy.) [Action] (Play on your turn or in showdowns.) [Stun] a unit. (It doesn't deal combat damage this turn.) If you played this from your hand, draw 1.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/a0e7f7fa55ae618f94fe48920f92406ddd7e3512-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 3
   },
   {
     "id": "unl-043",
     "name": "Enthusiastic Promoter",
     "type": "Unit",
     "rarity": "Uncommon",
-    "cost": 2,
-    "energy": 2,
+    "cost": 3,
+    "energy": 3,
     "domain": [
       "Calm"
     ],
@@ -14602,15 +14837,16 @@
     "keywords": [
       "Yordle",
       "Bandle City"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "unl-044",
     "name": "Flurry of Feathers",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 2,
-    "might": 2,
+    "cost": 4,
+    "might": 4,
     "domain": [
       "Calm"
     ],
@@ -14627,7 +14863,7 @@
     "name": "Forgotten Signpost",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Calm"
     ],
@@ -14637,14 +14873,15 @@
     "text": "[Action][&gt;] Exhaust a unit you control, exhaust: Move a different unit you control to the location of the unit you exhausted to pay for this ability.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/edf248974d1d97ff5ff1c6745f663fa059dbc82d-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 2
   },
   {
     "id": "unl-046",
     "name": "Friendship",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Calm"
     ],
@@ -14654,7 +14891,8 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) Choose a unit. Give it +1 might this turn for each of the following tags among your units — Bird, Cat, Dog, and Poro.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/4a1a08ec8c23a2663babd2fc683481888347407a-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 1
   },
   {
     "id": "unl-047",
@@ -14663,7 +14901,7 @@
     "rarity": "Uncommon",
     "cost": 3,
     "energy": 3,
-    "might": 1,
+    "might": 3,
     "domain": [
       "Calm"
     ],
@@ -14699,14 +14937,15 @@
     "keywords": [
       "Yordle",
       "Ionia"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "unl-049",
     "name": "Honeyfruit",
     "type": "Gear",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Calm"
     ],
@@ -14716,16 +14955,17 @@
     "text": "This enters exhausted. [Reaction][&gt;] exhaust: [Add] 1 rune of any type. (Abilities that add resources can't be reacted to.) [Level 6][&gt;] [&gt;&gt;][Reaction][&gt;] exhaust: [Add] 1 energy1 rune of any type. (Use this ability only while you have 6+ XP.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/4794052d16d88b12861b348a466673ace098c32e-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 2
   },
   {
     "id": "unl-050",
     "name": "Iascylla",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 6,
-    "energy": 6,
-    "might": 1,
+    "cost": 7,
+    "energy": 7,
+    "might": 6,
     "domain": [
       "Calm"
     ],
@@ -14813,8 +15053,8 @@
     "name": "Scuttle Crab",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 0,
-    "energy": 0,
+    "cost": 2,
+    "energy": 2,
     "domain": [
       "Calm"
     ],
@@ -14827,15 +15067,16 @@
     "set": "Unleashed",
     "keywords": [
       "Bilgewater"
-    ]
+    ],
+    "might": 0
   },
   {
     "id": "unl-054",
     "name": "Tricksy Tentacles",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 1,
-    "might": 1,
+    "cost": 4,
+    "might": 4,
     "domain": [
       "Calm"
     ],
@@ -14925,9 +15166,9 @@
     "name": "Alpha Wildclaw",
     "type": "Unit",
     "rarity": "Epic",
-    "cost": 7,
-    "energy": 7,
-    "might": 2,
+    "cost": 6,
+    "energy": 6,
+    "might": 7,
     "domain": [
       "Calm"
     ],
@@ -15042,7 +15283,7 @@
     "rarity": "Epic",
     "cost": 8,
     "energy": 8,
-    "might": 2,
+    "might": 8,
     "domain": [
       "Calm"
     ],
@@ -15065,7 +15306,7 @@
     "rarity": "Showcase",
     "cost": 8,
     "energy": 8,
-    "might": 2,
+    "might": 8,
     "domain": [
       "Calm"
     ],
@@ -15086,7 +15327,7 @@
     "name": "Downstage Dramatics",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Mind"
     ],
@@ -15096,7 +15337,8 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) [Repeat] 2 energy (You may pay the additional cost to repeat this spell's effect.) Draw 1.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/d76418eabcddbea148f3331913223b79a39aabda-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 2
   },
   {
     "id": "unl-062",
@@ -15117,14 +15359,15 @@
     "set": "Unleashed",
     "keywords": [
       "Ionia"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "unl-063",
     "name": "Eclipse",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Mind"
     ],
@@ -15134,15 +15377,16 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) Give a unit -4 might this turn. [Predict]. (Look at the top card of your Main Deck. You may recycle it.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/9fcef3d1d7de3c219aabcab88d0550c9d8cd4311-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 3
   },
   {
     "id": "unl-064",
     "name": "Fate Weaver",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 4,
-    "energy": 4,
+    "cost": 5,
+    "energy": 5,
     "domain": [
       "Mind"
     ],
@@ -15155,7 +15399,8 @@
     "set": "Unleashed",
     "keywords": [
       "Ionia"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "unl-065",
@@ -15176,14 +15421,15 @@
     "set": "Unleashed",
     "keywords": [
       "Freljord"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "unl-066",
     "name": "Moonlight Affliction",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 7,
     "domain": [
       "Mind"
     ],
@@ -15193,7 +15439,8 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) Give a unit -10 might this turn.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/8f75280599fdb4d3b6191cf8e8443aadf33ad11e-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 7
   },
   {
     "id": "unl-067",
@@ -15202,7 +15449,7 @@
     "rarity": "Common",
     "cost": 6,
     "energy": 6,
-    "might": 1,
+    "might": 6,
     "domain": [
       "Mind"
     ],
@@ -15222,8 +15469,8 @@
     "name": "Spectral Centaur",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 5,
-    "energy": 5,
+    "cost": 6,
+    "energy": 6,
     "domain": [
       "Mind"
     ],
@@ -15237,14 +15484,15 @@
     "keywords": [
       "Spirit",
       "Shadow Isles"
-    ]
+    ],
+    "might": 5
   },
   {
     "id": "unl-069",
     "name": "Sprite Burst",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 5,
     "domain": [
       "Mind"
     ],
@@ -15254,14 +15502,15 @@
     "text": "Play two ready 3 might Sprite unit tokens with [Temporary]. (Kill each at the start of its controller's Beginning Phase, before scoring.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/4427ceffae1c3e7b012167461ce7c080bb2c1fe4-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 5
   },
   {
     "id": "unl-070",
     "name": "Turn to Dust",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Mind"
     ],
@@ -15271,7 +15520,8 @@
     "text": "Give a gear [Temporary]. (Kill it at the start of its controller's Beginning Phase, before scoring.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/4986c0c2fea96d9a88d736789d604374a64d03fb-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 2
   },
   {
     "id": "unl-071",
@@ -15292,15 +15542,16 @@
     "set": "Unleashed",
     "keywords": [
       "Bilgewater"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "unl-072",
     "name": "Crescent Strike",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 1,
-    "might": 1,
+    "cost": 3,
+    "might": 3,
     "domain": [
       "Mind"
     ],
@@ -15317,7 +15568,7 @@
     "name": "Deadly Flourish",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 4,
     "domain": [
       "Mind"
     ],
@@ -15327,14 +15578,15 @@
     "text": "Deal 3 to an enemy unit. When it dies this turn, play a Gold gear token exhausted. (It has &quot;[Reaction][&gt;] Kill this, exhaust: [Add] 1 rune of any type.&quot;)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/81195df7122beaba38ebc8b8212ceb0e7593afe9-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 4
   },
   {
     "id": "unl-074",
     "name": "Frigid Jewel",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Mind"
     ],
@@ -15344,7 +15596,8 @@
     "text": "When you draw your second card each turn, give a friendly unit +2 might this turn.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/f1a6c28649bf4478b4728379b6d548058739f0e9-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 2
   },
   {
     "id": "unl-075",
@@ -15353,7 +15606,7 @@
     "rarity": "Uncommon",
     "cost": 3,
     "energy": 3,
-    "might": 1,
+    "might": 3,
     "domain": [
       "Mind"
     ],
@@ -15389,15 +15642,16 @@
     "keywords": [
       "Fae",
       "Ionia"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "unl-077",
     "name": "Soul Shepherd",
     "type": "Unit",
     "rarity": "Uncommon",
-    "cost": 3,
-    "energy": 3,
+    "cost": 5,
+    "energy": 5,
     "domain": [
       "Mind"
     ],
@@ -15410,15 +15664,16 @@
     "set": "Unleashed",
     "keywords": [
       "Shadow Isles"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "unl-078",
     "name": "Sprite Fountain",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Mind"
     ],
@@ -15502,8 +15757,8 @@
     "name": "Keeper of Masks",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 1,
-    "energy": 1,
+    "cost": 2,
+    "energy": 2,
     "domain": [
       "Mind"
     ],
@@ -15516,7 +15771,8 @@
     "set": "Unleashed",
     "keywords": [
       "Ionia"
-    ]
+    ],
+    "might": 1
   },
   {
     "id": "unl-082",
@@ -15569,7 +15825,7 @@
     "name": "Smoke and Mirrors",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Mind"
     ],
@@ -15579,16 +15835,17 @@
     "text": "[Hidden] (Hide now for 1 rune of any type to react with later for 0 energy.) [Action] (Play on your turn or in showdowns.) Choose a unit you control and another unit you control at a different location. If at least one of them has [Temporary], move each to the other's location. Draw 1.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/38886634ee8646707d9c26020f977f14c934a4c0-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 2
   },
   {
     "id": "unl-084",
     "name": "Sprite Queen",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 6,
-    "energy": 6,
-    "might": 1,
+    "cost": 7,
+    "energy": 7,
+    "might": 6,
     "domain": [
       "Mind"
     ],
@@ -15609,7 +15866,7 @@
     "name": "Sumpworks Map",
     "type": "Gear",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Mind"
     ],
@@ -15619,7 +15876,8 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) [Temporary] (Kill this at the start of its controller's Beginning Phase, before scoring.) When an opponent scores, draw 1.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/87c3d5007aa3c3e2c4ff3d5bf78a92a2bee58db3-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 2
   },
   {
     "id": "unl-086",
@@ -15651,7 +15909,7 @@
     "rarity": "Epic",
     "cost": 4,
     "energy": 4,
-    "might": 1,
+    "might": 4,
     "domain": [
       "Mind"
     ],
@@ -15673,7 +15931,7 @@
     "rarity": "Showcase",
     "cost": 4,
     "energy": 4,
-    "might": 1,
+    "might": 4,
     "domain": [
       "Mind"
     ],
@@ -15690,7 +15948,7 @@
     "name": "Gutter Palace",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 4,
     "domain": [
       "Mind"
     ],
@@ -15700,7 +15958,8 @@
     "text": "At the start of your Beginning Phase, if you have exactly 4 cards in hand and exactly 4 units at battlefields, you win the game. Discard 1, exhaust: Play a 1 might Bird unit token with [Deflect]. (Opponents must pay 1 rune of any type to choose it with a spell or ability.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/f1addf7bb3925871cbcf4615f5a449dc61f762da-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 4
   },
   {
     "id": "unl-089",
@@ -15795,7 +16054,7 @@
     "name": "Concentrate",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 5,
     "domain": [
       "Body"
     ],
@@ -15805,7 +16064,8 @@
     "text": "Draw 2. [Level 6][&gt;] This costs 2 energy less. (While you have 6+ XP, get the effect.) [Level 11][&gt;] This costs 4 energy less instead.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/5e032420b6dcbdd96dca122b4d7875868feb82ed-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 5
   },
   {
     "id": "unl-092",
@@ -15826,15 +16086,16 @@
     "set": "Unleashed",
     "keywords": [
       "Demacia"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "unl-093",
     "name": "Dragonsoul Sage",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 1,
-    "energy": 1,
+    "cost": 2,
+    "energy": 2,
     "domain": [
       "Body"
     ],
@@ -15847,7 +16108,8 @@
     "set": "Unleashed",
     "keywords": [
       "Ionia"
-    ]
+    ],
+    "might": 1
   },
   {
     "id": "unl-094",
@@ -15869,14 +16131,15 @@
     "keywords": [
       "Yordle",
       "Mount Targon"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "unl-095",
     "name": "Grim Resolve",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Body"
     ],
@@ -15886,14 +16149,15 @@
     "text": "[Action] (Play on your turn or in showdowns.) Give a friendly unit +3 might this turn. When it wins a combat this turn, gain 2 XP.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/4705a4ef2589f2a82021f1b70dcdb7e289a88fdf-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 2
   },
   {
     "id": "unl-096",
     "name": "Hunter's Machete",
     "type": "Gear",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Body"
     ],
@@ -15906,7 +16170,8 @@
     "set": "Unleashed",
     "keywords": [
       "Equipment"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "unl-097",
@@ -15927,7 +16192,8 @@
     "set": "Unleashed",
     "keywords": [
       "Ionia"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "unl-098",
@@ -15948,15 +16214,16 @@
     "set": "Unleashed",
     "keywords": [
       "Mount Targon"
-    ]
+    ],
+    "might": 6
   },
   {
     "id": "unl-099",
     "name": "Towering Combatant",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 3,
-    "energy": 3,
+    "cost": 4,
+    "energy": 4,
     "domain": [
       "Body"
     ],
@@ -15969,7 +16236,8 @@
     "set": "Unleashed",
     "keywords": [
       "Shurima"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "unl-100",
@@ -15990,14 +16258,15 @@
     "set": "Unleashed",
     "keywords": [
       "Freljord"
-    ]
+    ],
+    "might": 5
   },
   {
     "id": "unl-101",
     "name": "Call to Battle",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Body"
     ],
@@ -16007,7 +16276,8 @@
     "text": "Move a unit you control to a battlefield you control. Then, choose an opponent. They move a unit they control to the same battlefield.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/3c7e0f93c72654f786f5df37895c6e95fa9d4d60-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 3
   },
   {
     "id": "unl-102",
@@ -16028,14 +16298,15 @@
     "set": "Unleashed",
     "keywords": [
       "Noxus"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "unl-103",
     "name": "Disposal Order",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Body"
     ],
@@ -16045,7 +16316,8 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) Choose one —<ul><li>Choose up to 3 cards from opponents' trashes. Their owners recycle them.</li><li>Draw 1.</li></ul>",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/de7b7c683f16a297418bc9a326178c520f17ef2b-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 2
   },
   {
     "id": "unl-104",
@@ -16067,7 +16339,8 @@
     "keywords": [
       "Dragon",
       "Mount Targon"
-    ]
+    ],
+    "might": 8
   },
   {
     "id": "unl-105",
@@ -16088,7 +16361,8 @@
     "set": "Unleashed",
     "keywords": [
       "Ionia"
-    ]
+    ],
+    "might": 5
   },
   {
     "id": "unl-106",
@@ -16113,7 +16387,7 @@
     "name": "Stare Down",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Body"
     ],
@@ -16123,7 +16397,8 @@
     "text": "Choose a friendly unit and a battlefield. Move all enemy units at that battlefield with less Might than the chosen unit to their base. Gain 1 XP.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/58d0353a966bb0ca292855a0a55de5769e28d155-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 2
   },
   {
     "id": "unl-108",
@@ -16144,14 +16419,15 @@
     "set": "Unleashed",
     "keywords": [
       "Bilgewater"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "unl-109",
     "name": "Blood Rose",
     "type": "Gear",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Body"
     ],
@@ -16161,15 +16437,16 @@
     "text": "When you play a unit, you may pay 1 energy to gain 1 XP. Spend 3 XP, exhaust: Ready a unit.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/64067ebdbe3140e9a458da7ecf7253a5fae9a31b-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 1
   },
   {
     "id": "unl-110",
     "name": "Clash of Giants",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 2,
-    "might": 2,
+    "cost": 6,
+    "might": 6,
     "domain": [
       "Body"
     ],
@@ -16201,15 +16478,16 @@
     "keywords": [
       "Yordle",
       "Bandle City"
-    ]
+    ],
+    "might": 1
   },
   {
     "id": "unl-112",
     "name": "Irresistible Faefolk",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 1,
-    "energy": 1,
+    "cost": 2,
+    "energy": 2,
     "domain": [
       "Body"
     ],
@@ -16223,7 +16501,8 @@
     "keywords": [
       "Fae",
       "Ionia"
-    ]
+    ],
+    "might": 1
   },
   {
     "id": "unl-113",
@@ -16370,7 +16649,7 @@
     "rarity": "Epic",
     "cost": 6,
     "energy": 6,
-    "might": 1,
+    "might": 6,
     "domain": [
       "Body"
     ],
@@ -16391,9 +16670,9 @@
     "name": "Elder Dragon",
     "type": "Unit",
     "rarity": "Epic",
-    "cost": 10,
-    "energy": 10,
-    "might": 4,
+    "cost": 12,
+    "energy": 12,
+    "might": 10,
     "domain": [
       "Body"
     ],
@@ -16414,9 +16693,9 @@
     "name": "Elder Dragon",
     "type": "Unit",
     "rarity": "Showcase",
-    "cost": 10,
-    "energy": 10,
-    "might": 4,
+    "cost": 12,
+    "energy": 12,
+    "might": 10,
     "domain": [
       "Body"
     ],
@@ -16438,7 +16717,7 @@
     "rarity": "Epic",
     "cost": 5,
     "energy": 5,
-    "might": 1,
+    "might": 5,
     "domain": [
       "Body"
     ],
@@ -16461,7 +16740,7 @@
     "rarity": "Showcase",
     "cost": 5,
     "energy": 5,
-    "might": 1,
+    "might": 5,
     "domain": [
       "Body"
     ],
@@ -16482,9 +16761,9 @@
     "name": "Rengar, Trophy Hunter",
     "type": "Unit",
     "rarity": "Epic",
-    "cost": 6,
-    "energy": 6,
-    "might": 1,
+    "cost": 5,
+    "energy": 5,
+    "might": 6,
     "domain": [
       "Body"
     ],
@@ -16506,9 +16785,9 @@
     "name": "Rengar, Trophy Hunter",
     "type": "Unit",
     "rarity": "Showcase",
-    "cost": 6,
-    "energy": 6,
-    "might": 1,
+    "cost": 5,
+    "energy": 5,
+    "might": 6,
     "domain": [
       "Body"
     ],
@@ -16530,8 +16809,8 @@
     "name": "Bewitching Spirit",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 2,
-    "energy": 2,
+    "cost": 3,
+    "energy": 3,
     "domain": [
       "Chaos"
     ],
@@ -16545,7 +16824,8 @@
     "keywords": [
       "Spirit",
       "Shadow Isles"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "unl-122",
@@ -16566,7 +16846,8 @@
     "set": "Unleashed",
     "keywords": [
       "Mount Targon"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "unl-123",
@@ -16587,14 +16868,15 @@
     "set": "Unleashed",
     "keywords": [
       "Shadow Isles"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "unl-124",
     "name": "Isolate",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Chaos"
     ],
@@ -16604,14 +16886,15 @@
     "text": "Move an enemy unit from a battlefield to its base. Then, if there's an enemy unit alone at that battlefield, draw 1.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/bde23f07e4869fa96b14fcab329e782894b1e1e3-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 2
   },
   {
     "id": "unl-125",
     "name": "Lunar Boon",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Chaos"
     ],
@@ -16621,7 +16904,8 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) Discard 1, then draw 2.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/7dc31cec93a355ba52b8cf2ca0b232a0edd57586-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 3
   },
   {
     "id": "unl-126",
@@ -16642,15 +16926,16 @@
     "set": "Unleashed",
     "keywords": [
       "Bilgewater"
-    ]
+    ],
+    "might": 6
   },
   {
     "id": "unl-127",
     "name": "Mister Root",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 1,
-    "energy": 1,
+    "cost": 2,
+    "energy": 2,
     "domain": [
       "Chaos"
     ],
@@ -16664,15 +16949,16 @@
     "keywords": [
       "Fae",
       "Ionia"
-    ]
+    ],
+    "might": 1
   },
   {
     "id": "unl-128",
     "name": "Star-Crossed",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 1,
-    "might": 1,
+    "cost": 3,
+    "might": 3,
     "domain": [
       "Chaos"
     ],
@@ -16703,15 +16989,16 @@
     "set": "Unleashed",
     "keywords": [
       "Bilgewater"
-    ]
+    ],
+    "might": 5
   },
   {
     "id": "unl-130",
     "name": "Walking Roost",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 6,
-    "energy": 6,
+    "cost": 5,
+    "energy": 5,
     "domain": [
       "Chaos"
     ],
@@ -16724,14 +17011,15 @@
     "set": "Unleashed",
     "keywords": [
       "Shadow Isles"
-    ]
+    ],
+    "might": 6
   },
   {
     "id": "unl-131",
     "name": "Abandon",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Chaos"
     ],
@@ -16741,7 +17029,8 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) Counter a spell. Return it to its owner's hand instead of putting it in their trash. [Predict]. (Look at the top card of your Main Deck. You may recycle it.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/89929cfa4417c99576477793529c6808af145919-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 2
   },
   {
     "id": "unl-132",
@@ -16750,7 +17039,7 @@
     "rarity": "Uncommon",
     "cost": 5,
     "energy": 5,
-    "might": 1,
+    "might": 5,
     "domain": [
       "Chaos"
     ],
@@ -16770,8 +17059,8 @@
     "name": "Blast Cone",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 1,
-    "might": 1,
+    "cost": 4,
+    "might": 4,
     "domain": [
       "Chaos"
     ],
@@ -16820,14 +17109,15 @@
     "set": "Unleashed",
     "keywords": [
       "Piltover"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "unl-136",
     "name": "Scryer's Bloom",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Chaos"
     ],
@@ -16837,15 +17127,16 @@
     "text": "This enters exhausted. Kill this, 1 energy, exhaust: [Predict 2], then draw 1. Gain 1 XP. (To Predict 2, look at the top two cards of your Main Deck. Recycle any of them and put the rest back in any order.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/b10a544d24d3ae3e177d4791743bb2cfb742abcc-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 1
   },
   {
     "id": "unl-137",
     "name": "Sinister Poro",
     "type": "Unit",
     "rarity": "Uncommon",
-    "cost": 1,
-    "energy": 1,
+    "cost": 2,
+    "energy": 2,
     "might": 1,
     "domain": [
       "Chaos"
@@ -16867,7 +17158,7 @@
     "name": "The List",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Chaos"
     ],
@@ -16877,15 +17168,16 @@
     "text": "As you play this, name a tag. (For example, Miss Fortune, Demacia, and Poro are tags.) exhaust: Give a unit with the named tag -2 might this turn.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/f35b49faeb444071445662c9af13710c00a4569c-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 1
   },
   {
     "id": "unl-139",
     "name": "Bone Skewer",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Chaos"
     ],
@@ -16902,8 +17194,8 @@
     "name": "Conscription",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 2,
-    "might": 2,
+    "cost": 5,
+    "might": 5,
     "domain": [
       "Chaos"
     ],
@@ -16942,8 +17234,8 @@
     "name": "Heedless Resurrection",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Chaos"
     ],
@@ -17006,9 +17298,9 @@
     "name": "Maduli the Gatekeeper",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 6,
-    "energy": 6,
-    "might": 1,
+    "cost": 7,
+    "energy": 7,
+    "might": 6,
     "domain": [
       "Chaos"
     ],
@@ -17095,9 +17387,9 @@
     "name": "Baron Nashor",
     "type": "Unit",
     "rarity": "Epic",
-    "cost": 12,
-    "energy": 12,
-    "might": 3,
+    "cost": 10,
+    "energy": 10,
+    "might": 12,
     "domain": [
       "Chaos"
     ],
@@ -17117,9 +17409,9 @@
     "name": "Baron Nashor",
     "type": "Unit",
     "rarity": "Showcase",
-    "cost": 12,
-    "energy": 12,
-    "might": 3,
+    "cost": 10,
+    "energy": 10,
+    "might": 12,
     "domain": [
       "Chaos"
     ],
@@ -17139,8 +17431,8 @@
     "name": "Cursed Sarcophagus",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 4,
+    "might": 4,
     "domain": [
       "Chaos"
     ],
@@ -17157,9 +17449,9 @@
     "name": "Diana, No Longer Human",
     "type": "Unit",
     "rarity": "Epic",
-    "cost": 3,
-    "energy": 3,
-    "might": 1,
+    "cost": 4,
+    "energy": 4,
+    "might": 3,
     "domain": [
       "Chaos"
     ],
@@ -17180,9 +17472,9 @@
     "name": "Diana, No Longer Human",
     "type": "Unit",
     "rarity": "Showcase",
-    "cost": 3,
-    "energy": 3,
-    "might": 1,
+    "cost": 4,
+    "energy": 4,
+    "might": 3,
     "domain": [
       "Chaos"
     ],
@@ -17249,9 +17541,9 @@
     "name": "Bandle Soldier",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 5,
-    "energy": 5,
-    "might": 1,
+    "cost": 4,
+    "energy": 4,
+    "might": 5,
     "domain": [
       "Order"
     ],
@@ -17272,8 +17564,8 @@
     "name": "Black Rose Dignitary",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 2,
-    "energy": 2,
+    "cost": 3,
+    "energy": 3,
     "domain": [
       "Order"
     ],
@@ -17286,15 +17578,16 @@
     "set": "Unleashed",
     "keywords": [
       "Noxus"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "unl-153",
     "name": "Carrion Dredger",
     "type": "Unit",
     "rarity": "Common",
-    "cost": 1,
-    "energy": 1,
+    "cost": 2,
+    "energy": 2,
     "domain": [
       "Order"
     ],
@@ -17308,7 +17601,8 @@
     "keywords": [
       "Mech",
       "Zaun"
-    ]
+    ],
+    "might": 1
   },
   {
     "id": "unl-154",
@@ -17330,14 +17624,15 @@
     "keywords": [
       "Bird",
       "Noxus"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "unl-155",
     "name": "Heroic Charge",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Order"
     ],
@@ -17347,7 +17642,8 @@
     "text": "[Action] (Play on your turn or in showdowns.) Give a friendly unit +1 might this turn and [Stun] an enemy unit at its location. (A stunned unit doesn't deal combat damage this turn.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/944b89db8a7f7961a28e66ec4fb7d30bb863f324-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 3
   },
   {
     "id": "unl-156",
@@ -17369,7 +17665,8 @@
     "keywords": [
       "Poro",
       "Freljord"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "unl-157",
@@ -17391,14 +17688,15 @@
     "keywords": [
       "Elite",
       "Demacia"
-    ]
+    ],
+    "might": 6
   },
   {
     "id": "unl-158",
     "name": "Shepherd's Heirloom",
     "type": "Gear",
     "rarity": "Common",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Order"
     ],
@@ -17411,15 +17709,16 @@
     "set": "Unleashed",
     "keywords": [
       "Equipment"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "unl-159",
     "name": "Soul Harvest",
     "type": "Spell",
     "rarity": "Common",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Order"
     ],
@@ -17451,14 +17750,15 @@
     "keywords": [
       "Poro",
       "Freljord"
-    ]
+    ],
+    "might": 5
   },
   {
     "id": "unl-161",
     "name": "Divining Shells",
     "type": "Gear",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Order"
     ],
@@ -17468,7 +17768,8 @@
     "text": "[Vision] (When you play this, look at the top card of your Main Deck. You may recycle it.) [Action][&gt;] Kill this, exhaust: Give a unit +2 might this turn.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/f2b626602f5db047b96cf9112474d42bf5b483e7-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 2
   },
   {
     "id": "unl-162",
@@ -17490,7 +17791,8 @@
     "keywords": [
       "Fae",
       "Ionia"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "unl-163",
@@ -17511,16 +17813,17 @@
     "set": "Unleashed",
     "keywords": [
       "Demacia"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "unl-164",
     "name": "Safety Inspector",
     "type": "Unit",
     "rarity": "Uncommon",
-    "cost": 3,
-    "energy": 3,
-    "might": 1,
+    "cost": 5,
+    "energy": 5,
+    "might": 3,
     "domain": [
       "Order"
     ],
@@ -17541,7 +17844,7 @@
     "name": "Shadow's Call",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Order"
     ],
@@ -17551,16 +17854,17 @@
     "text": "Choose a friendly unit without [Temporary]. Give it [Temporary]. Draw 2. (Kill it at the start of its controller's Beginning Phase, before scoring.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/5a9a81d353131fc275313e737d55ca6e2661dce6-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 2
   },
   {
     "id": "unl-166",
     "name": "Stalking Wolf",
     "type": "Unit",
     "rarity": "Uncommon",
-    "cost": 6,
-    "energy": 6,
-    "might": 1,
+    "cost": 4,
+    "energy": 4,
+    "might": 6,
     "domain": [
       "Order"
     ],
@@ -17581,9 +17885,9 @@
     "name": "Starhound",
     "type": "Unit",
     "rarity": "Uncommon",
-    "cost": 6,
-    "energy": 6,
-    "might": 1,
+    "cost": 5,
+    "energy": 5,
+    "might": 6,
     "domain": [
       "Order"
     ],
@@ -17604,8 +17908,8 @@
     "name": "Undying Loyalty",
     "type": "Spell",
     "rarity": "Uncommon",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Order"
     ],
@@ -17645,9 +17949,9 @@
     "name": "Atakhan",
     "type": "Unit",
     "rarity": "Rare",
-    "cost": 7,
-    "energy": 7,
-    "might": 3,
+    "cost": 10,
+    "energy": 10,
+    "might": 7,
     "domain": [
       "Order"
     ],
@@ -17737,7 +18041,7 @@
     "name": "Sacrifice",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 1,
     "domain": [
       "Order"
     ],
@@ -17747,14 +18051,15 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) As an additional cost to play this, kill a friendly [Mighty] unit. (A unit is Mighty while it has 5+ might.) Draw 2 and channel 1 rune exhausted.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/139153ae4b4f786442018c09765c67e35515df24-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 1
   },
   {
     "id": "unl-174",
     "name": "Shard of Undoing",
     "type": "Gear",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 6,
     "domain": [
       "Order"
     ],
@@ -17764,14 +18069,15 @@
     "text": "The first time a friendly unit dies during your Beginning Phase each turn, each opponent must kill one of their units.",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/d167f4e37714f0f8983fce16a9c657bc7ce39642-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 6
   },
   {
     "id": "unl-175",
     "name": "Tactical Retreat",
     "type": "Spell",
     "rarity": "Rare",
-    "cost": 0,
+    "cost": 2,
     "domain": [
       "Order"
     ],
@@ -17781,7 +18087,8 @@
     "text": "[Reaction] (Play any time, even before spells and abilities resolve.) Choose a friendly unit. The next time it would die this turn, heal it, exhaust it, and recall it instead. (Send it to base. This isn't a move.)",
     "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/cd5abf6c27f5faac247f6044306db3d710fb9d61-744x1039.png",
     "setCode": "UNL",
-    "set": "Unleashed"
+    "set": "Unleashed",
+    "might": 2
   },
   {
     "id": "unl-176",
@@ -17926,9 +18233,9 @@
     "name": "Rift Herald",
     "type": "Unit",
     "rarity": "Epic",
-    "cost": 7,
-    "energy": 7,
-    "might": 1,
+    "cost": 8,
+    "energy": 8,
+    "might": 7,
     "domain": [
       "Order"
     ],
@@ -17948,9 +18255,9 @@
     "name": "Rift Herald",
     "type": "Unit",
     "rarity": "Showcase",
-    "cost": 7,
-    "energy": 7,
-    "might": 1,
+    "cost": 8,
+    "energy": 8,
+    "might": 7,
     "domain": [
       "Order"
     ],
@@ -17970,8 +18277,8 @@
     "name": "The Ruination",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 3,
-    "might": 3,
+    "cost": 9,
+    "might": 9,
     "domain": [
       "Order"
     ],
@@ -18009,7 +18316,7 @@
     "name": "Curtain Call",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 4,
     "domain": [
       "Fury",
       "Mind"
@@ -18023,7 +18330,8 @@
     "set": "Unleashed",
     "keywords": [
       "Jhin"
-    ]
+    ],
+    "might": 4
   },
   {
     "id": "unl-183",
@@ -18051,8 +18359,8 @@
     "name": "Thrill of the Hunt",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Fury",
       "Body"
@@ -18094,8 +18402,8 @@
     "name": "Death from Below",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 4,
+    "might": 4,
     "domain": [
       "Fury",
       "Chaos"
@@ -18137,7 +18445,7 @@
     "name": "Hextech Gauntlets",
     "type": "Gear",
     "rarity": "Epic",
-    "cost": 0,
+    "cost": 3,
     "domain": [
       "Fury",
       "Order"
@@ -18152,7 +18460,8 @@
     "keywords": [
       "Vi",
       "Equipment"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "unl-189",
@@ -18223,8 +18532,8 @@
     "name": "Alpha Strike",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 3,
+    "might": 3,
     "domain": [
       "Calm",
       "Body"
@@ -18282,7 +18591,8 @@
     "keywords": [
       "Vex",
       "Shadow Isles"
-    ]
+    ],
+    "might": 3
   },
   {
     "id": "unl-195",
@@ -18310,9 +18620,9 @@
     "name": "Daisy!",
     "type": "Unit",
     "rarity": "Epic",
-    "cost": 8,
-    "energy": 8,
-    "might": 2,
+    "cost": 9,
+    "energy": 9,
+    "might": 8,
     "domain": [
       "Calm",
       "Order"
@@ -18355,8 +18665,8 @@
     "name": "Moonfall",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 3,
+    "might": 3,
     "domain": [
       "Mind",
       "Chaos"
@@ -18398,8 +18708,8 @@
     "name": "Mirror Image",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 2,
-    "might": 2,
+    "cost": 3,
+    "might": 3,
     "domain": [
       "Mind",
       "Order"
@@ -18441,8 +18751,8 @@
     "name": "Void Assault",
     "type": "Spell",
     "rarity": "Epic",
-    "cost": 1,
-    "might": 1,
+    "cost": 2,
+    "might": 2,
     "domain": [
       "Body",
       "Chaos"
@@ -18775,7 +19085,8 @@
     "set": "Unleashed",
     "keywords": [
       "Poro"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "unl-221",
@@ -18797,7 +19108,8 @@
     "keywords": [
       "Poro",
       "Freljord"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "unl-222",
@@ -18820,7 +19132,8 @@
       "Poro",
       "Pirate",
       "Bilgewater"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "unl-223",
@@ -18842,7 +19155,8 @@
     "keywords": [
       "Poro",
       "Freljord"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "unl-224",
@@ -18863,7 +19177,8 @@
     "set": "Unleashed",
     "keywords": [
       "Poro"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "unl-225",
@@ -18884,7 +19199,8 @@
     "set": "Unleashed",
     "keywords": [
       "Poro"
-    ]
+    ],
+    "might": 2
   },
   {
     "id": "unl-226",
@@ -19395,9 +19711,9 @@
     "name": "Baron Nashor",
     "type": "Unit",
     "rarity": "Showcase",
-    "cost": 12,
-    "energy": 12,
-    "might": 3,
+    "cost": 10,
+    "energy": 10,
+    "might": 12,
     "domain": [
       "Chaos"
     ],

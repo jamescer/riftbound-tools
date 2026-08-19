@@ -241,6 +241,20 @@ export const filterByEnergyExists = (cards: Card[]): Card[] =>
 export const filterByMightExists = (cards: Card[]): Card[] =>
   cards.filter((card) => card.might !== undefined);
 
+/**
+ * Keep cards that have (or lack) an `imageUrl`.
+ * Defaults to `true` (keep only cards that have an image URL set).
+ * Pass `false` to find cards missing art — useful for auditing incomplete data.
+ *
+ * @example
+ * filterByImageUrl(cards);        // cards with art
+ * filterByImageUrl(cards, false); // cards missing art
+ */
+export const filterByImageUrl = (cards: Card[], hasImage = true): Card[] =>
+  cards.filter(
+    (card) => (card.imageUrl !== undefined && card.imageUrl !== "") === hasImage
+  );
+
 // ─── filter composition ───────────────────────────────────────────────────────
 
 /**
@@ -589,6 +603,26 @@ export const getUniqueSetCodes = (cards: Card[]): string[] =>
   [...new Set(cards.map((card) => card.setCode))].sort();
 
 /**
+ * Return a list of every distinct `CardSet` present in the given cards,
+ * sorted in chronological release order (Origins → Spiritforged → Unleashed → …).
+ * Cards with `set: undefined` are excluded.
+ *
+ * Unlike `getUniqueSetCodes`, this returns typed `CardSet` values and collapses
+ * set codes that share a set (e.g. `"OGN"` and `"OGS"` both return `"Origins"`).
+ *
+ * @example
+ * getUniqueSets(cards); // → ["Origins", "Spiritforged", "Unleashed"]
+ */
+export const getUniqueSets = (cards: Card[]): CardSet[] => {
+  const seen = new Set(
+    cards.map((c) => c.set).filter((s): s is CardSet => s !== undefined)
+  );
+  return [...seen].sort(
+    (a, b) => (setOrder[a] ?? Infinity) - (setOrder[b] ?? Infinity)
+  );
+};
+
+/**
  * Return a sorted list of every distinct value in the `keywords` (region/champion tag)
  * field across the given cards. Useful for building filter dropdowns.
  */
@@ -710,6 +744,41 @@ export const countBySetCode = (cards: Card[]): Record<string, number> =>
     return acc;
   }, {});
 
+// ─── cost grouping (mana curve) ──────────────────────────────────────────────
+
+/**
+ * Group cards by their derived `cost` value.
+ * Returns a plain `Record<number, Card[]>` where each key is a cost integer.
+ * Keys not present in the input are omitted.
+ *
+ * Use `countByCost` when you only need the counts (mana curve chart data).
+ * Use `getCardStats` when you need min/max/avg rather than a breakdown.
+ *
+ * @example
+ * const curve = groupByCost(filterByType(cards, "Unit"));
+ * curve[2]; // all 2-cost Units
+ */
+export const groupByCost = (cards: Card[]): Record<number, Card[]> =>
+  cards.reduce<Record<number, Card[]>>((acc, card) => {
+    (acc[card.cost] ??= []).push(card);
+    return acc;
+  }, {});
+
+/**
+ * Count how many cards have each cost value (the mana curve).
+ * Returns a `Record<number, number>` where each key is a cost integer and the value
+ * is the number of cards at that cost. Keys with zero cards are omitted.
+ *
+ * @example
+ * countByCost(filterByType(cards, "Unit"));
+ * // → { 0: 12, 1: 43, 2: 87, 3: 95, 4: 110, 5: 79, 6: 43, 7: 22 }
+ */
+export const countByCost = (cards: Card[]): Record<number, number> =>
+  cards.reduce<Record<number, number>>((acc, card) => {
+    acc[card.cost] = (acc[card.cost] ?? 0) + 1;
+    return acc;
+  }, {});
+
 // ─── stats ────────────────────────────────────────────────────────────────────
 
 /**
@@ -726,6 +795,18 @@ export const countBySetCode = (cards: Card[]): Record<string, number> =>
  * stats.might.max;   // highest might value among Units with a might stat
  * stats.total;       // 491
  */
+/**
+ * Return the total cost across all cards in the array (sum of `card.cost`).
+ * Useful for computing the total mana value of a deck or a filtered subset.
+ * Returns `0` for an empty array.
+ *
+ * @example
+ * sumCost(myDeck);                              // total mana value
+ * sumCost(myDeck) / myDeck.length;             // average cost (same as getCardStats().cost.avg)
+ */
+export const sumCost = (cards: Card[]): number =>
+  cards.reduce((total, card) => total + card.cost, 0);
+
 export const getCardStats = (cards: Card[]): CardStats => {
   const zero: CardFieldStats = { min: 0, max: 0, avg: 0, count: 0 };
   if (cards.length === 0) {
